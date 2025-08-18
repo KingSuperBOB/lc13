@@ -23,27 +23,45 @@
 		StartCooldown()
 
 /datum/action/cooldown/exploitgap/proc/GapSpotted()
-	owner.say("You're full of gaps.")
-	for(var/mob/living/carbon/human/human in view(range, get_turf(src)))
-		if (human.stat == DEAD)
+	for(var/mob/living/L in view(range, owner))
+		if(L.stat == DEAD)
 			continue
-		if (human == owner && !affect_self)
+		if (L == owner && !affect_self)
+			owner.say("	Tch... I’ve rusted all too soon, haven't I?.")
 			continue
-		human.physiology.red_mod *= 1.2
-		human.physiology.white_mod *= 1.2
-		human.physiology.black_mod *= 1.2
-		human.physiology.pale_mod *= 1.2
-		affected+= human
+		owner.say("You're full of gaps.")
+		L.apply_status_effect(/datum/status_effect/rend_sevendirector)
 
-	addtimer(CALLBACK(src, PROC_REF(Recall)), 30 SECONDS, TIMER_UNIQUE | TIMER_OVERRIDE)
 
-/datum/action/cooldown/exploitgap/proc/Recall()
-	for(var/mob/living/carbon/human/human in affected)
-		human.physiology.red_mod /= 1.2
-		human.physiology.white_mod /= 1.2
-		human.physiology.black_mod /= 1.2
-		human.physiology.pale_mod /= 1.2
-		affected-= human
+/datum/status_effect/rend_sevendirector
+	id = "seven director rend armor"
+	status_type = STATUS_EFFECT_UNIQUE
+	duration = 300 //30 seconds
+	alert_type = null
+
+/datum/status_effect/rend_sevendirector/on_apply()
+	. = ..()
+	if(ishuman(owner))
+		var/mob/living/carbon/human/L = owner
+		L.physiology.red_mod *= 1.2
+		L.physiology.white_mod *= 1.2
+		L.physiology.black_mod *= 1.2
+		L.physiology.pale_mod *= 1.2
+		return
+	var/mob/living/simple_animal/M = owner
+	M.AddModifier(/datum/dc_change/sevendirector)
+
+/datum/status_effect/rend_sevendirector/on_remove()
+	. = ..()
+	if(ishuman(owner))
+		var/mob/living/carbon/human/L = owner
+		L.physiology.red_mod /= 1.2
+		L.physiology.white_mod /= 1.2
+		L.physiology.black_mod /= 1.2
+		L.physiology.pale_mod /= 1.2
+		return
+	var/mob/living/simple_animal/M = owner
+	M.RemoveModifier(/datum/dc_change/sevendirector)
 
 /datum/movespeed_modifier/exploitgap
 	variable = TRUE

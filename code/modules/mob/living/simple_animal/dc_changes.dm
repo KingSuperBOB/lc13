@@ -72,6 +72,11 @@
 	potency = 1.4
 	damage_type = BLACK_DAMAGE
 
+// x1.2 modifiers, used by Exploit the Gap skill
+/datum/dc_change/sevendirector
+	potency = 1.2
+	damage_type = list(RED_DAMAGE, WHITE_DAMAGE, BLACK_DAMAGE, PALE_DAMAGE)
+
 /// 1.2x modifiers, used by Qliphoth Shredder
 /datum/dc_change/qliphothshred
 	potency = 1.2

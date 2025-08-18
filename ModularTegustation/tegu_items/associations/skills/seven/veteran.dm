@@ -20,7 +20,7 @@
 		if (L == owner && !affect_self)
 			continue
 		L.apply_status_effect(/datum/status_effect/rend_seven)
-	owner.say("	I've analyzed the enemy's behavior.")
+	owner.say("I've analyzed the enemy's behavior.")
 	StartCooldown()
 	return ..()
 
