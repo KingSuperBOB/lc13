@@ -16,6 +16,8 @@
 	for(var/mob/living/carbon/human/fuel in view(range, get_turf(src)))
 		if(locate(/obj/structure/turf_fireliu) in fuel.loc)
 			//this stuff is important for what youre about to do
+			if (fuel == owner)
+				continue
 			var/burn_holder = fuel.getFireLoss() //storing burn memories of fuel
 			fuel.adjustFireLoss(burn_holder)
 	owner.visible_message(span_warning("[owner] fans the flames, scorching those within!"))

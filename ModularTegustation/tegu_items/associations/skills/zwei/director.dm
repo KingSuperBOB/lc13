@@ -24,7 +24,7 @@
 		if(target.maxHealth >= skilluser.maxHealth)
 			new /obj/effect/temp_visual/slice(get_turf(target))
 			target.adjustBruteLoss(target.maxHealth*0.3, TRUE, TRUE)
-		target.add_movespeed_modifier(/datum/movespeed_modifier/retreat)
+		target.add_movespeed_modifier(/datum/movespeed_modifier/flexsuppress)
 		addtimer(CALLBACK(target, TYPE_PROC_REF(/mob, remove_movespeed_modifier), /datum/movespeed_modifier/flexsuppress), 3 SECONDS, TIMER_UNIQUE | TIMER_OVERRIDE)
 
 	owner.visible_message(span_userdanger("[owner] in a instant applies a precision strike pinning down their opponent!"), span_warning("You pin down your opponent masterfully!"))

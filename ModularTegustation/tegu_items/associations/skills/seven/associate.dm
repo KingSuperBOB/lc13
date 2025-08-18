@@ -7,6 +7,8 @@
 	button_icon_state = "healthhud_on"
 	var/datum/atom_hud/medsensor = GLOB.huds[DATA_HUD_MEDICAL_ADVANCED]
 	medsensor.add_hud_to(owner)
+	ADD_TRAIT(owner, TRAIT_THERMAL_VISION, src)
+	owner.update_sight()
 	active = TRUE
 	UpdateButtonIcon()
 
@@ -15,6 +17,8 @@
 	button_icon_state = "healthhud_off"
 	var/datum/atom_hud/medsensor = GLOB.huds[DATA_HUD_MEDICAL_ADVANCED]
 	medsensor.remove_hud_from(owner)
+	REMOVE_TRAIT(owner, TRAIT_THERMAL_VISION, src)
+	owner.update_sight()
 	active = FALSE
 	UpdateButtonIcon()
 
@@ -59,8 +63,8 @@
 	//increase speed
 	if (ishuman(owner))
 		var/mob/living/carbon/human/human = owner
-		human.add_movespeed_modifier(/datum/movespeed_modifier/retreat)
-		addtimer(CALLBACK(human, TYPE_PROC_REF(/mob, remove_movespeed_modifier), /datum/movespeed_modifier/retreat), 5 SECONDS, TIMER_UNIQUE | TIMER_OVERRIDE)
+		human.add_movespeed_modifier(/datum/movespeed_modifier/getaway)
+		addtimer(CALLBACK(human, TYPE_PROC_REF(/mob, remove_movespeed_modifier), /datum/movespeed_modifier/getaway), 5 SECONDS, TIMER_UNIQUE | TIMER_OVERRIDE)
 		human.physiology.red_mod *= 1.5
 		human.physiology.white_mod *= 1.5
 		human.physiology.black_mod *= 1.5
@@ -80,3 +84,7 @@
 	human.physiology.white_mod /= 1.5
 	human.physiology.black_mod /= 1.5
 	human.physiology.pale_mod /= 1.5
+
+/datum/movespeed_modifier/getaway
+	variable = TRUE
+	multiplicative_slowdown = -0.3

@@ -20,7 +20,7 @@
 		if (L == owner && !affect_self)
 			continue
 		L.apply_status_effect(/datum/status_effect/rend_seven)
-		owner.say("	I've analyzed the enemy's behavior.")
+	owner.say("	I've analyzed the enemy's behavior.")
 	StartCooldown()
 	return ..()
 
@@ -34,10 +34,7 @@
 	. = ..()
 	if(ishuman(owner))
 		var/mob/living/carbon/human/L = owner
-		L.physiology.red_mod *= 1.4
-		L.physiology.white_mod *= 1.4
 		L.physiology.black_mod *= 1.4
-		L.physiology.pale_mod *= 1.4
 		return
 	var/mob/living/simple_animal/M = owner
 	M.AddModifier(/datum/dc_change/seven)
@@ -46,10 +43,7 @@
 	. = ..()
 	if(ishuman(owner))
 		var/mob/living/carbon/human/L = owner
-		L.physiology.red_mod /= 1.4
-		L.physiology.white_mod /= 1.4
 		L.physiology.black_mod /= 1.4
-		L.physiology.pale_mod /= 1.4
 		return
 	var/mob/living/simple_animal/M = owner
 	M.RemoveModifier(/datum/dc_change/seven)

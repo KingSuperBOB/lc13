@@ -66,6 +66,8 @@
 			//this stuff is important for what youre about to do
 			var/burn_holder = fuel.getFireLoss() //storing burn memories of fuel
 			var/white_holder = fuel.sanityloss //storing sanity memories of fuel
+			if (fuel == owner)
+				continue
 			fuel.adjustSanityLoss(-1000)
 			fuel.adjustFireLoss(-1000)
 			fuel.adjustFireLoss(white_holder)

@@ -20,6 +20,7 @@
 		owner.add_movespeed_modifier(/datum/movespeed_modifier/exploitgap)
 		addtimer(CALLBACK(owner, TYPE_PROC_REF(/mob, remove_movespeed_modifier), /datum/movespeed_modifier/exploitgap), 2 SECONDS, TIMER_UNIQUE | TIMER_OVERRIDE)
 		addtimer(CALLBACK(src, PROC_REF(GapSpotted)), 2 SECONDS, TIMER_UNIQUE | TIMER_OVERRIDE)
+		StartCooldown()
 
 /datum/action/cooldown/exploitgap/proc/GapSpotted()
 	owner.say("You're full of gaps.")
