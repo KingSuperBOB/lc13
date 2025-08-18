@@ -30,8 +30,8 @@
 
 	outfit = /datum/outfit/job/command/extraction
 
-	access = list(ACCESS_COMMAND, ACCESS_SECURITY) // LC13:To-Do
-	minimal_access = list(ACCESS_COMMAND, ACCESS_SECURITY)
+	access = list(ACCESS_COMMAND) // LC13:To-Do
+	minimal_access = list(ACCESS_COMMAND)
 	departments = DEPARTMENT_COMMAND
 
 	mapexclude = list("mini")

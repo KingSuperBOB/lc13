@@ -253,4 +253,3 @@
 	destination.undershirt = undershirt
 	destination.socks = socks
 	destination.jumpsuit_style = jumpsuit_style
-

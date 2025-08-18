@@ -12,10 +12,10 @@
 
 
 /// The max human health is adjusted to default define + fortitude points * this modifier
-#define FORTITUDE_MOD (SSmaptype.chosen_trait == FACILITY_TRAIT_XP_MOD ? 1.7 : 1)
+#define FORTITUDE_MOD 1
 
 /// Same as above, but for sanity and prudence
-#define PRUDENCE_MOD (SSmaptype.chosen_trait == FACILITY_TRAIT_XP_MOD ? 1.7 : 1)
+#define PRUDENCE_MOD 1
 
 /// What the temperance scaling modifier is. Roughly, this is the temperance at infinite temperance. Higher is better.
 #define TEMPERANCE_SUCCESS_MOD 40

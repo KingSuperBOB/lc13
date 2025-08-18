@@ -42,7 +42,7 @@
 	icon = 'icons/obj/grenade.dmi'
 	icon_state = "delivery"
 	inhand_icon_state = "flashbang"
-	usable_roles = list("Blade Lineage Cutthroat", "Index Messenger", "Kurokumo Kashira", "Grand Inquisitor", "Thumb Sottocapo", "Thumb East Capo")
+	usable_roles = list("Blade Lineage Cutthroat", "Index Messenger", "Kurokumo Kashira", "Grand Inquisitor", "Thumb Sottocapo")
 
 /obj/item/office_marker/syndicate/attack_self(mob/living/carbon/human/user)
 	return

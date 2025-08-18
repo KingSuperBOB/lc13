@@ -21,7 +21,6 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"Grand Inquisitor",
 	"Thumb Sottocapo",
 	"Kurokumo Kashira",
-	"Thumb East Capo",
 
 	// R-corp Fourth Pack
 	"Ground Commander",
@@ -244,9 +243,6 @@ GLOBAL_LIST_INIT(city_antagonist_positions, list(
 	"Kurokumo Kashira",
 	"Kurokumo Hosa",
 	"Kurokumo Wakashu",
-
-	"Thumb East Capo",
-	"Thumb East Soldato",
 ))
 
 

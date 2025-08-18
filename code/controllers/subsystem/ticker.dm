@@ -65,9 +65,6 @@ SUBSYSTEM_DEF(ticker)
 	/// Why an emergency shuttle was called
 	var/emergency_reason
 
-	//How good you did
-	var/rating_achieved = "D"	//Defaults to a D rank
-
 /datum/controller/subsystem/ticker/Initialize(timeofday)
 	load_mode()
 
