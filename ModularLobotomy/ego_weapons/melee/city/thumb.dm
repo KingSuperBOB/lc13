@@ -419,9 +419,17 @@
 /obj/item/ego_weapon/city/thumb_east/ignition_effect(atom/A, mob/user)
 	. = ""
 	if(SpendAmmo(user))
-		. = span_danger("[user] fires their [src.name], using the exhaust to nonchalantly light [A]. They don't even flinch from the recoil. Holy shit.")
+		if((get_attribute_level(user, FORTITUDE_ATTRIBUTE) <= attribute_requirements || HAS_TRAIT(user, TRAIT_CLUMSY)) && prob(50))
+			. = span_danger("[user] attempts to fire their [src.name], in a attempt to light the [A]. However they fail to control the recoil and injure themselves in the process. How foolish...")
+			user.emote("scream")
+			if(ishuman(user))
+				var/mob/living/carbon/human/H = user
+				H.apply_damage(force, RED_DAMAGE)
+				H.apply_damage(force*0.1, FIRE)
+		else
+			. = span_danger("[user] fires their [src.name], using the exhaust to nonchalantly light [A]. They don't even flinch from the recoil. Holy shit.")
 		playsound(src, detonation_sound, 90, FALSE, 10)
-	return .
+		return .
 
 ////////////////////////////////////////////////////////////
 // AMMO MANAGEMENT PROCS SECTION.

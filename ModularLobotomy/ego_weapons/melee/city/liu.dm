@@ -16,6 +16,11 @@
 			H.death()
 	..()
 
+/obj/item/ego_weapon/city/liu/ignition_effect(atom/A, mob/user)
+	. = ""
+	. = span_danger("[user] fires their [src.name], using the exhaust to nonchalantly light [A]. They don't even flinch from the recoil. Holy shit.")
+	return .
+
 //Section 1&2, 6-5-4-2 as the grades
 /obj/item/ego_weapon/city/liu/fire
 	name = "liu blade"
@@ -57,6 +62,12 @@
 							JUSTICE_ATTRIBUTE = 60
 							)
 	swingstyle = WEAPONSWING_SMALLSWEEP
+
+/obj/item/ego_weapon/city/liu/fire/fist/ignition_effect(atom/A, mob/user)
+	. = ""
+	. = span_danger("[user] snaps their fingers [src.name], using the exhaust to nonchalantly light [A]. They don't even flinch from the recoil. Holy shit.")
+		playsound(src, 'sound/effects/snap.ogg', 15, TRUE)
+	return .
 
 /obj/item/ego_weapon/city/liu/fire/spear
 	name = "liu spear"
