@@ -416,16 +416,24 @@
 /// I've been asked by several people to let you light cigars with Thumb East weapons. I mean... okay.
 /// Was tempted to give this a chance to burn you but I'll be nice.
 /// That being said if another coder happens to find this code and accidentally adds a prob or fortitude check to decap you, I clean my hands of it.
+/// Your honor, they were asking for it
 /obj/item/ego_weapon/city/thumb_east/ignition_effect(atom/A, mob/user)
 	. = ""
 	if(SpendAmmo(user))
-		if((get_attribute_level(user, FORTITUDE_ATTRIBUTE) <= attribute_requirements || HAS_TRAIT(user, TRAIT_CLUMSY)) && prob(50))
-			. = span_danger("[user] attempts to fire their [src.name], in a attempt to light the [A]. However they fail to control the recoil and injure themselves in the process. How foolish...")
+		if((!CanUseEgo(user) || HAS_TRAIT(user, TRAIT_CLUMSY)) && prob(50))
+			. = span_danger("[user] fires their [src.name] in a attempt to light [A]. However they fail to control the recoil and heavily injure themselves in the process. How foolish...")
 			user.emote("scream")
+			user.Jitter(20)
 			if(ishuman(user))
 				var/mob/living/carbon/human/H = user
 				H.apply_damage(force, RED_DAMAGE)
 				H.apply_damage(force*0.1, FIRE)
+				H.Knockdown(50)
+				H.Immobilize(10)
+				if(HAS_TRAIT(H, TRAIT_NODISMEMBER))
+					return
+				var/obj/item/bodypart/arm = pick(H.get_bodypart(BODY_ZONE_R_ARM), H.get_bodypart(BODY_ZONE_L_ARM))
+				arm?.dismember()
 		else
 			. = span_danger("[user] fires their [src.name], using the exhaust to nonchalantly light [A]. They don't even flinch from the recoil. Holy shit.")
 		playsound(src, detonation_sound, 90, FALSE, 10)

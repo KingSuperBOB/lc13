@@ -17,9 +17,22 @@
 	..()
 
 /obj/item/ego_weapon/city/liu/ignition_effect(atom/A, mob/user)
-	. = ""
-	. = span_danger("[user] fires their [src.name], using the exhaust to nonchalantly light [A]. They don't even flinch from the recoil. Holy shit.")
-	return .
+	if((!CanUseEgo(user) || HAS_TRAIT(user, TRAIT_CLUMSY)) && prob(50))
+		user.visible_message(span_danger("[user] does a rapid motion with their [src.name] wildly releasing flames in a attempt to light [A]. The flames quickly encompass them as they shrivel up."))
+		user.emote("scream")
+		new /obj/effect/temp_visual/fire/fast(get_turf(src))
+		playsound(src, 'sound/effects/burn.ogg', 90, FALSE, 10)
+		if(ishuman(user))
+			var/mob/living/carbon/human/H = user
+			H.apply_damage(force, FIRE)
+			H.adjust_fire_stacks(20)
+			H.IgniteMob()
+			H.resist_fire()
+
+	else
+		user.visible_message(span_danger("[user] does a rapid motion with their [src.name], the resulting flames released from their weapon light [A]. The heat doesn't even bother them. How fire."))
+		new /obj/effect/temp_visual/fire/fast(get_turf(src))
+		playsound(src, 'sound/effects/burn.ogg', 90, FALSE, 10)
 
 //Section 1&2, 6-5-4-2 as the grades
 /obj/item/ego_weapon/city/liu/fire
@@ -62,12 +75,6 @@
 							JUSTICE_ATTRIBUTE = 60
 							)
 	swingstyle = WEAPONSWING_SMALLSWEEP
-
-/obj/item/ego_weapon/city/liu/fire/fist/ignition_effect(atom/A, mob/user)
-	. = ""
-	. = span_danger("[user] snaps their fingers [src.name], using the exhaust to nonchalantly light [A]. They don't even flinch from the recoil. Holy shit.")
-		playsound(src, 'sound/effects/snap.ogg', 15, TRUE)
-	return .
 
 /obj/item/ego_weapon/city/liu/fire/spear
 	name = "liu spear"
