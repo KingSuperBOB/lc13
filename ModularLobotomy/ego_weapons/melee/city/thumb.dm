@@ -421,7 +421,7 @@
 	. = ""
 	if(SpendAmmo(user))
 		if((!CanUseEgo(user) || HAS_TRAIT(user, TRAIT_CLUMSY)) && prob(50))
-			. = span_danger("[user] fires their [src.name] in a attempt to light [A]. However they fail to control the recoil and heavily injure themselves in the process. How foolish...")
+			. = span_userdanger("[user] fires their [src.name] in a attempt to light [A]. However they fail to control the recoil and heavily injure themselves in the process. How foolish...")
 			user.emote("scream")
 			user.Jitter(20)
 			if(ishuman(user))
