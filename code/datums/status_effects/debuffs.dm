@@ -1443,3 +1443,48 @@
 		src.apply_status_effect(/datum/status_effect/stacking/lc_burn/dark_flame, stacks)
 	else
 		B.add_stacks(stacks)
+
+// Oufi Shit
+/datum/status_effect/stacking/oufi_warning
+	id = "oufi_warning"
+	alert_type = /atom/movable/screen/alert/status_effect/oufi_warning
+	max_stacks = 30 //if Oufi are hitting you with close range itd take 8 hits to get here
+	tick_interval = 15 SECONDS //Longer decay time than tremor as Oufi NEED to use it for their executions
+	consumed_on_threshold = FALSE
+	var/new_stack = TRUE
+
+/atom/movable/screen/alert/status_effect/oufi_warning
+	name = "Execution Warning"
+	desc = "Your movement grows unsteady and sluggish as execution approaches."
+	icon = 'ModularLobotomy/_Lobotomyicons/status_sprites.dmi'
+	icon_state = "oufiwarning"
+
+//Slowdown on stack like tremor, used up as fuel for Oufis execution
+/datum/status_effect/stacking/oufi_warning/on_apply()
+	. = ..()
+	owner.add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/oufiwarning, multiplicative_slowdown = stacks * 0.5)
+
+/datum/status_effect/stacking/oufi_warning/on_remove()
+	owner.remove_movespeed_modifier(/datum/movespeed_modifier/oufiwarning)
+	return ..()
+
+/datum/status_effect/stacking/oufi_warning/add_stacks(stacks)
+	. = ..()
+	owner.add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/oufiwarning, multiplicative_slowdown = stacks * 0.5)
+
+/datum/status_effect/stacking/oufi_warning/can_have_status()
+	return (owner.stat != DEAD || !(owner.status_flags & GODMODE))
+
+// The Stack Decaying (this is the name for Canto 10 by the way)
+/datum/status_effect/stacking/oufi_warning/tick()
+	if(new_stack)
+		new_stack = FALSE
+	else
+		qdel(src)
+
+/mob/living/proc/ApplyWarning(stacks)
+	var/datum/status_effect/stacking/oufi_warning/warn = src.has_status_effect(/datum/status_effect/stacking/oufi_warning)
+	if(!warn)
+		src.apply_status_effect(/datum/status_effect/stacking/oufi_warning, stacks)
+	else
+		warn.add_stacks(stacks)
