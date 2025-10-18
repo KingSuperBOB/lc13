@@ -8,8 +8,7 @@
 	outfit = /datum/outfit/job/agent/captain
 	display_order = JOB_DISPLAY_ORDER_CAPTAIN
 
-	access = list(ACCESS_COMMAND, ACCESS_SECURITY) // LC13:To-Do
-	minimal_access = list(ACCESS_COMMAND, ACCESS_SECURITY)
+	access = list(ACCESS_COMMAND) // LC13:To-Do
 	departments = DEPARTMENT_COMMAND | DEPARTMENT_SECURITY
 	exp_requirements = 6000
 	exp_type = EXP_TYPE_CREW

@@ -1351,4 +1351,3 @@
 	if (species)
 		return species.attack_type
 	return ..()
-

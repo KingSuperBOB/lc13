@@ -70,9 +70,6 @@ SUBSYSTEM_DEF(maptype)
 /datum/controller/subsystem/maptype/Initialize()
 	..()
 	if(SSmaptype.maptype in SSmaptype.lc_maps)
-		if(!CONFIG_GET(flag/enabletraits))
-			message_admins("Notice! Station Traits are disabled!")
-			return
 		if(prob(40))	//40% chance to not run a station trait
 			return
 		chosen_trait = pickweight(lc_trait)
@@ -132,16 +129,3 @@ SUBSYSTEM_DEF(maptype)
 					GLOB.rcorp_objective = "payload_rcorp"
 				if(5)
 					GLOB.rcorp_objective = "payload_abno"
-
-/datum/controller/subsystem/maptype/vv_edit_var(var_name, var_value)
-	. = ..()
-	switch(var_name)
-		if(NAMEOF(src, chosen_trait))
-			for(var/mob/living/carbon/human/probably_agent in GLOB.mob_living_list)
-				if(!LAZYLEN(probably_agent.attributes))
-					continue
-				var/datum/attribute/fortitude/fort = probably_agent.attributes[FORTITUDE_ATTRIBUTE]
-				var/datum/attribute/prudence/prud = probably_agent.attributes[PRUDENCE_ATTRIBUTE]
-				fort.on_update(probably_agent)
-				prud.on_update(probably_agent)
-				probably_agent.updatehealth()

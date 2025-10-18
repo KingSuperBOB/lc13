@@ -91,20 +91,20 @@
 							)
 
 	charge_cost = 3
-	charge_effect = "deal extra damage to the main target and deal damage in an area around you."
+	charge_effect = "deal damage in an area around you."
 	successfull_activation = "You release your charge, resulting in a massive discharge!"
 
 /obj/item/ego_weapon/city/wcorp/spear/ChargeAttack(mob/living/target, mob/living/user)
 	. = ..()
 	sleep(0.2 SECONDS)
-	for(var/mob/living/L in range(1, get_turf(user)))
+	for(var/mob/living/L in range(1, src))
 		var/aoe = 25
 		var/userjust = (get_attribute_level(user, JUSTICE_ATTRIBUTE))
 		var/justicemod = 1 + userjust/100
 		aoe*=justicemod
-		if(L == user || ishuman(L) || L == target)
+		if(L == user || ishuman(L))
 			continue
-		L.apply_damage(aoe, BLACK_DAMAGE, null, L.run_armor_check(null, BLACK_DAMAGE), spread_damage = TRUE)
+		L.apply_damage(force, BLACK_DAMAGE, null, L.run_armor_check(null, BLACK_DAMAGE), spread_damage = TRUE)
 		new /obj/effect/temp_visual/small_smoke/halfsecond(get_turf(L))
 
 	user.changeNext_move(CLICK_CD_MELEE * 3)
