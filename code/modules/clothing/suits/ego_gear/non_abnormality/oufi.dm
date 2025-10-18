@@ -8,8 +8,9 @@
 							PRUDENCE_ATTRIBUTE = 80,
 							TEMPERANCE_ATTRIBUTE = 80,
 							JUSTICE_ATTRIBUTE = 80
+							)
 
-	hat = /obj/item/clothing/head/ego_hat/oufi
+	hat = /obj/item/clothing/head/ego_hat/ouficap
 
 /obj/item/clothing/head/ego_hat/ouficap
 	name = "oufi association bowtie cap"

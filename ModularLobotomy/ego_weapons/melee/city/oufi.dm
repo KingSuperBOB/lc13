@@ -62,13 +62,16 @@
 
 	target.ApplyWarning(warningpower*(RealOufi*2))
 
-	if(target.warning >= executionwarning)
-		user.say("I already gave you your final warning, prepare for execution sentencing.")
-	else if(target.warning >= finalwarning)
-		user.say("This is your first and final warning. No more.")
+	var/datum/status_effect/stacking/oufi_warning/warn
+
+	for(target)
+		if(warn.stacks >= executionwarning)
+			user.say("I already gave you your final warning, prepare for execution sentencing.")
+		else if(warn.stacks >= finalwarning)
+			user.say("This is your first and final warning. No more.")
 
 	if(target.stat == DEAD && living)
-		Dismember(mob/living/target)
+		Dismember(target)
 		living = FALSE
 
 //Press the button, redeem your warnings for a big execution
@@ -77,9 +80,9 @@
 	Executing = TRUE
 	to_chat(user, span_notice("You prepare your stance for a execution."))
 
-/obj/item/ego_weapon/city/oufi_halberd/proc/Dismember(/mob/living/M)
+/obj/item/ego_weapon/city/oufi_halberd/proc/Dismember(mob/living/target)
 	if(ishuman(target))
-		var/mob/living/carbon/human/H = M
+		var/mob/living/carbon/human/H = target
 		var/potential_target_list = list() //Grab all the limbs and see if one's worth taking
 		var/actual_target_list = list()
 		var/obj/item/bodypart/left_leg = H.get_bodypart(BODY_ZONE_L_LEG)
@@ -96,3 +99,52 @@
 		var/obj/item/bodypart/removingpart = pick(actual_target_list)
 		removingpart?.dismember()
 
+
+// Oufi Shit
+/datum/status_effect/stacking/oufi_warning
+	id = "oufi_warning"
+	alert_type = /atom/movable/screen/alert/status_effect/oufi_warning
+	max_stacks = 30 //if Oufi are hitting you with close range itd take 8 hits to get here
+	tick_interval = 15 SECONDS //Longer decay time than tremor as Oufi NEED to use it for their executions
+	consumed_on_threshold = FALSE
+	var/new_stack = TRUE
+
+/atom/movable/screen/alert/status_effect/oufi_warning
+	name = "Execution Warning"
+	desc = "Your movement grows unsteady and sluggish as execution approaches."
+	icon = 'ModularLobotomy/_Lobotomyicons/status_sprites.dmi'
+	icon_state = "oufiwarning"
+
+//Slowdown on stack like tremor, used up as fuel for Oufis execution
+/datum/status_effect/stacking/oufi_warning/on_apply()
+	. = ..()
+	owner.add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/oufiwarning, multiplicative_slowdown = stacks * 0.5)
+
+/datum/status_effect/stacking/oufi_warning/on_remove()
+	owner.remove_movespeed_modifier(/datum/movespeed_modifier/oufiwarning)
+	return ..()
+
+/datum/status_effect/stacking/oufi_warning/add_stacks(stacks)
+	. = ..()
+	owner.add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/oufiwarning, multiplicative_slowdown = stacks * 0.5)
+
+/datum/status_effect/stacking/oufi_warning/can_have_status()
+	return (owner.stat != DEAD || !(owner.status_flags & GODMODE))
+
+// The Stack Decaying (this is the name for Canto 10 by the way)
+/datum/status_effect/stacking/oufi_warning/tick()
+	if(new_stack)
+		new_stack = FALSE
+	else
+		qdel(src)
+
+/datum/movespeed_modifier/oufiwarning
+	multiplicative_slowdown = 0
+	variable = TRUE
+
+/mob/living/proc/ApplyWarning(stacks)
+	var/datum/status_effect/stacking/oufi_warning/warn = src.has_status_effect(/datum/status_effect/stacking/oufi_warning)
+	if(!warn)
+		src.apply_status_effect(/datum/status_effect/stacking/oufi_warning, stacks)
+	else
+		warn.add_stacks(stacks)
