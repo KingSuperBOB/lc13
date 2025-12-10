@@ -41,7 +41,7 @@
 		/datum/ego_datum/weapon/ardor_star,
 		/datum/ego_datum/armor/ardor_star,
 	)
-//	gift_type =  /datum/ego_gifts/ardor_moth
+	gift_type =  /datum/ego_gifts/ardor_moth
 	abnormality_origin = ABNORMALITY_ORIGIN_LIMBUS
 
 	observation_prompt = "Orange circles float in the air before your eyes. <br>\
@@ -114,6 +114,6 @@
 
 /obj/effect/turf_fire/ardor/DoDamage(mob/living/fuel)
 	if(ishuman(fuel))
-		fuel.deal_damage(4, FIRE)
+		fuel.deal_damage(4, FIRE, attack_type = (ATTACK_TYPE_ENVIRONMENT))
 		fuel.apply_lc_burn(2)
 		return TRUE

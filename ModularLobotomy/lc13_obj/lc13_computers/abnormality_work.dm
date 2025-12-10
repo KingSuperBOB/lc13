@@ -280,7 +280,7 @@
 				if(!datum_reference.stupid)
 					datum_reference.current.WorktickFailure(user)
 				else
-					user.deal_damage(datum_reference.work_damage_amount_dummy, datum_reference.work_damage_type_dummy)
+					user.deal_split_damage(datum_reference.work_damage_amount_dummy, datum_reference.work_damage_type_dummy, flags = (DAMAGE_FORCED))
 					var/turf/target_turf = get_ranged_target_turf(datum_reference.current, SOUTHWEST, 1)
 					var/obj/effect/temp_visual/roomdamage/damage = new(target_turf)
 					damage.icon_state = "[datum_reference.work_damage_type_dummy]"
@@ -297,7 +297,7 @@
 				if(!datum_reference.stupid)
 					datum_reference.current.WorktickFailure(user)
 				else
-					user.deal_damage(datum_reference.work_damage_amount_dummy, datum_reference.work_damage_type_dummy)
+					user.deal_split_damage(datum_reference.work_damage_amount_dummy, datum_reference.work_damage_type_dummy, flags = (DAMAGE_FORCED))
 					var/turf/target_turf = get_ranged_target_turf(datum_reference.current, SOUTHWEST, 1)
 					var/obj/effect/temp_visual/roomdamage/damage = new(target_turf)
 					damage.icon_state = "[datum_reference.work_damage_type_dummy]"
@@ -319,8 +319,11 @@
 /obj/machinery/computer/abnormality/proc/CheckStatus(mob/living/carbon/human/user)
 	if(user.sanity_lost)
 		return FALSE // Lost sanity
-	if(user.health < 0)
-		return FALSE // Dying
+
+	//If for some reason our goober cannot die
+	if(!HAS_TRAIT(user, TRAIT_NOSOFTCRIT))
+		if(user.health < 0)
+			return FALSE // Dying
 	if(!(datum_reference.current.status_flags & GODMODE))
 		return FALSE // Somehow it escaped
 	return TRUE

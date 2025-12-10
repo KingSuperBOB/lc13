@@ -32,8 +32,13 @@
 	name = "Kurokumo Capsule"
 	template_id = "kurokumo_base"
 
+/obj/item/structurecapsule/syndicate/thumb_east
+	name = "Thumb East Capsule"
+	template_id = "thumb_east_base"
 
-
+/obj/item/structurecapsule/syndicate/middle
+	name = "Middle Capsule"
+	template_id = "middle_base"
 
 //Office templates
 /datum/map_template/shelter/index
@@ -66,3 +71,14 @@
 	description = "A place for the Kurokumo Clan."
 	mappath = "_maps/templates/syndicate_office/kurokumosake.dmm"
 
+/datum/map_template/shelter/thumb_east
+	name = "Thumb East Base"
+	shelter_id = "thumb_east_base"
+	description = "A place for the thumb's eastern branch."
+	mappath = "_maps/templates/syndicate_office/thumb_east.dmm"
+
+/datum/map_template/shelter/middle
+	name = "Middle Base"
+	shelter_id = "middle_base"
+	description = "A place for the middle's u-corp branch."
+	mappath = "_maps/templates/syndicate_office/middle.dmm"

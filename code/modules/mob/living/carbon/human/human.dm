@@ -98,7 +98,7 @@
 		for(var/stat in atr.affected_stats)
 			.["stats"] += stat
 			.[stat + "name"] = stat
-			.[stat + "base"] = atr.get_printed_level_bonus() + atr.get_level_buff()
+			.[stat + "base"] = atr.get_printed_level_bonus()
 			.[stat + "bonus"] = round(atr.get_stat_bonus())
 
 /mob/living/carbon/human/ui_interact(mob/user, datum/tgui/ui)
@@ -228,13 +228,13 @@
 	. += "Intent: [a_intent]"
 	. += "Move Mode: [m_intent]"
 	if (internal)
-		if (!internal.air_contents)
-			qdel(internal)
-		else
+		// if (!internal.air_contents)
+		qdel(internal)
+/* 		else
 			. += ""
 			. += "Internal Atmosphere Info: [internal.name]"
 			. += "Tank Pressure: [internal.air_contents.return_pressure()]"
-			. += "Distribution Pressure: [internal.distribute_pressure]"
+			. += "Distribution Pressure: [internal.distribute_pressure]" */
 	if(istype(wear_suit, /obj/item/clothing/suit/space))
 		var/obj/item/clothing/suit/space/S = wear_suit
 		. += "Thermal Regulator: [S.thermal_on ? "on" : "off"]"
@@ -1317,14 +1317,8 @@
 
 /mob/living/carbon/human/updatehealth()
 	if(LAZYLEN(attributes))
-		maxHealth = max(1, DEFAULT_HUMAN_MAX_HEALTH + round(get_attribute_level(src, FORTITUDE_ATTRIBUTE) * FORTITUDE_MOD + get_stat_bonus(src, FORTITUDE_ATTRIBUTE, no_neg = FALSE)))
-		maxSanity = max(1, DEFAULT_HUMAN_MAX_SANITY + round(get_attribute_level(src, PRUDENCE_ATTRIBUTE) * PRUDENCE_MOD + get_stat_bonus(src, PRUDENCE_ATTRIBUTE, no_neg = FALSE)))
-
-		//Shit way of doing this.
-		if(SSmaptype.chosen_trait == FACILITY_TRAIT_XP_MOD)
-			maxHealth = max(1, 40 + round(get_attribute_level(src, FORTITUDE_ATTRIBUTE) * 1.7 + get_stat_bonus(src, FORTITUDE_ATTRIBUTE, no_neg = FALSE)))
-			maxSanity = max(1, 40 + round(get_attribute_level(src, PRUDENCE_ATTRIBUTE) * 1.7 + get_stat_bonus(src, PRUDENCE_ATTRIBUTE, no_neg = FALSE)))
-
+		maxHealth = max(1, get_attribute_printed_level_bonus(src, FORTITUDE_ATTRIBUTE) + round(get_stat_bonus(src, FORTITUDE_ATTRIBUTE, no_neg = FALSE)))
+		maxSanity = max(1, get_attribute_printed_level_bonus(src, PRUDENCE_ATTRIBUTE) + round(get_stat_bonus(src, PRUDENCE_ATTRIBUTE, no_neg = FALSE)))
 	. = ..()
 	dna?.species.spec_updatehealth(src)
 	sanityhealth = maxSanity - sanityloss

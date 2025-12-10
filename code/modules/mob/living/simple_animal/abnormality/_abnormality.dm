@@ -7,9 +7,8 @@
 	layer = LARGE_MOB_LAYER
 	a_intent = INTENT_HARM
 	del_on_death = TRUE
+	area_index = MOB_ABNORMALITY_INDEX
 	damage_coeff = list(RED_DAMAGE = 1, WHITE_DAMAGE = 1, BLACK_DAMAGE = 1, PALE_DAMAGE = 1)
-	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
-	minbodytemp = 0
 	see_in_dark = 7
 	vision_range = 12
 	aggro_vision_range = 20
@@ -152,6 +151,9 @@
 		ABNORMALITY_WORK_ATTACHMENT = list("%PERSON talks to %ABNO for a while."),
 		ABNORMALITY_WORK_REPRESSION = list("%PERSON holds what %ABNO desires, just out of reach..."),
 	)
+
+	// If TRUE, this Abnormality's odds of spawning go up dramatically. Enable for Abnormalities that are being reworked and need testing.
+	var/being_tested = FALSE
 
 /mob/living/simple_animal/hostile/abnormality/Login()
 	. = ..()
@@ -510,7 +512,7 @@ The variable's key needs to be non-numerical.*/
 
 // Additional effect on each individual work tick failure
 /mob/living/simple_animal/hostile/abnormality/proc/WorktickFailure(mob/living/carbon/human/user)
-	user.deal_damage(work_damage_amount, work_damage_type)
+	user.deal_split_damage(work_damage_amount, work_damage_type, source = src, flags = (DAMAGE_FORCED), attack_type = (ATTACK_TYPE_OTHER))
 	WorkDamageEffect()
 	return
 

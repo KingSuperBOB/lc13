@@ -41,13 +41,15 @@
 	)
 	var/dashready = TRUE
 	var/reforming = FALSE
+	gift_message = "The clay clings to you, a constant reminder."
+	gift_type =  /datum/ego_gifts/clayman
 	abnormality_origin = ABNORMALITY_ORIGIN_ORIGINAL
 
 /mob/living/simple_animal/hostile/abnormality/clayman/WorktickFailure(mob/living/carbon/human/user)
 	var/list/damtypes = list(RED_DAMAGE, WHITE_DAMAGE, BLACK_DAMAGE, PALE_DAMAGE)
 	var/damage = pick(damtypes)
 	work_damage_type = damage
-	user.deal_damage(6, damage)
+	user.deal_damage(6, damage, flags = (DAMAGE_FORCED))
 	WorkDamageEffect()
 
 /mob/living/simple_animal/hostile/abnormality/clayman/PostWorkEffect(mob/living/carbon/human/user, work_type, pe)
