@@ -325,6 +325,7 @@
 		return
 	else
 		minor_announce("Through executive decision the manager has sized down the Extraction Department reducing abnormality selection, for their efforts they have received 2 LOB.", "Extraction Alert:", TRUE)
+		budgetcut.value = 1
 		SSlobotomy_corp.lob_points += profit
 
 /datum/facility_upgrade/abno_melt_time
