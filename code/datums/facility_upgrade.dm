@@ -314,9 +314,9 @@
 	max_value = 1
 	cost = 0
 	var/profit = 2
-	" - This upgrade authorizes budget cuts of the Extraction Department reducing the amount of <b>Abnormalities</b> the manager can select."
+	info = " - This upgrade authorizes budget cuts of the Extraction Department reducing the amount of <b>Abnormalities</b> the manager can select."
 
-/datum/facility_upgrade/picking_abno_amount/Upgrade()
+/datum/facility_upgrade/no_picking_abno_amount/Upgrade()
 	value = max_value
 	. = ..()
 	var/datum/facility_upgrade/picking_abno_amount/budgetcut
