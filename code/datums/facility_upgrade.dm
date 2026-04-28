@@ -308,6 +308,25 @@
 	. = ..()
 	cost += 1
 
+/datum/facility_upgrade/no_picking_abno_amount
+	name = DOWNGRADE_ABNO_QUEUE_COUNT
+	category = "Facility"
+	max_value = 1
+	cost = 0
+	var/profit = 2
+	" - This upgrade authorizes budget cuts of the Extraction Department reducing the amount of <b>Abnormalities</b> the manager can select."
+
+/datum/facility_upgrade/picking_abno_amount/Upgrade()
+	value = max_value
+	. = ..()
+	var/datum/facility_upgrade/picking_abno_amount/budgetcut
+	if(budgetcut.value > initial(budgetcut.value))
+		minor_announce("The acting manager is being notified that they are not allowed to remove Extraction assets so soon after acquiring them, if possible shame their decision publicly.", "Extraction Alert:", TRUE)
+		return
+	else
+		minor_announce("Through executive decision the manager has sized down the Extraction Department reducing abnormality selection, for their efforts they have received 2 LOB.", "Extraction Alert:", TRUE)
+		SSlobotomy_corp.lob_points += profit
+
 /datum/facility_upgrade/abno_melt_time
 	name = UPGRADE_ABNO_MELT_TIME
 	category = "Facility"
