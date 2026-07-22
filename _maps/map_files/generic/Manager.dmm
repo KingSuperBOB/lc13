@@ -1,4 +1,69 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ac" = (
+/obj/machinery/light,
+/obj/structure/chair/plastic{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/department_main/manager)
+"ad" = (
+/obj/machinery/light/cold/no_nightlight{
+	dir = 8
+	},
+/obj/structure/filingcabinet/branch12,
+/turf/open/floor/facility/halls,
+/area/department_main/manager)
+"ae" = (
+/obj/machinery/computer/security/telescreen{
+	network = list("ss13");
+	pixel_x = -17;
+	pixel_y = 39
+	},
+/obj/machinery/computer/security/telescreen{
+	network = list("ss13");
+	pixel_x = -17;
+	pixel_y = 27
+	},
+/obj/machinery/computer/security/telescreen{
+	network = list("ss13");
+	pixel_x = 3;
+	pixel_y = 45
+	},
+/obj/machinery/computer/security/telescreen{
+	network = list("ss13");
+	pixel_x = 3;
+	pixel_y = 33
+	},
+/obj/machinery/computer/security/telescreen{
+	network = list("ss13");
+	pixel_x = -37;
+	pixel_y = 33
+	},
+/obj/machinery/computer/security/telescreen{
+	network = list("ss13");
+	pixel_x = -37;
+	pixel_y = 21
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	color = "#3234B9";
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/blue{
+	color = "#3234B9"
+	},
+/obj/machinery/computer/communications,
+/turf/open/floor/plasteel/sepia,
+/area/department_main/manager)
+"ah" = (
+/obj/structure/closet/crate,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
 "aj" = (
 /obj/structure/rack,
 /obj/item/toy/plush/bigbird,
@@ -9,9 +74,65 @@
 /obj/effect/turf_decal/siding/brown,
 /turf/open/floor/carpet/orange,
 /area/facility_hallway/manager)
+"ar" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
+"at" = (
+/obj/structure/sign/departments/mait,
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
+"av" = (
+/obj/structure/sigsystem/tower,
+/obj/structure/sigsystem/tower,
+/obj/structure/sigsystem/tower{
+	signal_code = 55
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
+"ay" = (
+/obj/machinery/light,
+/obj/structure/chair/plastic{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/department_main/manager)
 "aC" = (
 /turf/open/space,
 /area/space)
+"aE" = (
+/turf/closed/indestructible/fakeglass,
+/area/department_main/manager)
+"aF" = (
+/obj/effect/turf_decal/siding/green{
+	dir = 8
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"aI" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sigsystem/tower{
+	dir = 1;
+	signal_code = 26
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"aP" = (
+/obj/machinery/conveyor/auto{
+	dir = 8;
+	resistance_flags = 64;
+	tamperproof = 1
+	},
+/turf/open/lava,
+/area/city/outskirtsfactory)
+"aS" = (
+/obj/structure/fence{
+	resistance_flags = 64
+	},
+/turf/open/floor/plating/asteroid/basalt,
+/area/city/outskirtsfactory)
 "aW" = (
 /obj/machinery/door/airlock/wood{
 	name = "Officer Bunks"
@@ -40,6 +161,10 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/facility_hallway/manager)
+"by" = (
+/obj/structure/flora/stump,
+/turf/open/floor/plating/asteroid/basalt,
+/area/city/outskirtsfactory)
 "bA" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -59,16 +184,39 @@
 	},
 /turf/open/floor/carpet/orange,
 /area/facility_hallway/manager)
+"bE" = (
+/obj/effect/turf_decal/siding/blue{
+	dir = 4
+	},
+/obj/machinery/light/cold/no_nightlight{
+	dir = 4
+	},
+/turf/open/floor/carpet/cyan,
+/area/department_main/manager)
 "bG" = (
 /obj/machinery/light,
 /turf/open/floor/plasteel/white,
 /area/facility_hallway/manager)
+"bH" = (
+/obj/machinery/conveyor/auto{
+	dir = 4;
+	resistance_flags = 64;
+	tamperproof = 1
+	},
+/turf/open/lava,
+/area/city/outskirtsfactory)
 "bS" = (
 /obj/machinery/vending/lobotomyuniform{
 	pixel_x = -10
 	},
 /turf/closed/indestructible/reinforced,
 /area/facility_hallway/manager)
+"bW" = (
+/obj/effect/turf_decal/siding/thinplating/light{
+	dir = 1
+	},
+/turf/open/floor/facility,
+/area/city/outskirtsfactory)
 "bY" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -81,6 +229,27 @@
 	},
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"bZ" = (
+/obj/machinery/computer/communications,
+/turf/open/floor/carpet/royalblack,
+/area/department_main/manager)
+"cb" = (
+/obj/structure/closet/crate,
+/obj/item/tresmetal/copper,
+/obj/item/tresmetal/bloodiron,
+/obj/item/tresmetal,
+/obj/item/tresmetal,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"cg" = (
+/obj/machinery/computer/extraction_cargo{
+	dir = 8
+	},
+/obj/structure/sign/ordealmonitor{
+	pixel_y = 32
+	},
+/turf/open/floor/facility/halls,
+/area/department_main/manager)
 "ch" = (
 /obj/structure/curtain/bounty,
 /turf/open/floor/plasteel/white,
@@ -100,6 +269,40 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/facility_hallway/manager)
+"co" = (
+/obj/machinery/conveyor/auto{
+	dir = 4;
+	resistance_flags = 64;
+	tamperproof = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
+"cp" = (
+/obj/structure/sign/warning/securearea{
+	pixel_y = 19;
+	pixel_x = 32
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"cs" = (
+/obj/machinery/door/poddoor/shutters/indestructible{
+	resistance_flags = 64;
+	desc = "Heavy duty mechanical shutters with an atmospheric seal that keeps them airtight once closed. These ones seem less secure than the others..."
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"ct" = (
+/obj/docking_port/stationary{
+	dwidth = 3;
+	height = 5;
+	id = "epsilon_command";
+	name = "1F - Command";
+	roundstart_template = /datum/map_template/shuttle/epsilon/elevator;
+	width = 6;
+	dir = 4
+	},
+/turf/open/floor/plasteel/elevatorshaft,
+/area/facility_hallway/manager)
 "cu" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 8
@@ -114,27 +317,85 @@
 	},
 /turf/open/floor/facility/dark,
 /area/facility_hallway/manager)
+"cE" = (
+/obj/machinery/door/airlock/wood{
+	name = "Discipline Auxiliary Office"
+	},
+/turf/open/floor/plasteel/dark,
+/area/facility_hallway/manager)
 "cH" = (
 /obj/effect/turf_decal/siding/white/corner,
 /turf/open/floor/carpet/black,
 /area/facility_hallway/manager)
+"cI" = (
+/mob/living/simple_animal/hostile/ordeal/grungeon_shielder,
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"cQ" = (
+/obj/structure/sigsystem/tower{
+	signal_code = 33
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirtsfactory)
 "cR" = (
 /obj/structure/table/glass,
-/obj/item/work_console_upgrade/chemical_extraction_attachment,
-/obj/item/work_console_upgrade/chemical_extraction_attachment,
-/obj/item/work_console_upgrade/chemical_extraction_attachment,
+/obj/item/storage/backpack/duffelbag/med/surgery,
+/obj/item/clothing/suit/armor/ego_gear/limbus_labs/doctor,
+/obj/item/clothing/head/beret/tegu/med,
 /turf/open/floor/plasteel/white,
 /area/facility_hallway/manager)
+"cS" = (
+/obj/effect/decal/cleanable/blood/footprints,
+/turf/open/floor/plating/asteroid/basalt,
+/area/city/outskirtsfactory)
+"cU" = (
+/obj/structure/sigsystem/connector{
+	dir = 4
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"cW" = (
+/obj/structure/sigsystem/connector{
+	happens_once = 1
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "cY" = (
 /obj/machinery/vending/coffee,
 /turf/open/floor/plasteel/dark,
 /area/facility_hallway/manager)
+"da" = (
+/obj/machinery/conveyor/auto{
+	dir = 4;
+	resistance_flags = 64;
+	tamperproof = 1
+	},
+/obj/structure/plasticflaps/opaque{
+	resistance_flags = 64
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
 "dc" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 5
 	},
 /turf/open/floor/carpet/black,
 /area/facility_hallway/manager)
+"de" = (
+/obj/structure/sigsystem/connector/split{
+	dir = 4
+	},
+/obj/machinery/light/red{
+	dir = 8
+	},
+/obj/structure/closet/crate,
+/obj/item/tresmetal,
+/obj/item/tresmetal,
+/obj/item/tresmetal,
+/obj/item/tresmetal/copper,
+/obj/item/tresmetal/bloodiron,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "dg" = (
 /obj/machinery/vending/autodrobe{
 	pixel_y = 10
@@ -147,6 +408,13 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/facility_hallway/manager)
+"di" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/green/corner{
+	dir = 8
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
 "dj" = (
 /obj/machinery/light/floor,
 /obj/effect/turf_decal/tile/neutral{
@@ -186,6 +454,9 @@
 /obj/machinery/computer/abnormality_queue,
 /turf/open/floor/facility/dark,
 /area/department_main/manager)
+"dF" = (
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
 "dK" = (
 /obj/structure/filingcabinet/zayininfo{
 	pixel_x = -10
@@ -230,6 +501,12 @@
 	},
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"dU" = (
+/obj/structure/sigsystem/connector{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirtsfactory)
 "ek" = (
 /obj/effect/turf_decal/tile{
 	color = "#111111";
@@ -249,6 +526,19 @@
 	},
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"eo" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	resistance_flags = 64;
+	lockpickable = 0
+	},
+/obj/structure/sigsystem/connector,
+/obj/structure/sigsystem/activator,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
+"ex" = (
+/mob/living/simple_animal/hostile/ordeal/green_bot_rocket,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "eD" = (
 /turf/open/floor/carpet/orange,
 /area/department_main/manager)
@@ -266,9 +556,36 @@
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel/dark,
 /area/facility_hallway/manager)
+"eG" = (
+/obj/effect/turf_decal/caution/stand_clear/red{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/department_main/manager)
+"eK" = (
+/obj/effect/turf_decal/caution/stand_clear/red,
+/obj/effect/turf_decal,
+/turf/open/floor/plasteel/dark,
+/area/facility_hallway/manager)
 "eL" = (
 /obj/effect/turf_decal/siding/blue,
 /turf/open/floor/carpet/cyan,
+/area/department_main/manager)
+"eN" = (
+/obj/structure/sign/warning/fire{
+	desc = "A warning sign which reads 'DANGER: FIRE'. A small inscription beneath it says, 'Do not attempt to crawl under the flaps'.";
+	resistance_flags = 64
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
+"eQ" = (
+/obj/machinery/camera/autoname{
+	dir = 9
+	},
+/obj/structure/chair/plastic{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
 /area/department_main/manager)
 "eR" = (
 /obj/structure/sign/poster/official/soft_cap_pop_art{
@@ -276,6 +593,55 @@
 	},
 /turf/open/floor/facility/dark,
 /area/facility_hallway/manager)
+"eY" = (
+/obj/machinery/computer/security/telescreen{
+	network = list("ss13");
+	pixel_x = -37;
+	pixel_y = 45
+	},
+/obj/machinery/computer/security/telescreen{
+	network = list("ss13");
+	pixel_x = -37;
+	pixel_y = 33
+	},
+/obj/machinery/computer/security/telescreen{
+	network = list("ss13");
+	pixel_x = -17;
+	pixel_y = 39
+	},
+/obj/machinery/computer/security/telescreen{
+	network = list("ss13");
+	pixel_x = -17;
+	pixel_y = 27
+	},
+/obj/machinery/computer/security/telescreen{
+	network = list("ss13");
+	pixel_x = 3;
+	pixel_y = 33
+	},
+/obj/machinery/computer/security/telescreen{
+	network = list("ss13");
+	pixel_x = 3;
+	pixel_y = 21
+	},
+/obj/machinery/light/floor{
+	pixel_x = -9;
+	pixel_y = -8
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	color = "#3234B9";
+	dir = 8
+	},
+/obj/machinery/computer/abnormality_auxiliary,
+/turf/open/floor/plasteel/sepia,
+/area/department_main/manager)
 "fb" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
@@ -290,6 +656,33 @@
 	},
 /turf/open/floor/facility/dark,
 /area/facility_hallway/manager)
+"fd" = (
+/obj/machinery/light/cold/no_nightlight{
+	dir = 1;
+	brightness = 16
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/facility_hallway/manager)
+"fj" = (
+/obj/effect/turf_decal/siding/green/corner{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/ordeal/green_bot_rocket,
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"fn" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/effect/turf_decal/delivery/red,
+/obj/machinery/light/cold/no_nightlight{
+	brightness = 16
+	},
+/turf/open/floor/facility/white,
+/area/department_main/manager)
 "fp" = (
 /obj/effect/turf_decal/tile{
 	color = "#111111";
@@ -315,24 +708,32 @@
 /area/department_main/manager)
 "fr" = (
 /obj/structure/table/glass,
-/obj/item/clothing/glasses/science{
-	pixel_y = 3
-	},
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/item/clothing/glasses/science,
-/obj/item/clothing/glasses/science{
-	pixel_y = -3
-	},
 /turf/open/floor/plasteel/white,
 /area/facility_hallway/manager)
-"fx" = (
-/obj/structure/chair/office{
+"fv" = (
+/obj/structure/railing{
 	dir = 8
 	},
-/turf/open/floor/plasteel/white,
+/obj/effect/turf_decal/delivery/red,
+/turf/open/floor/facility/white,
+/area/city/outskirtsfactory)
+"fx" = (
+/obj/effect/landmark/salesspawn_extra,
+/turf/closed/indestructible/reinforced,
 /area/facility_hallway/manager)
+"fy" = (
+/obj/machinery/cryopod{
+	dir = 1
+	},
+/turf/open/floor/facility/halls,
+/area/department_main/manager)
+"fC" = (
+/obj/effect/decal/cleanable/blood/footprints,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "fJ" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -365,6 +766,10 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/facility_hallway/manager)
+"fX" = (
+/obj/item/bodypart/head,
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
 "fY" = (
 /obj/structure/chair/comfy/brown{
 	dir = 4
@@ -374,12 +779,28 @@
 	},
 /turf/open/floor/carpet/green,
 /area/facility_hallway/manager)
+"fZ" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
 "gc" = (
 /obj/machinery/computer/communications{
 	dir = 4
 	},
 /turf/open/floor/facility/dark,
 /area/department_main/manager)
+"gh" = (
+/obj/effect/turf_decal/siding/thinplating/light{
+	dir = 8
+	},
+/turf/open/floor/facility,
+/area/city/outskirtsfactory)
+"gi" = (
+/obj/structure/sigsystem/tower{
+	signal_code = 55
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
 "gs" = (
 /obj/effect/turf_decal/tile{
 	color = "#111111";
@@ -393,15 +814,39 @@
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"gt" = (
+/obj/machinery/conveyor/auto{
+	dir = 8;
+	resistance_flags = 64;
+	tamperproof = 1
+	},
+/obj/structure/plasticflaps/opaque{
+	resistance_flags = 64
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
 "gu" = (
 /obj/structure/rack,
 /obj/item/toy/plush/mosb,
 /turf/open/floor/plasteel/dark,
 /area/facility_hallway/manager)
+"gv" = (
+/obj/machinery/door/poddoor/shutters/indestructible{
+	lockpickable = 0;
+	resistance_flags = 64;
+	id = "furnaceaccess"
+	},
+/obj/structure/sigsystem/activator,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
 "gx" = (
 /obj/machinery/vending/coffee,
 /turf/open/floor/facility/dark,
 /area/facility_hallway/manager)
+"gA" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "gC" = (
 /obj/machinery/photocopier,
 /obj/effect/turf_decal/siding/wood{
@@ -409,6 +854,46 @@
 	},
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"gG" = (
+/obj/machinery/light/small/red{
+	dir = 1
+	},
+/obj/structure/sigsystem/tower{
+	dir = 8;
+	signal_code = 90;
+	happens_once = 1
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"gL" = (
+/obj/machinery/door/poddoor/shutters/indestructible{
+	lockpickable = 0
+	},
+/obj/structure/sigsystem/activator,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
+"gP" = (
+/mob/living/simple_animal/hostile/ordeal/green_bot_rocket,
+/turf/open/floor/plating,
+/area/city/outskirtsfactory)
+"gQ" = (
+/obj/structure/plasticflaps/opaque{
+	resistance_flags = 64
+	},
+/obj/machinery/conveyor/auto{
+	dir = 1;
+	resistance_flags = 64;
+	tamperproof = 1
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"gS" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/stripes{
+	dir = 1
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "gX" = (
 /obj/structure/table/wood/fancy/royalblack,
 /obj/item/reagent_containers/food/drinks/mug/tea{
@@ -478,6 +963,10 @@
 	},
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"hp" = (
+/obj/effect/landmark/cratespawn,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "hr" = (
 /obj/structure/chair/comfy/beige,
 /obj/effect/turf_decal/siding/white{
@@ -485,6 +974,16 @@
 	},
 /turf/open/floor/carpet/black,
 /area/facility_hallway/manager)
+"hx" = (
+/obj/structure/sigsystem/pressure_plate{
+	dir = 1;
+	mobs_only = 1
+	},
+/obj/effect/turf_decal/siding/red{
+	dir = 8
+	},
+/turf/open/floor/circuit/red,
+/area/city/outskirtsfactory)
 "hA" = (
 /obj/machinery/modular_computer/console/preset{
 	dir = 8
@@ -500,6 +999,16 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/department_main/manager)
+"hN" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/door/poddoor/shutters/preopen{
+	resistance_flags = 64;
+	lockpickable = 0
+	},
+/obj/structure/sigsystem/connector,
+/obj/structure/sigsystem/activator,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "hS" = (
 /obj/effect/turf_decal/tile{
 	color = "#111111";
@@ -517,29 +1026,60 @@
 /obj/effect/spawner/randomcolavend,
 /turf/open/floor/plasteel/dark,
 /area/facility_hallway/manager)
-"if" = (
-/obj/machinery/chem_master,
-/turf/open/floor/plasteel/white,
+"hX" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"hY" = (
+/obj/structure/railing/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal,
+/turf/open/floor/plasteel/dark,
 /area/facility_hallway/manager)
+"ig" = (
+/obj/effect/decal/cleanable/blood/gibs/up,
+/obj/effect/turf_decal/siding/green{
+	dir = 1
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
 "ih" = (
 /obj/structure/rack,
 /obj/item/toy/plush/kod,
 /turf/open/floor/plasteel/dark,
 /area/facility_hallway/manager)
+"ij" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/blood/old,
+/obj/effect/turf_decal/siding/green{
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"il" = (
+/obj/machinery/navbeacon/wayfinding/architecturedepartment,
+/turf/open/floor/plasteel,
+/area/department_main/manager)
+"in" = (
+/obj/structure/sigsystem/connector/split{
+	happens_once = 1
+	},
+/turf/closed/indestructible/rock,
+/area/city/outskirtsfactory)
 "it" = (
 /obj/machinery/computer/abnormality_logs{
 	dir = 4
 	},
 /turf/open/floor/wood,
 /area/department_main/manager)
-"iv" = (
-/obj/structure/closet/crate/science/abnochem_startercrate,
-/obj/item/clothing/suit/armor/ego_gear/limbus_labs/chem{
-	name = "chemist labcoat"
-	},
-/obj/item/clothing/head/beret/tegu/chem,
-/turf/open/floor/plasteel/white,
-/area/facility_hallway/manager)
+"iu" = (
+/obj/effect/decal/cleanable/blood/gibs/body,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "ix" = (
 /obj/structure/railing{
 	dir = 6
@@ -555,6 +1095,26 @@
 /obj/effect/turf_decal/caution/stand_clear,
 /turf/open/floor/facility/dark,
 /area/facility_hallway/manager)
+"iD" = (
+/obj/effect/turf_decal/delivery/red,
+/obj/machinery/computer/shuttle/mining{
+	max_integrity = 350000;
+	name = "elevator console";
+	possible_destinations = "epsilon_control";
+	shuttleId = "epsilon"
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/machinery/light/cold/no_nightlight{
+	brightness = 16;
+	dir = 1
+	},
+/obj/machinery/camera/autoname{
+	dir = 8
+	},
+/turf/open/floor/facility/white,
+/area/department_main/manager)
 "iG" = (
 /obj/machinery/door/airlock/wood{
 	name = "Discipline Office"
@@ -578,6 +1138,16 @@
 /obj/structure/table/wood/fancy/black,
 /turf/open/floor/carpet/green,
 /area/facility_hallway/manager)
+"iM" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/structure/sigsystem/pressure_plate{
+	dir = 1;
+	mobs_only = 1
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "iO" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -585,9 +1155,28 @@
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
 "iU" = (
-/obj/structure/chair/office,
-/turf/open/floor/carpet/red,
-/area/facility_hallway/manager)
+/obj/machinery/conveyor/auto{
+	dir = 8;
+	resistance_flags = 64;
+	tamperproof = 1
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"iW" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/red/corner,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"ja" = (
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"jg" = (
+/obj/machinery/light/red{
+	dir = 8
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
 "jj" = (
 /obj/item/kirbyplants/random,
 /obj/effect/turf_decal/siding/wood{
@@ -598,14 +1187,92 @@
 	},
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"jl" = (
+/obj/structure/table/reinforced,
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/item/clothing/suit/armor/ego_gear/ordeal/painful_purpose{
+	pixel_x = 9;
+	pixel_y = 8
+	},
+/obj/item/ego_weapon/ranged/malicedescent{
+	pixel_y = -6;
+	pixel_x = -5
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "jn" = (
 /obj/structure/reagent_dispensers/water_cooler,
 /turf/open/floor/facility/dark,
 /area/facility_hallway/manager)
+"jq" = (
+/obj/structure/table/wood,
+/obj/effect/spawner/lootdrop/three_course_meal,
+/turf/open/floor/wood,
+/area/department_main/manager)
+"js" = (
+/obj/structure/sigsystem/connector,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"ju" = (
+/obj/structure/railing{
+	dir = 9
+	},
+/obj/structure/sigsystem/connector{
+	dir = 4
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
+"jx" = (
+/obj/effect/turf_decal/siding/red,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"jy" = (
+/obj/docking_port/stationary{
+	dwidth = 3;
+	height = 5;
+	id = "epsilon_control";
+	name = "2F - Manager's Office";
+	width = 6
+	},
+/turf/open/floor/plasteel/elevatorshaft,
+/area/department_main/manager)
+"jE" = (
+/obj/structure/chair/comfy/black{
+	dir = 4
+	},
+/turf/open/floor/carpet/royalblack,
+/area/department_main/manager)
+"jH" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
+"jI" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sigsystem/connector{
+	dir = 1;
+	happens_once = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
 "jL" = (
 /obj/machinery/computer/camera_advanced/manager/sephirah,
 /turf/open/floor/carpet/orange,
 /area/department_main/manager)
+"jN" = (
+/obj/machinery/door/airlock/grunge,
+/turf/open/floor/facility/halls,
+/area/department_main/manager)
+"jP" = (
+/obj/machinery/door/poddoor/shutters/indestructible{
+	lockpickable = 0;
+	resistance_flags = 64
+	},
+/obj/structure/sigsystem/connector/split,
+/obj/structure/sigsystem/activator,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "jT" = (
 /obj/machinery/holopad/secure,
 /turf/open/floor/carpet/green,
@@ -628,6 +1295,10 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/department_main/manager)
+"kb" = (
+/obj/machinery/light/small/red,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "kd" = (
 /obj/structure/rack,
 /obj/item/toy/plush/kog,
@@ -655,6 +1326,26 @@
 	},
 /turf/open/floor/carpet/green,
 /area/facility_hallway/manager)
+"kq" = (
+/obj/machinery/light/floor{
+	pixel_x = 8;
+	pixel_y = -8
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/blue{
+	color = "#3234B9"
+	},
+/obj/machinery/computer/abnormality_queue,
+/turf/open/floor/plasteel/sepia,
+/area/department_main/manager)
 "kz" = (
 /obj/machinery/photocopier,
 /turf/open/floor/plasteel/dark,
@@ -677,12 +1368,44 @@
 	},
 /turf/open/floor/carpet/orange,
 /area/facility_hallway/manager)
+"kM" = (
+/obj/effect/turf_decal/siding/green,
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"kN" = (
+/obj/machinery/door/poddoor/shutters/indestructible{
+	lockpickable = 0;
+	resistance_flags = 64
+	},
+/obj/structure/sigsystem/connector{
+	dir = 4
+	},
+/obj/structure/sigsystem/activator,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "kP" = (
 /obj/machinery/status_display{
 	pixel_x = -32
 	},
 /turf/open/floor/plasteel/dark,
 /area/facility_hallway/manager)
+"kX" = (
+/obj/structure/sigsystem/connector/split{
+	happens_once = 1
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"kZ" = (
+/obj/structure/rack,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
+"lb" = (
+/obj/effect/turf_decal/siding/thinplating/light{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/facility,
+/area/city/outskirtsfactory)
 "lc" = (
 /obj/effect/turf_decal/siding/yellow{
 	dir = 5
@@ -695,6 +1418,11 @@
 	},
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"lk" = (
+/obj/effect/turf_decal/siding/thinplating/light,
+/obj/machinery/light,
+/turf/open/floor/facility,
+/area/city/outskirtsfactory)
 "lp" = (
 /obj/machinery/door/airlock/hatch{
 	hackProof = 1;
@@ -719,6 +1447,38 @@
 	},
 /turf/open/floor/carpet/orange,
 /area/facility_hallway/manager)
+"lt" = (
+/mob/living/simple_animal/hostile/ordeal/grungeon_shielder,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sigsystem/tower/button{
+	pixel_x = -24;
+	signal_code = 39
+	},
+/obj/effect/turf_decal/siding/red/end{
+	dir = 8
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
+"lu" = (
+/obj/effect/turf_decal,
+/obj/structure/railing/corner{
+	dir = 1
+	},
+/obj/structure/chair/office{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/facility_hallway/manager)
+"lv" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/light_emitter{
+	light_power = 4;
+	light_range = 25;
+	set_cap = 3;
+	set_luminosity = 24
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "lw" = (
 /obj/machinery/light{
 	dir = 4
@@ -740,12 +1500,36 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/facility_hallway/manager)
+"lA" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/blood/drip,
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"lB" = (
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"lC" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/plating/asteroid/basalt,
+/area/city/outskirtsfactory)
 "lE" = (
 /obj/machinery/computer/abnormality_archive{
 	dir = 8
 	},
 /turf/open/floor/facility/dark,
 /area/department_main/manager)
+"lL" = (
+/obj/machinery/light,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/red,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"lN" = (
+/obj/structure/sigsystem/connector{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirtsfactory)
 "lO" = (
 /obj/structure/mirror{
 	pixel_x = -28
@@ -773,6 +1557,15 @@
 	},
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"lU" = (
+/obj/structure/sign/directions/engineering{
+	dir = 8
+	},
+/obj/structure/sigsystem/connector/split{
+	dir = 4
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
 "lW" = (
 /obj/structure/sign/ordealmonitor{
 	pixel_y = 32
@@ -809,6 +1602,41 @@
 	},
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"mk" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
+"ml" = (
+/obj/effect/decal/cleanable/blood/footprints{
+	dir = 4
+	},
+/turf/open/floor/plating/asteroid/basalt,
+/area/city/outskirtsfactory)
+"mn" = (
+/obj/effect/decal/cleanable/blood/innards,
+/obj/effect/turf_decal/siding/green,
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"mo" = (
+/obj/structure/railing{
+	dir = 6
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
+"mq" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	resistance_flags = 64;
+	lockpickable = 0
+	},
+/obj/structure/sigsystem/connector{
+	dir = 4
+	},
+/obj/structure/sigsystem/activator,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "mu" = (
 /obj/structure/chair/comfy/black{
 	dir = 1
@@ -828,6 +1656,12 @@
 	},
 /turf/open/floor/carpet/green,
 /area/facility_hallway/manager)
+"mB" = (
+/obj/effect/turf_decal/siding/blue{
+	dir = 9
+	},
+/turf/open/floor/carpet/cyan,
+/area/department_main/manager)
 "mF" = (
 /obj/machinery/door/poddoor/preopen{
 	id = "managerlockdown";
@@ -844,6 +1678,13 @@
 	},
 /turf/open/floor/carpet/green,
 /area/facility_hallway/manager)
+"mI" = (
+/obj/structure/sigsystem/tower/button{
+	signal_code = 92;
+	signal_range = 3
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
 "mK" = (
 /obj/structure/rack,
 /obj/item/toy/plush/big_bad_wolf,
@@ -902,28 +1743,137 @@
 	},
 /turf/open/floor/carpet/royalblue,
 /area/facility_hallway/manager)
+"mT" = (
+/obj/structure/railing{
+	resistance_flags = 115;
+	name = "wing-grade railing";
+	desc = "Indestructible railing created in a vain attempt of fool-proofing the wing's workplace.";
+	mouse_opacity = 0;
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
 "mU" = (
 /obj/structure/curtain/cloth,
 /turf/open/floor/plasteel/white,
 /area/facility_hallway/manager)
+"mW" = (
+/obj/structure/sigsystem/tower{
+	dir = 8;
+	signal_code = 82
+	},
+/turf/closed/indestructible/rock,
+/area/city/outskirtsfactory)
+"mY" = (
+/obj/effect/decal/cleanable/blood/footprints,
+/obj/structure/sigsystem/connector{
+	dir = 4
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"nb" = (
+/obj/structure/table/wood,
+/obj/structure/sign/ordealmonitor{
+	pixel_x = 32
+	},
+/turf/open/floor/carpet/royalblack,
+/area/department_main/manager)
+"ne" = (
+/obj/machinery/computer/security/telescreen{
+	network = list("ss13");
+	pixel_x = -10;
+	pixel_y = 45
+	},
+/obj/machinery/computer/security/telescreen{
+	network = list("ss13");
+	pixel_x = -10;
+	pixel_y = 33
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	color = "#3234B9";
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/blue{
+	color = "#3234B9"
+	},
+/obj/machinery/camera/autoname{
+	dir = 6
+	},
+/obj/machinery/light/cold/no_nightlight{
+	dir = 1
+	},
+/obj/machinery/computer/camera_advanced/manager,
+/turf/open/floor/plasteel/sepia,
+/area/department_main/manager)
+"nh" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sigsystem/connector{
+	delay_time = 90;
+	dir = 1;
+	happens_once = 1
+	},
+/obj/effect/turf_decal/siding/red{
+	dir = 4
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"nl" = (
+/obj/structure/sigsystem/connector{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/red/corner,
+/obj/effect/turf_decal/siding/red/corner{
+	dir = 4
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "nm" = (
 /obj/machinery/computer/abnormality_logs{
 	dir = 4
 	},
 /turf/open/floor/facility/dark,
 /area/department_main/manager)
+"no" = (
+/obj/machinery/light/small/red,
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirtsfactory)
+"np" = (
+/obj/item/bodypart/head,
+/turf/open/floor/plating/asteroid/basalt,
+/area/city/outskirtsfactory)
 "nz" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"nA" = (
+/obj/effect/turf_decal/siding/blue{
+	dir = 1
+	},
+/turf/open/floor/carpet/cyan,
+/area/department_main/manager)
 "nG" = (
 /obj/effect/turf_decal/siding/yellow{
 	dir = 8
 	},
 /turf/open/floor/carpet/royalblack,
 /area/department_main/manager)
+"nI" = (
+/obj/machinery/door/poddoor/shutters/indestructible{
+	lockpickable = 0;
+	resistance_flags = 64
+	},
+/obj/structure/sigsystem/activator,
+/obj/structure/sigsystem/connector,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
 "nJ" = (
 /obj/machinery/light/floor,
 /obj/effect/turf_decal/siding/white{
@@ -931,19 +1881,35 @@
 	},
 /turf/open/floor/carpet/black,
 /area/facility_hallway/manager)
-"nY" = (
-/obj/structure/table/glass,
-/obj/item/hand_labeler,
-/obj/item/hand_labeler_refill,
-/obj/item/hand_labeler_refill,
-/turf/open/floor/plasteel/white,
-/area/facility_hallway/manager)
+"nO" = (
+/obj/effect/turf_decal/siding/red/corner,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"nR" = (
+/obj/structure/sigsystem/pressure_plate{
+	dir = 8;
+	mobs_only = 1
+	},
+/obj/structure/sigsystem/connector{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
 "ob" = (
 /obj/machinery/vending/autodrobe{
 	pixel_y = -10
 	},
 /turf/closed/indestructible/reinforced,
 /area/facility_hallway/manager)
+"oh" = (
+/obj/structure/sigsystem/connector{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/red{
+	dir = 4
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "ok" = (
 /obj/effect/turf_decal/tile{
 	color = "#111111";
@@ -959,9 +1925,29 @@
 	},
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"oq" = (
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
 "or" = (
 /turf/open/floor/carpet/royalblack,
 /area/department_main/manager)
+"oA" = (
+/obj/structure/sigsystem/connector{
+	delay_time = 250;
+	dir = 1
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
+"oD" = (
+/obj/structure/sign/warning/fire{
+	desc = "A warning sign which reads 'DANGER: FIRE'. A small inscription beneath it says, 'Do not attempt to crawl under the flaps'.";
+	resistance_flags = 64
+	},
+/obj/structure/sigsystem/connector{
+	dir = 4
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
 "oF" = (
 /obj/effect/turf_decal/tile{
 	color = "#111111";
@@ -985,12 +1971,42 @@
 /obj/effect/spawner/randomcolavend,
 /turf/open/floor/facility/dark,
 /area/facility_hallway/manager)
+"oK" = (
+/obj/effect/decal/cleanable/blood/gibs/limb,
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"oM" = (
+/obj/structure/closet/secure_closet/freezer/meat/open{
+	anchored = 1
+	},
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/turf/open/floor/wood,
+/area/department_main/manager)
 "oP" = (
 /obj/effect/turf_decal/siding/white/corner{
 	dir = 1
 	},
 /turf/open/floor/carpet/black,
 /area/facility_hallway/manager)
+"oQ" = (
+/mob/living/simple_animal/hostile/ordeal/green_bot_big,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
 "oW" = (
 /obj/effect/turf_decal/tile{
 	color = "#111111";
@@ -1031,6 +2047,12 @@
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel/dark,
 /area/facility_hallway/manager)
+"pc" = (
+/obj/effect/turf_decal/siding/thinplating/light{
+	dir = 8
+	},
+/turf/open/floor/circuit,
+/area/city/outskirtsfactory)
 "pm" = (
 /obj/machinery/door/window/brigdoor/southleft,
 /obj/effect/turf_decal/siding/green{
@@ -1045,6 +2067,18 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/plasteel/white,
 /area/facility_hallway/manager)
+"pq" = (
+/obj/structure/railing{
+	resistance_flags = 115;
+	name = "wing-grade railing";
+	desc = "Indestructible railing created in a vain attempt of fool-proofing the wing's workplace.";
+	mouse_opacity = 0;
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/oil/slippery,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
 "pv" = (
 /obj/machinery/computer/abnormality_logs,
 /obj/machinery/status_display{
@@ -1055,10 +2089,91 @@
 	},
 /turf/open/floor/carpet/green,
 /area/facility_hallway/manager)
+"pw" = (
+/obj/structure/sigsystem/tower{
+	dir = 1;
+	signal_code = 44
+	},
+/turf/open/floor/circuit/red,
+/area/city/outskirtsfactory)
+"py" = (
+/obj/machinery/door/poddoor{
+	id = "disc_blast";
+	name = "external blast door"
+	},
+/turf/open/floor/plasteel/dark,
+/area/facility_hallway/manager)
+"pA" = (
+/obj/structure/sigsystem/connector/split{
+	happens_once = 1
+	},
+/obj/structure/sigsystem/tower/button{
+	pixel_y = 27;
+	signal_code = 90
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"pB" = (
+/obj/structure/sigsystem/connector,
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirtsfactory)
 "pE" = (
 /obj/effect/turf_decal/siding/white,
 /turf/open/floor/carpet/black,
 /area/facility_hallway/manager)
+"pG" = (
+/obj/effect/turf_decal/delivery/red,
+/obj/machinery/computer/shuttle/mining{
+	max_integrity = 350000;
+	name = "elevator console";
+	possible_destinations = "epsilon_control";
+	shuttleId = "epsilon"
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/machinery/light/cold/no_nightlight{
+	dir = 1;
+	brightness = 16
+	},
+/obj/machinery/camera/autoname{
+	dir = 8
+	},
+/turf/open/floor/facility/white,
+/area/city/outskirtsfactory)
+"pJ" = (
+/obj/machinery/light/floor,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
+"pM" = (
+/obj/machinery/door/poddoor{
+	resistance_flags = 64
+	},
+/obj/structure/sigsystem/connector,
+/obj/structure/sigsystem/activator,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"pR" = (
+/obj/structure/sigsystem/connector/split{
+	dir = 4;
+	happens_once = 1
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirtsfactory)
+"pZ" = (
+/obj/effect/decal/cleanable/blood/gibs/limb,
+/obj/structure/headpike,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"qa" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
+"qb" = (
+/turf/open/floor/plasteel,
+/area/department_main/manager)
 "qe" = (
 /obj/machinery/computer/crew,
 /turf/open/floor/carpet/orange,
@@ -1069,6 +2184,10 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/facility_hallway/manager)
+"qk" = (
+/obj/structure/lootcrate/money,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "qq" = (
 /obj/effect/turf_decal/tile{
 	color = "#111111";
@@ -1082,6 +2201,25 @@
 /obj/structure/closet/secure_closet/freezer/meat/open,
 /turf/open/floor/plasteel/white,
 /area/facility_hallway/manager)
+"qx" = (
+/obj/machinery/light/small/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/green{
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"qy" = (
+/obj/machinery/light/small/red{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirtsfactory)
+"qA" = (
+/obj/structure/headpike,
+/turf/open/floor/plating/asteroid/basalt,
+/area/city/outskirtsfactory)
 "qC" = (
 /obj/machinery/light{
 	dir = 4
@@ -1113,10 +2251,30 @@
 	},
 /turf/closed/indestructible/reinforced,
 /area/facility_hallway/manager)
+"qN" = (
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"qQ" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "qT" = (
 /obj/structure/chair/stool,
 /turf/open/floor/plasteel/dark,
 /area/facility_hallway/manager)
+"qU" = (
+/obj/machinery/light/red{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
+"qW" = (
+/obj/effect/decal/cleanable/oil/slippery,
+/turf/open/floor/facility,
+/area/city/outskirtsfactory)
 "qY" = (
 /obj/structure/table/wood/fancy/royalblack,
 /obj/effect/turf_decal/siding/brown/corner{
@@ -1137,6 +2295,10 @@
 	},
 /turf/open/floor/carpet/orange,
 /area/facility_hallway/manager)
+"rd" = (
+/obj/machinery/light,
+/turf/open/floor/plasteel,
+/area/department_main/manager)
 "rg" = (
 /obj/machinery/light{
 	dir = 4;
@@ -1148,12 +2310,29 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/facility_hallway/manager)
+"ri" = (
+/obj/effect/turf_decal/siding/red{
+	dir = 1
+	},
+/obj/machinery/light/small/red{
+	dir = 1
+	},
+/turf/open/floor/circuit/red,
+/area/city/outskirtsfactory)
 "rl" = (
 /obj/machinery/computer/abnormality_auxiliary{
 	dir = 8
 	},
 /turf/open/floor/facility/dark,
 /area/department_main/manager)
+"rm" = (
+/obj/structure/destructible/cult/forge{
+	resistance_flags = 64;
+	desc = "A forge used in crafting various parts.";
+	name = "forge"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
 "rq" = (
 /obj/effect/turf_decal/tile{
 	color = "#111111";
@@ -1169,6 +2348,9 @@
 	},
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"rr" = (
+/turf/closed/indestructible/rock,
+/area/space)
 "rw" = (
 /obj/machinery/door/window/brigdoor/southright{
 	dir = 8
@@ -1178,6 +2360,12 @@
 	},
 /turf/open/floor/carpet/orange,
 /area/facility_hallway/manager)
+"ry" = (
+/obj/structure/sigsystem/connector/split{
+	dir = 1
+	},
+/turf/closed/indestructible/rock,
+/area/city/outskirtsfactory)
 "rz" = (
 /obj/machinery/newscaster/security_unit{
 	pixel_y = 32
@@ -1195,17 +2383,29 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/department_main/manager)
+"rA" = (
+/obj/effect/landmark/machine/extra,
+/turf/open/floor/plasteel/white,
+/area/facility_hallway/manager)
+"rB" = (
+/mob/living/simple_animal/hostile/ordeal/green_bot/fast,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
 "rD" = (
-/obj/structure/closet,
-/obj/item/storage/box/syringes,
-/obj/item/storage/box/syringes,
-/obj/item/storage/box/beakers,
+/obj/effect/landmark/refinery/extra,
 /turf/open/floor/plasteel/white,
 /area/facility_hallway/manager)
 "rF" = (
 /obj/machinery/computer/crew,
 /turf/open/floor/carpet/royalblack,
 /area/department_main/manager)
+"rG" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/red{
+	dir = 8
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "rH" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 4
@@ -1215,6 +2415,19 @@
 	},
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"rL" = (
+/obj/machinery/light/small/red{
+	dir = 4
+	},
+/obj/structure/sigsystem/connector{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirtsfactory)
+"rN" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
 "rO" = (
 /turf/open/floor/carpet/red,
 /area/facility_hallway/manager)
@@ -1224,6 +2437,15 @@
 	},
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"rY" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/green/corner,
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"sa" = (
+/obj/structure/headpike,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "sg" = (
 /obj/machinery/light{
 	dir = 4
@@ -1240,6 +2462,31 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/facility_hallway/manager)
+"sk" = (
+/mob/living/simple_animal/hostile/ordeal/green_bot_big,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"sl" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/small/red{
+	dir = 1
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"sq" = (
+/obj/structure/railing{
+	resistance_flags = 115;
+	name = "wing-grade railing";
+	desc = "Indestructible railing created in a vain attempt of fool-proofing the wing's workplace.";
+	mouse_opacity = 0;
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
+"sr" = (
+/turf/open/lava,
+/area/city/outskirtsfactory)
 "sx" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
@@ -1285,6 +2532,14 @@
 	},
 /turf/open/floor/facility/dark,
 /area/facility_hallway/manager)
+"sL" = (
+/obj/machinery/door/poddoor/shutters/indestructible{
+	lockpickable = 0;
+	resistance_flags = 64
+	},
+/obj/structure/sigsystem/activator,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "sO" = (
 /obj/machinery/light{
 	dir = 4;
@@ -1298,6 +2553,13 @@
 	},
 /turf/open/floor/carpet/black,
 /area/facility_hallway/manager)
+"sT" = (
+/obj/effect/turf_decal/siding/red,
+/obj/machinery/door/airlock/wood{
+	name = "Manager's Office"
+	},
+/turf/open/floor/plasteel,
+/area/department_main/manager)
 "sW" = (
 /obj/structure/bed/pod,
 /obj/item/bedsheet/black,
@@ -1309,6 +2571,23 @@
 	},
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"sX" = (
+/turf/open/floor/circuit,
+/area/city/outskirtsfactory)
+"sY" = (
+/obj/structure/sigsystem/deployer{
+	atom_path = "/mob/living/simple_animal/hostile/ordeal/grungeon_spawner"
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirtsfactory)
+"tb" = (
+/obj/machinery/conveyor/auto{
+	dir = 8;
+	resistance_flags = 64;
+	tamperproof = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
 "tc" = (
 /obj/machinery/newscaster/security_unit{
 	pixel_y = 32
@@ -1342,6 +2621,12 @@
 /obj/item/storage/lockbox/medal,
 /turf/open/floor/plasteel/dark,
 /area/department_main/manager)
+"tj" = (
+/obj/structure/sigsystem/connector{
+	dir = 1
+	},
+/turf/open/floor/circuit/red,
+/area/city/outskirtsfactory)
 "tn" = (
 /obj/machinery/light{
 	dir = 4
@@ -1364,6 +2649,21 @@
 	},
 /turf/open/floor/carpet/royalblue,
 /area/facility_hallway/manager)
+"tD" = (
+/obj/effect/decal/cleanable/blood/old,
+/obj/structure/sigsystem/tower/button{
+	pixel_y = 27;
+	signal_code = 15
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
+"tE" = (
+/obj/structure/sigsystem/announcer{
+	message_range = 6;
+	message = "Dance for us, organic!"
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
 "tM" = (
 /obj/structure/table,
 /obj/item/pen/fourcolor,
@@ -1372,12 +2672,29 @@
 	},
 /turf/open/floor/carpet/black,
 /area/facility_hallway/manager)
+"tN" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood/footprints,
+/obj/structure/sigsystem/tower{
+	dir = 8;
+	signal_code = 44
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "tV" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 8
 	},
 /turf/open/floor/carpet/black,
 /area/department_main/manager)
+"tW" = (
+/obj/machinery/door/airlock/highsecurity{
+	name = "Central Command Department"
+	},
+/turf/open/floor/facility/halls,
+/area/city/outskirtsfactory)
 "tZ" = (
 /obj/machinery/light{
 	dir = 8
@@ -1385,6 +2702,23 @@
 /obj/machinery/roulette,
 /turf/open/floor/plasteel/dark,
 /area/facility_hallway/manager)
+"ub" = (
+/obj/structure/curtain/bounty,
+/turf/open/floor/wood,
+/area/department_main/manager)
+"uc" = (
+/obj/structure/railing{
+	dir = 5
+	},
+/obj/structure/sigsystem/connector{
+	dir = 8
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
+"ue" = (
+/obj/machinery/light/red,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "ug" = (
 /obj/machinery/door/poddoor{
 	id = "sephirah";
@@ -1398,6 +2732,9 @@
 	},
 /turf/open/floor/carpet/black,
 /area/department_main/manager)
+"uv" = (
+/turf/open/floor/circuit/red,
+/area/city/outskirtsfactory)
 "uz" = (
 /obj/structure/chair/stool,
 /obj/effect/turf_decal/siding/wood{
@@ -1416,6 +2753,17 @@
 	},
 /turf/open/floor/facility/dark,
 /area/department_main/manager)
+"uO" = (
+/obj/machinery/light/small/red{
+	dir = 4
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"uP" = (
+/obj/structure/table/reinforced,
+/obj/structure/lootcrate/hana,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "uY" = (
 /obj/machinery/light{
 	dir = 4;
@@ -1426,6 +2774,12 @@
 	},
 /turf/open/floor/carpet/green,
 /area/facility_hallway/manager)
+"uZ" = (
+/obj/structure/sigsystem/connector/split{
+	dir = 4
+	},
+/turf/closed/indestructible/rock,
+/area/city/outskirtsfactory)
 "va" = (
 /turf/open/floor/facility/dark,
 /area/department_main/manager)
@@ -1451,15 +2805,85 @@
 	},
 /turf/open/floor/carpet/orange,
 /area/facility_hallway/manager)
+"vo" = (
+/obj/effect/turf_decal/siding/red/corner{
+	dir = 8
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"vp" = (
+/turf/open/floor/plating/asteroid/basalt,
+/area/city/outskirtsfactory)
 "vw" = (
 /obj/effect/turf_decal/siding/yellow,
 /turf/open/floor/carpet/royalblack,
+/area/department_main/manager)
+"vz" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
 /area/department_main/manager)
 "vB" = (
 /obj/effect/turf_decal/siding/white/corner{
 	dir = 4
 	},
 /turf/open/floor/carpet/black,
+/area/facility_hallway/manager)
+"vC" = (
+/obj/structure/sigsystem/connector{
+	dir = 1
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
+"vD" = (
+/obj/effect/turf_decal/siding/thinplating/light{
+	dir = 1
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/mob/living/simple_animal/hostile/ordeal/green_bot/syringe,
+/turf/open/floor/facility,
+/area/city/outskirtsfactory)
+"vE" = (
+/obj/effect/turf_decal/siding/green/corner{
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"vF" = (
+/obj/structure/railing{
+	resistance_flags = 115;
+	name = "wing-grade railing";
+	desc = "Indestructible railing created in a vain attempt of fool-proofing the wing's workplace.";
+	mouse_opacity = 0;
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
+"vI" = (
+/obj/machinery/door/poddoor/shutters/indestructible{
+	lockpickable = 0;
+	resistance_flags = 64
+	},
+/obj/structure/sigsystem/activator,
+/obj/machinery/conveyor/auto{
+	dir = 1;
+	resistance_flags = 64;
+	tamperproof = 1
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"vL" = (
+/obj/machinery/light/red,
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"vM" = (
+/obj/structure/chair/sofa/corp{
+	dir = 4
+	},
+/turf/open/floor/carpet/red,
 /area/facility_hallway/manager)
 "vP" = (
 /obj/structure/chair/wood{
@@ -1475,6 +2899,16 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/facility/dark,
 /area/facility_hallway/manager)
+"vV" = (
+/obj/effect/turf_decal/siding/red{
+	dir = 1
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"vZ" = (
+/obj/effect/decal/cleanable/blood/gibs/torso,
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
 "wb" = (
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
@@ -1518,6 +2952,14 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/facility_hallway/manager)
+"wl" = (
+/obj/structure/sigsystem/tower{
+	dir = 8;
+	signal_code = 07;
+	happens_once = 1
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
 "wn" = (
 /obj/effect/landmark/custom_office/poster{
 	pixel_x = -32
@@ -1527,6 +2969,15 @@
 	},
 /turf/open/floor/facility/dark,
 /area/facility_hallway/manager)
+"wp" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/small/red,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"wq" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "ws" = (
 /obj/machinery/light{
 	dir = 1
@@ -1565,6 +3016,24 @@
 /obj/machinery/vending/cigarette/beach,
 /turf/open/floor/facility/dark,
 /area/facility_hallway/manager)
+"wA" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/structure/sigsystem/pressure_plate{
+	dir = 1;
+	mobs_only = 1
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
+"wD" = (
+/obj/effect/decal/cleanable/blood,
+/obj/structure/sigsystem/announcer{
+	message_range = 5;
+	message = "Intruders detected. All units, prepare for battle."
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "wF" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
@@ -1586,6 +3055,29 @@
 	},
 /turf/closed/indestructible/reinforced,
 /area/facility_hallway/manager)
+"wQ" = (
+/obj/structure/rack,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
+"wW" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/structure/sigsystem/connector/split{
+	dir = 1
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
+"xa" = (
+/obj/structure/fence,
+/obj/structure/fence{
+	resistance_flags = 64
+	},
+/turf/open/floor/plating/asteroid/basalt,
+/area/city/outskirtsfactory)
 "xb" = (
 /obj/machinery/holopad/secure,
 /turf/open/floor/carpet/orange,
@@ -1608,7 +3100,8 @@
 /obj/machinery/button/door/indestructible{
 	id = "sephirah";
 	name = "Sephirah CIC opening";
-	pixel_y = -25
+	pixel_y = -25;
+	req_access_txt = "20"
 	},
 /turf/open/floor/wood,
 /area/department_main/manager)
@@ -1617,6 +3110,48 @@
 /obj/machinery/light,
 /turf/open/floor/plasteel/white,
 /area/facility_hallway/manager)
+"xs" = (
+/obj/structure/sigsystem/connector{
+	happens_once = 1
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"xx" = (
+/obj/machinery/door/poddoor/shutters/indestructible{
+	id = "foundryaccess";
+	lockpickable = 0
+	},
+/obj/structure/sigsystem/connector/split{
+	dir = 4
+	},
+/obj/structure/sigsystem/activator,
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"xA" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/red{
+	dir = 1
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"xB" = (
+/obj/effect/turf_decal/siding/thinplating/light{
+	dir = 5
+	},
+/obj/machinery/mech_bay_recharge_port{
+	dir = 8;
+	resistance_flags = 64
+	},
+/turf/open/floor/facility,
+/area/city/outskirtsfactory)
+"xE" = (
+/obj/machinery/conveyor/auto{
+	dir = 1;
+	resistance_flags = 64;
+	tamperproof = 1
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "xG" = (
 /obj/effect/turf_decal/tile{
 	color = "#111111";
@@ -1631,6 +3166,19 @@
 /obj/effect/spawner/lootdrop/three_course_meal,
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"xH" = (
+/obj/effect/turf_decal/siding/green{
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"xI" = (
+/obj/effect/decal/cleanable/blood/footprints,
+/obj/structure/sigsystem/connector/split{
+	dir = 4
+	},
+/turf/open/floor/circuit/red,
+/area/city/outskirtsfactory)
 "xK" = (
 /obj/effect/turf_decal/siding/blue{
 	color = "#3234B9";
@@ -1638,6 +3186,12 @@
 	},
 /turf/open/floor/carpet/royalblue,
 /area/facility_hallway/manager)
+"xM" = (
+/obj/structure/fluff/big_chain{
+	resistance_flags = 3
+	},
+/turf/open/lava,
+/area/city/outskirtsfactory)
 "xP" = (
 /obj/effect/turf_decal/tile{
 	color = "#111111";
@@ -1651,6 +3205,26 @@
 /obj/structure/table/wood,
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"xQ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/red/corner{
+	dir = 1
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"xY" = (
+/obj/structure/railing/corner{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/turf_decal/siding/red/corner{
+	dir = 8
+	},
+/obj/structure/sigsystem/connector{
+	dir = 8
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "yc" = (
 /obj/item/kirbyplants/random,
 /turf/open/floor/plasteel/dark,
@@ -1673,6 +3247,16 @@
 	},
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"yl" = (
+/obj/machinery/light/small/red{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/green{
+	dir = 8
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
 "yp" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
 /obj/effect/turf_decal/siding/wood{
@@ -1707,12 +3291,29 @@
 	},
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"yw" = (
+/obj/effect/turf_decal/siding/red{
+	dir = 8
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"yx" = (
+/obj/machinery/light/red{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
 "yA" = (
 /obj/structure/chair/comfy/brown{
 	dir = 1
 	},
 /turf/open/floor/carpet/orange,
 /area/department_main/manager)
+"yC" = (
+/obj/structure/flora/rock/pile,
+/turf/open/floor/plating/asteroid/basalt,
+/area/city/outskirtsfactory)
 "yD" = (
 /obj/effect/turf_decal/tile{
 	color = "#111111";
@@ -1739,12 +3340,6 @@
 	},
 /turf/open/floor/carpet/black,
 /area/facility_hallway/manager)
-"yO" = (
-/obj/machinery/computer/extraction_cargo/discipline{
-	dir = 4
-	},
-/turf/open/floor/carpet/red,
-/area/facility_hallway/manager)
 "yP" = (
 /obj/effect/turf_decal/siding/blue{
 	color = "#3234B9";
@@ -1752,6 +3347,38 @@
 	},
 /turf/open/floor/carpet/royalblue,
 /area/facility_hallway/manager)
+"yR" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
+"yS" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sigsystem/connector{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/red/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/red/corner{
+	dir = 8
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"yT" = (
+/obj/structure/railing{
+	resistance_flags = 115;
+	name = "wing-grade railing";
+	desc = "Indestructible railing created in a vain attempt of fool-proofing the wing's workplace.";
+	mouse_opacity = 0;
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/oil/slippery,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
 "yX" = (
 /obj/item/kirbyplants{
 	icon_state = "plant-11";
@@ -1768,6 +3395,27 @@
 "zb" = (
 /turf/open/floor/carpet/orange,
 /area/facility_hallway/manager)
+"zg" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sign/warning/securearea{
+	pixel_x = -32;
+	pixel_y = 19
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"zr" = (
+/obj/structure/sigsystem/connector{
+	dir = 4;
+	delay_time = 30
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"zv" = (
+/obj/structure/chair/comfy/black{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/department_main/manager)
 "zy" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -1776,6 +3424,19 @@
 	pixel_x = -32
 	},
 /turf/open/floor/wood,
+/area/department_main/manager)
+"zA" = (
+/obj/effect/landmark/cratespawn/corpo,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
+"zB" = (
+/obj/machinery/light,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"zD" = (
+/obj/structure/filingcabinet/branch12,
+/turf/open/floor/carpet/royalblack,
 /area/department_main/manager)
 "zE" = (
 /obj/machinery/light{
@@ -1800,6 +3461,10 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/department_main/manager)
+"zK" = (
+/mob/living/simple_animal/hostile/ordeal/green_bot,
+/turf/open/floor/plating/asteroid/basalt,
+/area/city/outskirtsfactory)
 "zL" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 6
@@ -1831,6 +3496,10 @@
 	},
 /turf/open/floor/carpet/black,
 /area/department_main/manager)
+"zT" = (
+/obj/structure/table/optable,
+/turf/open/floor/plasteel/white,
+/area/facility_hallway/manager)
 "zV" = (
 /obj/item/paper_bin,
 /obj/item/pen/fourcolor,
@@ -1842,6 +3511,24 @@
 /obj/structure/table/wood,
 /turf/open/floor/facility/dark,
 /area/department_main/manager)
+"zW" = (
+/obj/structure/sigsystem/tower{
+	dir = 1;
+	signal_code = 53
+	},
+/turf/closed/indestructible/rock,
+/area/city/outskirtsfactory)
+"Aa" = (
+/obj/structure/sigsystem/connector{
+	delay_time = 90;
+	dir = 1;
+	happens_once = 1
+	},
+/obj/effect/turf_decal/siding/red{
+	dir = 8
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "Ab" = (
 /obj/item/kirbyplants/random,
 /obj/effect/turf_decal/siding/wood{
@@ -1861,6 +3548,19 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/facility_hallway/manager)
+"Ai" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/red/corner{
+	dir = 4
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"Aj" = (
+/obj/effect/turf_decal/siding/blue{
+	dir = 8
+	},
+/turf/open/floor/carpet/cyan,
+/area/department_main/manager)
 "Ao" = (
 /obj/effect/turf_decal/siding/blue{
 	dir = 6
@@ -1887,6 +3587,34 @@
 /obj/item/food/grown/star_cactus,
 /turf/open/floor/facility/dark,
 /area/department_main/manager)
+"Ax" = (
+/obj/structure/chair/sofa/corp/right{
+	dir = 4
+	},
+/turf/open/floor/carpet/red,
+/area/facility_hallway/manager)
+"AB" = (
+/obj/effect/decal/cleanable/blood/old,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"AC" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/red,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"AD" = (
+/obj/structure/sign/departments/security,
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
+"AE" = (
+/obj/machinery/door/poddoor/shutters/indestructible{
+	lockpickable = 0;
+	resistance_flags = 64
+	},
+/obj/structure/sigsystem/activator,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
 "AI" = (
 /obj/structure/table,
 /obj/machinery/cell_charger,
@@ -1908,6 +3636,18 @@
 	},
 /turf/open/floor/carpet/green,
 /area/facility_hallway/manager)
+"AQ" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"AS" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "AV" = (
 /obj/machinery/button/door/indestructible{
 	id = "managerlockdown";
@@ -1918,6 +3658,17 @@
 /obj/structure/table/wood,
 /turf/open/floor/facility/dark,
 /area/department_main/manager)
+"AY" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	resistance_flags = 64;
+	lockpickable = 0
+	},
+/obj/structure/sigsystem/connector/split{
+	dir = 4
+	},
+/obj/structure/sigsystem/activator,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "AZ" = (
 /obj/structure/filingcabinet/wawinfo{
 	pixel_x = -10
@@ -1950,6 +3701,17 @@
 	},
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"Bq" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	resistance_flags = 64;
+	lockpickable = 0
+	},
+/obj/structure/sigsystem/connector{
+	dir = 8
+	},
+/obj/structure/sigsystem/activator,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "Bs" = (
 /obj/item/toy/plush/netzach,
 /obj/structure/railing,
@@ -1961,6 +3723,45 @@
 	},
 /turf/open/floor/carpet/green,
 /area/facility_hallway/manager)
+"Bv" = (
+/obj/machinery/conveyor/auto{
+	dir = 1;
+	resistance_flags = 64;
+	tamperproof = 1
+	},
+/obj/structure/railing{
+	resistance_flags = 115;
+	name = "wing-grade railing";
+	desc = "Indestructible railing created in a vain attempt of fool-proofing the wing's workplace.";
+	mouse_opacity = 0;
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
+"BD" = (
+/obj/structure/railing/corner{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/turf_decal/siding/red/corner,
+/obj/structure/sigsystem/connector{
+	dir = 4
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
+"BE" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/turf_decal/siding/green{
+	dir = 8
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"BF" = (
+/obj/effect/turf_decal/siding/green/corner{
+	dir = 1
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
 "BO" = (
 /obj/machinery/computer/abnormality_archive{
 	dir = 8
@@ -1970,6 +3771,23 @@
 	},
 /turf/open/floor/carpet/orange,
 /area/facility_hallway/manager)
+"BW" = (
+/obj/structure/sigsystem/connector{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
+"Cc" = (
+/obj/structure/sign/departments/cargo{
+	resistance_flags = 64
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
+"Cd" = (
+/obj/structure/sigsystem/connector,
+/obj/effect/turf_decal/siding/red/corner,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "Cg" = (
 /obj/effect/turf_decal/siding/blue{
 	dir = 10
@@ -1986,6 +3804,19 @@
 /obj/item/toy/plush/sow,
 /turf/open/floor/plasteel/dark,
 /area/facility_hallway/manager)
+"Cq" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/blood/old,
+/obj/effect/turf_decal/siding/green/corner,
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"Cr" = (
+/obj/structure/closet/cabinet,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/department_main/manager)
 "Cu" = (
 /obj/machinery/light{
 	dir = 8
@@ -2006,6 +3837,10 @@
 	},
 /turf/open/floor/carpet/black,
 /area/department_main/manager)
+"CC" = (
+/obj/structure/sign/directions/evac,
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
 "CI" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 6
@@ -2023,12 +3858,38 @@
 	},
 /turf/open/floor/plasteel/elevatorshaft,
 /area/facility_hallway/manager)
+"CL" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/green/corner,
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"CN" = (
+/obj/machinery/door/poddoor/shutters/window{
+	lockpickable = 0;
+	resistance_flags = 64
+	},
+/obj/structure/sigsystem/activator,
+/obj/effect/turf_decal/siding/red,
+/obj/effect/turf_decal/siding/red{
+	dir = 1
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "CT" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
 	},
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"CU" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sigsystem/tower{
+	dir = 8;
+	signal_code = 24
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
 "CY" = (
 /obj/structure/chair/stool,
 /obj/effect/turf_decal/siding/wood{
@@ -2036,6 +3897,28 @@
 	},
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"Da" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/lootcrate/syndicate,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
+"Db" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	resistance_flags = 64;
+	lockpickable = 0
+	},
+/obj/structure/sigsystem/connector,
+/obj/structure/sigsystem/activator,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"Dd" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/small/red{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/ordeal/grungeon_shielder,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "Df" = (
 /obj/item/toy/plush/enoch,
 /obj/structure/table/wood/fancy/orange,
@@ -2062,6 +3945,13 @@
 	},
 /turf/open/floor/facility/dark,
 /area/facility_hallway/manager)
+"Dy" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/green/corner{
+	dir = 1
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
 "DA" = (
 /obj/effect/turf_decal/tile{
 	color = "#111111";
@@ -2078,6 +3968,39 @@
 	},
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"DF" = (
+/obj/structure/sigsystem/deployer{
+	atom_path = /mob/living/simple_animal/hostile/ordeal/grungeon_spawner
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirtsfactory)
+"DL" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/red{
+	dir = 4
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"DR" = (
+/obj/effect/decal/cleanable/oil/slippery,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
+"DU" = (
+/obj/effect/turf_decal/siding/red/corner{
+	dir = 4
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"DV" = (
+/turf/open/floor/facility,
+/area/city/outskirtsfactory)
+"Eb" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/effect/turf_decal/delivery/red,
+/turf/open/floor/facility/white,
+/area/department_main/manager)
 "Ec" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
@@ -2106,6 +4029,12 @@
 /obj/item/storage/pill_bottle/dice,
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"Ek" = (
+/obj/machinery/light/small/red{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirtsfactory)
 "El" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/bottle/champagne{
@@ -2129,9 +4058,70 @@
 /obj/effect/turf_decal/siding/wood/end,
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"Et" = (
+/obj/machinery/light/red{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirtsfactory)
+"Eu" = (
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"EB" = (
+/obj/machinery/door/airlock/highsecurity{
+	name = "Central Command Department"
+	},
+/turf/open/floor/facility/halls,
+/area/department_main/manager)
+"EG" = (
+/obj/effect/turf_decal/stripes{
+	dir = 1
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"EN" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/structure/sigsystem/connector{
+	dir = 1;
+	delay_time = 250
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "EQ" = (
 /turf/open/floor/carpet/green,
 /area/facility_hallway/manager)
+"ET" = (
+/obj/structure/closet/crate,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
+"EV" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sigsystem/tower{
+	dir = 1;
+	signal_code = 26
+	},
+/obj/effect/turf_decal/siding/red/corner{
+	dir = 1
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"EW" = (
+/obj/machinery/door/airlock/grunge{
+	name = "manager's study";
+	req_access_txt = "20"
+	},
+/turf/open/floor/wood,
+/area/department_main/manager)
+"EY" = (
+/obj/structure/sigsystem/tower/button{
+	signal_code = 07;
+	happens_once = 1
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
 "Fb" = (
 /obj/machinery/facility_holomap{
 	dir = 1;
@@ -2139,12 +4129,32 @@
 	},
 /turf/open/floor/facility/dark,
 /area/facility_hallway/manager)
+"Fe" = (
+/obj/machinery/door/poddoor/shutters/indestructible{
+	lockpickable = 0;
+	resistance_flags = 64
+	},
+/obj/structure/sigsystem/connector{
+	dir = 4
+	},
+/obj/structure/sigsystem/activator,
+/obj/machinery/conveyor/auto{
+	dir = 1;
+	resistance_flags = 64;
+	tamperproof = 1
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "Fg" = (
 /obj/structure/table,
 /obj/machinery/light,
 /obj/item/toy/plush/bongbong,
 /turf/open/floor/plasteel/dark,
 /area/facility_hallway/manager)
+"Fi" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "Fk" = (
 /obj/machinery/modular_computer/console/preset{
 	dir = 1
@@ -2154,6 +4164,44 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/facility_hallway/manager)
+"Fm" = (
+/obj/machinery/light/red{
+	dir = 1
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"Fx" = (
+/obj/effect/turf_decal/siding/thinplating/light{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/structure/table/reinforced,
+/obj/item/weldingtool/largetank{
+	pixel_x = 8;
+	pixel_y = -5
+	},
+/obj/item/stack/medical/suture{
+	pixel_y = 10;
+	pixel_x = -8
+	},
+/obj/item/stack/cable_coil{
+	amount = 30;
+	max_amount = 30;
+	pixel_x = -7;
+	pixel_y = -11
+	},
+/obj/effect/spawner/lootdrop/space/cashmoney{
+	pixel_x = -10;
+	pixel_y = 2
+	},
+/obj/effect/spawner/lootdrop/space/cashmoney{
+	pixel_x = 8;
+	pixel_y = 13
+	},
+/turf/open/floor/circuit,
+/area/city/outskirtsfactory)
 "FA" = (
 /obj/effect/landmark/custom_office/poster{
 	pixel_x = -32
@@ -2193,16 +4241,52 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/facility_hallway/manager)
+"FR" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/structure/table/reinforced,
+/obj/item/food/meatclown{
+	pixel_y = 3
+	},
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/department_main/manager)
 "FY" = (
 /obj/structure/rack,
 /obj/item/toy/plush/qoh,
 /turf/open/floor/plasteel/dark,
 /area/facility_hallway/manager)
+"FZ" = (
+/obj/machinery/door/airlock/grunge{
+	name = "manager's mess";
+	req_access_txt = "20"
+	},
+/turf/open/floor/wood,
+/area/department_main/manager)
+"Gb" = (
+/mob/living/simple_animal/hostile/ordeal/green_bot,
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
 "Gd" = (
 /obj/structure/curtain/bounty,
 /obj/effect/turf_decal/siding/wood/end,
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"Gh" = (
+/obj/structure/table/reinforced,
+/obj/structure/lootcrate/money,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
+"Gi" = (
+/obj/structure/sigsystem/pressure_plate{
+	dir = 1;
+	mobs_only = 1
+	},
+/obj/structure/sigsystem/connector{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
 "Gj" = (
 /obj/machinery/computer/abnormality_logs{
 	dir = 1
@@ -2231,6 +4315,12 @@
 /obj/machinery/vending/coffee,
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"Gt" = (
+/mob/living/simple_animal/hostile/ordeal/green_bot,
+/obj/machinery/light,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "Gu" = (
 /obj/item/toy/plush/chesed,
 /obj/structure/railing{
@@ -2242,6 +4332,10 @@
 	},
 /turf/open/floor/carpet/orange,
 /area/facility_hallway/manager)
+"Gv" = (
+/mob/living/simple_animal/hostile/ordeal/green_bot/fast,
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
 "Gw" = (
 /turf/open/floor/carpet/green,
 /area/department_main/manager)
@@ -2253,6 +4347,17 @@
 /obj/structure/chair/sofa/corp/left,
 /turf/open/floor/facility/dark,
 /area/facility_hallway/manager)
+"GD" = (
+/obj/docking_port/stationary{
+	dwidth = 3;
+	height = 5;
+	id = "epsilon_control";
+	name = "2F - Control";
+	roundstart_template = null;
+	width = 6
+	},
+/turf/open/floor/plasteel/elevatorshaft,
+/area/city/outskirtsfactory)
 "GK" = (
 /obj/structure/rack,
 /obj/item/toy/plush/scorched,
@@ -2283,11 +4388,80 @@
 	},
 /turf/open/floor/facility/dark,
 /area/department_main/manager)
+"GY" = (
+/obj/machinery/conveyor/auto{
+	dir = 8;
+	resistance_flags = 64;
+	tamperproof = 1
+	},
+/obj/structure/railing{
+	resistance_flags = 115;
+	name = "wing-grade railing";
+	desc = "Indestructible railing created in a vain attempt of fool-proofing the wing's workplace.";
+	mouse_opacity = 0;
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
+"GZ" = (
+/mob/living/simple_animal/hostile/ordeal/green_bot_big,
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"Hb" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/green{
+	dir = 1
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"He" = (
+/obj/effect/turf_decal/siding/thinplating/light{
+	dir = 6
+	},
+/obj/machinery/mech_bay_recharge_port{
+	dir = 8;
+	resistance_flags = 64
+	},
+/turf/open/floor/facility,
+/area/city/outskirtsfactory)
+"Hg" = (
+/turf/closed/indestructible/reinforced,
+/area/city/outskirtsfactory)
 "Hj" = (
 /obj/structure/chair/comfy/beige{
 	dir = 1
 	},
 /turf/open/floor/carpet/green,
+/area/department_main/manager)
+"Hl" = (
+/mob/living/simple_animal/hostile/ordeal/grungeon_boss,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
+"Hr" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/structure/sigsystem/tower/button{
+	pixel_x = 28;
+	signal_code = 09
+	},
+/obj/structure/sigsystem/tower{
+	signal_code = 09;
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
+"Hs" = (
+/obj/structure/chair/comfy/beige{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/blue{
+	dir = 1
+	},
+/turf/open/floor/carpet/cyan,
 /area/department_main/manager)
 "Ht" = (
 /obj/machinery/door/poddoor/preopen{
@@ -2299,6 +4473,13 @@
 	},
 /turf/open/floor/facility/dark,
 /area/department_main/manager)
+"Hv" = (
+/obj/structure/sigsystem/connector{
+	delay_time = 450;
+	dir = 4
+	},
+/turf/closed/indestructible/rock,
+/area/city/outskirtsfactory)
 "Hw" = (
 /obj/item/toy/plush/gebura,
 /obj/structure/railing{
@@ -2337,6 +4518,27 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/facility_hallway/manager)
+"HC" = (
+/obj/structure/sigsystem/tower{
+	signal_code = 92
+	},
+/turf/open/floor/mineral/gold,
+/area/city/outskirtsfactory)
+"HD" = (
+/obj/effect/turf_decal/siding/red,
+/obj/structure/sigsystem/connector/split{
+	dir = 1;
+	happens_once = 1
+	},
+/obj/machinery/light/small/red,
+/turf/open/floor/circuit/red,
+/area/city/outskirtsfactory)
+"HI" = (
+/obj/machinery/light/red{
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
 "HM" = (
 /obj/machinery/light{
 	dir = 8
@@ -2347,6 +4549,16 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/facility_hallway/manager)
+"HT" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/structure/sigsystem/tower{
+	dir = 8;
+	signal_code = 55
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "HY" = (
 /obj/machinery/computer/camera_advanced/manager/sephirah,
 /turf/open/floor/carpet/green,
@@ -2384,10 +4596,22 @@
 /obj/effect/turf_decal/siding/green,
 /turf/open/floor/carpet/green,
 /area/facility_hallway/manager)
+"Ir" = (
+/obj/machinery/door/poddoor/shutters/indestructible{
+	id = "foundryaccess";
+	lockpickable = 0
+	},
+/obj/structure/sigsystem/activator,
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
 "Iu" = (
 /obj/machinery/cryopod,
 /turf/open/floor/plasteel/white,
 /area/facility_hallway/manager)
+"Iv" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/facility,
+/area/city/outskirtsfactory)
 "Iw" = (
 /obj/item/toy/plush/lisa,
 /obj/structure/table/wood/fancy/orange,
@@ -2402,6 +4626,12 @@
 	},
 /turf/open/floor/facility/dark,
 /area/facility_hallway/manager)
+"IB" = (
+/obj/effect/turf_decal/siding/green{
+	dir = 1
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
 "IC" = (
 /obj/effect/turf_decal/tile{
 	color = "#111111";
@@ -2415,6 +4645,13 @@
 /obj/structure/table/wood/fancy/black,
 /turf/open/floor/carpet/green,
 /area/facility_hallway/manager)
+"IF" = (
+/obj/machinery/door/airlock/grunge{
+	name = "manager's private quarters";
+	req_access_txt = "20"
+	},
+/turf/open/floor/wood,
+/area/department_main/manager)
 "IK" = (
 /obj/structure/filingcabinet/wawinfo{
 	pixel_x = -10
@@ -2432,6 +4669,10 @@
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"IN" = (
+/obj/structure/sigsystem/connector,
+/turf/closed/indestructible/rock,
+/area/city/outskirtsfactory)
 "IP" = (
 /obj/effect/turf_decal/tile{
 	color = "#111111";
@@ -2461,11 +4702,68 @@
 	},
 /turf/open/floor/carpet/black,
 /area/facility_hallway/manager)
+"Ja" = (
+/obj/machinery/conveyor/auto{
+	dir = 1;
+	resistance_flags = 64;
+	tamperproof = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
+"Jb" = (
+/obj/structure/table/wood,
+/obj/item/clothing/suit/apron/chef,
+/obj/item/clothing/head/chefhat,
+/obj/machinery/light,
+/turf/open/floor/wood,
+/area/department_main/manager)
 "Jc" = (
 /obj/structure/sign/ordealmonitor{
 	pixel_y = -32
 	},
 /turf/open/floor/plasteel/dark,
+/area/facility_hallway/manager)
+"Je" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	resistance_flags = 64;
+	lockpickable = 0
+	},
+/obj/structure/sigsystem/activator,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"Jf" = (
+/obj/machinery/light/small/red{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
+"Jj" = (
+/obj/item/bedsheet/dorms,
+/obj/structure/bed,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/department_main/manager)
+"Jr" = (
+/obj/machinery/door/poddoor/shutters/window{
+	lockpickable = 0;
+	resistance_flags = 64
+	},
+/obj/structure/sigsystem/activator,
+/obj/effect/turf_decal/siding/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/red,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
+"JA" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/machinery/stonkmarket,
+/obj/structure/table/wood,
+/turf/open/floor/wood,
 /area/facility_hallway/manager)
 "JH" = (
 /obj/effect/turf_decal/tile{
@@ -2487,6 +4785,15 @@
 /obj/item/clothing/head/helmet/danteh,
 /turf/open/floor/plasteel/showroomfloor,
 /area/facility_hallway/manager)
+"JQ" = (
+/obj/machinery/conveyor/auto{
+	dir = 8;
+	resistance_flags = 64;
+	tamperproof = 1
+	},
+/obj/machinery/light/small,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "JS" = (
 /obj/effect/turf_decal/tile{
 	color = "#111111";
@@ -2511,22 +4818,41 @@
 	},
 /turf/open/floor/carpet/black,
 /area/facility_hallway/manager)
+"JV" = (
+/obj/structure/sigsystem/connector{
+	dir = 4
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
 "JY" = (
-/obj/structure/table,
-/obj/item/paper_bin,
-/obj/item/pen/fourcolor,
+/obj/structure/chair/sofa/corp/left{
+	dir = 4
+	},
 /turf/open/floor/carpet/red,
 /area/facility_hallway/manager)
-"Kh" = (
-/obj/structure/table/glass,
-/obj/item/storage/bag/chemistry,
-/turf/open/floor/plasteel/white,
-/area/facility_hallway/manager)
-"Kl" = (
-/obj/machinery/computer/camera_advanced/manager/representative{
-	dir = 4;
-	name = "discipinary camera console"
+"Kd" = (
+/obj/structure/railing{
+	dir = 10
 	},
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
+"Kg" = (
+/obj/effect/decal/cleanable/blood/footprints,
+/obj/machinery/door/poddoor/shutters/indestructible{
+	lockpickable = 0
+	},
+/obj/structure/sigsystem/activator,
+/obj/structure/sigsystem/connector,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"Kk" = (
+/obj/structure/sigsystem/announcer{
+	message_range = 5;
+	message = "Unauthorized access detected. Door opening delayed."
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
+"Kl" = (
 /obj/machinery/light{
 	dir = 1
 	},
@@ -2535,6 +4861,61 @@
 "Ks" = (
 /turf/open/floor/carpet/royalblack,
 /area/facility_hallway/manager)
+"Kx" = (
+/obj/structure/sigsystem/connector{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
+"KA" = (
+/obj/machinery/door/poddoor/shutters/indestructible{
+	lockpickable = 0;
+	resistance_flags = 64
+	},
+/obj/structure/sigsystem/activator,
+/obj/structure/sigsystem/connector/split,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
+"KD" = (
+/obj/machinery/door/poddoor/shutters/indestructible{
+	lockpickable = 0;
+	resistance_flags = 64;
+	id = "furnaceaccess"
+	},
+/obj/structure/sigsystem/activator,
+/obj/structure/sigsystem/connector{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
+"KM" = (
+/obj/structure/table/wood,
+/obj/item/flashlight/lamp,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/carpet/royalblack,
+/area/department_main/manager)
+"KR" = (
+/obj/machinery/light/small/red{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/green{
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"KW" = (
+/obj/effect/landmark/salesspawn_extra,
+/turf/closed/indestructible/reinforced,
+/area/department_main/manager)
+"Lc" = (
+/obj/structure/chair/wood{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/department_main/manager)
 "Ld" = (
 /obj/structure/sink{
 	dir = 8;
@@ -2545,6 +4926,24 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/facility_hallway/manager)
+"Li" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/structure/lootcrate/tres,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
+"Lj" = (
+/obj/effect/decal/cleanable/blood/gibs/old,
+/obj/machinery/light/small/red{
+	dir = 4
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"Lp" = (
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "Lr" = (
 /obj/structure/table/wood/fancy/royalblack,
 /obj/item/toy/plush/hokma,
@@ -2557,6 +4956,18 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/facility_hallway/manager)
+"Lv" = (
+/obj/machinery/computer/camera_advanced/manager/sephirah{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/department_main/manager)
+"Ly" = (
+/obj/structure/sigsystem/connector{
+	dir = 8
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
 "LA" = (
 /obj/effect/turf_decal/siding/blue{
 	color = "#3234B9";
@@ -2577,6 +4988,14 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/facility_hallway/manager)
+"LF" = (
+/obj/machinery/light,
+/obj/machinery/vending/snack/green,
+/turf/open/floor/plasteel,
+/area/department_main/manager)
+"LG" = (
+/turf/open/chasm,
+/area/city/outskirtsfactory)
 "LK" = (
 /obj/machinery/door/airlock/public/glass{
 	max_integrity = 250000000;
@@ -2585,6 +5004,20 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/facility_hallway/manager)
+"LN" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood/footprints,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
+"LO" = (
+/obj/structure/chair/wood{
+	dir = 4
+	},
+/obj/machinery/light,
+/turf/open/floor/wood,
+/area/department_main/manager)
 "LR" = (
 /turf/open/floor/plasteel/elevatorshaft,
 /area/facility_hallway/manager)
@@ -2598,6 +5031,40 @@
 /obj/machinery/holopad/secure,
 /turf/open/floor/carpet/royalblack,
 /area/facility_hallway/manager)
+"LW" = (
+/obj/structure/sigsystem/pressure_plate{
+	dir = 1;
+	mobs_only = 1
+	},
+/obj/effect/turf_decal/siding/red{
+	dir = 4
+	},
+/turf/open/floor/circuit/red,
+/area/city/outskirtsfactory)
+"Ma" = (
+/obj/effect/turf_decal/caution/stand_clear/red{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/city/outskirtsfactory)
+"Ml" = (
+/obj/structure/chair/plastic{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/department_main/manager)
+"Mn" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	resistance_flags = 64;
+	lockpickable = 0
+	},
+/obj/structure/sigsystem/activator,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
+"Mq" = (
+/obj/effect/decal/cleanable/blood/drip,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "Mw" = (
 /obj/machinery/door/airlock/public/glass{
 	max_integrity = 250000000;
@@ -2606,9 +5073,26 @@
 	},
 /turf/open/floor/facility/dark,
 /area/facility_hallway/manager)
+"Mx" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/structure/sigsystem/tower{
+	signal_code = 33;
+	dir = 1
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "MA" = (
 /turf/open/floor/plasteel/showroomfloor,
 /area/facility_hallway/manager)
+"MC" = (
+/obj/machinery/light/red{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
 "ME" = (
 /obj/effect/turf_decal/tile{
 	color = "#111111";
@@ -2627,6 +5111,13 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/facility_hallway/manager)
+"MP" = (
+/obj/structure/sigsystem/tower{
+	dir = 8;
+	signal_code = 53
+	},
+/turf/closed/indestructible/rock,
+/area/city/outskirtsfactory)
 "MS" = (
 /obj/structure/curtain,
 /obj/machinery/shower,
@@ -2642,6 +5133,15 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/facility_hallway/manager)
+"MW" = (
+/obj/effect/turf_decal/siding/thinplating/light{
+	dir = 9
+	},
+/obj/machinery/mech_bay_recharge_port{
+	resistance_flags = 64
+	},
+/turf/open/floor/facility,
+/area/city/outskirtsfactory)
 "Na" = (
 /obj/machinery/door/window/brigdoor/southleft{
 	dir = 1
@@ -2652,6 +5152,33 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/facility_hallway/manager)
+"Nb" = (
+/obj/structure/sigsystem/tower/button{
+	pixel_y = 27;
+	signal_code = 26
+	},
+/obj/structure/sigsystem/announcer{
+	message_range = 5;
+	message = "Unauthorized access detected. Door opening delayed."
+	},
+/obj/effect/turf_decal/siding/red{
+	dir = 1
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"Nc" = (
+/obj/machinery/conveyor/auto{
+	dir = 4;
+	resistance_flags = 64;
+	tamperproof = 1
+	},
+/obj/machinery/conveyor/auto{
+	dir = 4;
+	resistance_flags = 64;
+	tamperproof = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
 "Nd" = (
 /obj/item/toy/plush/hod,
 /obj/structure/table/wood/fancy/green,
@@ -2662,17 +5189,35 @@
 /obj/structure/table/wood,
 /turf/open/floor/carpet/black,
 /area/facility_hallway/manager)
+"Nm" = (
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirtsfactory)
+"Nq" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/green,
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"Nv" = (
+/obj/effect/mob_spawn/human/corpse/charredskeleton,
+/turf/open/lava,
+/area/city/outskirtsfactory)
 "Nx" = (
 /obj/machinery/light{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/facility_hallway/manager)
+"Ny" = (
+/turf/open/floor/plasteel/elevatorshaft,
+/area/city/outskirtsfactory)
 "Nz" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/railing,
 /turf/open/floor/plasteel/dark,
 /area/facility_hallway/manager)
+"NC" = (
+/turf/open/floor/plasteel/elevatorshaft,
+/area/department_main/manager)
 "ND" = (
 /obj/structure/sign/departments/chemistry/pharmacy,
 /turf/closed/indestructible/reinforced,
@@ -2684,12 +5229,40 @@
 /obj/structure/table/glass,
 /turf/open/floor/carpet/cyan,
 /area/department_main/manager)
+"NH" = (
+/obj/structure/sign/directions/vault{
+	dir = 1
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
+"NI" = (
+/obj/structure/chair/office{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/facility_hallway/manager)
 "NK" = (
 /obj/machinery/door/airlock/wood{
 	name = "Representative's Room"
 	},
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"NV" = (
+/obj/machinery/light/small/red{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/green{
+	dir = 8
+	},
+/mob/living/simple_animal/hostile/ordeal/green_bot_rocket,
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"NY" = (
+/obj/structure/chair/plastic{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/department_main/manager)
 "Oo" = (
 /obj/structure/table/wood/fancy/orange,
 /obj/item/toy/katana,
@@ -2699,6 +5272,11 @@
 	},
 /turf/open/floor/carpet/orange,
 /area/department_main/manager)
+"Ot" = (
+/obj/effect/turf_decal/siding/thinplating/light,
+/mob/living/simple_animal/hostile/ordeal/green_bot_big,
+/turf/open/floor/facility,
+/area/city/outskirtsfactory)
 "Ou" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 4
@@ -2714,16 +5292,53 @@
 /obj/item/clothing/glasses/monocle,
 /turf/open/floor/carpet/black,
 /area/facility_hallway/manager)
+"Oy" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/lootcrate/money,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "OF" = (
 /obj/item/kirbyplants/random,
 /turf/open/floor/facility/dark,
 /area/facility_hallway/manager)
+"OH" = (
+/obj/structure/railing/corner,
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/turf_decal/siding/red/corner{
+	dir = 1
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
+"OO" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/effect/turf_decal,
+/turf/open/floor/plasteel/dark,
+/area/facility_hallway/manager)
+"OV" = (
+/obj/structure/destructible/cult/forge{
+	resistance_flags = 64;
+	desc = "A forge used in crafting various parts.";
+	name = "forge"
+	},
+/obj/machinery/light,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
 "OZ" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Arcade"
 	},
 /turf/open/floor/facility/dark,
 /area/facility_hallway/manager)
+"Pc" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/blood/gibs/limb,
+/obj/effect/turf_decal/siding/green{
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
 "Pe" = (
 /obj/item/modular_computer/laptop/preset/civilian,
 /obj/structure/table/glass,
@@ -2738,6 +5353,14 @@
 	},
 /turf/open/floor/wood,
 /area/department_main/manager)
+"Pu" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	resistance_flags = 64;
+	lockpickable = 0
+	},
+/obj/structure/sigsystem/activator,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "Pv" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -2747,6 +5370,20 @@
 	},
 /turf/open/floor/wood,
 /area/department_main/manager)
+"Pz" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/green{
+	dir = 8
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"PA" = (
+/obj/effect/turf_decal/siding/thinplating/light{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/oil/slippery,
+/turf/open/floor/facility,
+/area/city/outskirtsfactory)
 "PK" = (
 /obj/machinery/requests_console{
 	announcementConsole = 1;
@@ -2759,6 +5396,37 @@
 /area/facility_hallway/manager)
 "PN" = (
 /obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/department_main/manager)
+"PP" = (
+/obj/machinery/light/small/red{
+	dir = 8
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"PR" = (
+/obj/machinery/light/red{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"PU" = (
+/obj/effect/turf_decal/siding/thinplating/light{
+	dir = 4
+	},
+/obj/machinery/recharge_station{
+	resistance_flags = 64
+	},
+/turf/open/floor/facility,
+/area/city/outskirtsfactory)
+"Qd" = (
+/obj/structure/table/wood,
+/obj/item/storage/fancy/candle_box,
+/obj/item/lighter,
+/obj/machinery/light{
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -2787,12 +5455,36 @@
 	},
 /turf/open/floor/wood,
 /area/department_main/manager)
+"Qn" = (
+/obj/machinery/door/poddoor/shutters/indestructible{
+	lockpickable = 0;
+	resistance_flags = 64
+	},
+/obj/structure/sigsystem/activator,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"Qq" = (
+/obj/machinery/light,
+/obj/structure/table/wood,
+/obj/item/reagent_containers/food/drinks/bottle/champagne,
+/turf/open/floor/wood,
+/area/department_main/manager)
 "Qt" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 5
 	},
 /turf/open/floor/carpet/black,
 /area/department_main/manager)
+"Qu" = (
+/obj/machinery/door/poddoor/shutters/indestructible{
+	lockpickable = 0
+	},
+/obj/structure/sigsystem/activator,
+/obj/structure/sigsystem/connector{
+	dir = 8
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "Qy" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -2805,6 +5497,17 @@
 	},
 /turf/open/floor/wood,
 /area/department_main/manager)
+"QC" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/door/poddoor/shutters/indestructible{
+	lockpickable = 0
+	},
+/obj/structure/sigsystem/activator,
+/obj/structure/sigsystem/connector{
+	dir = 8
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "QG" = (
 /obj/machinery/door/airlock/wood/glass{
 	name = "Manager's Office"
@@ -2845,6 +5548,16 @@
 	},
 /turf/open/floor/carpet/black,
 /area/facility_hallway/manager)
+"QS" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/item/food/meatclown{
+	pixel_y = 3
+	},
+/obj/structure/table/reinforced,
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/department_main/manager)
 "QU" = (
 /obj/effect/turf_decal/tile{
 	color = "#111111";
@@ -2861,23 +5574,84 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/facility_hallway/manager)
+"QW" = (
+/obj/machinery/light/red{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
+"QZ" = (
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/red/corner{
+	dir = 4
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "Rj" = (
 /obj/effect/spawner/randomsnackvend,
 /turf/open/floor/facility/dark,
 /area/facility_hallway/manager)
+"Rm" = (
+/obj/machinery/light,
+/obj/structure/table/wood,
+/obj/machinery/computer/security/wooden_tv,
+/obj/machinery/light,
+/turf/open/floor/wood,
+/area/department_main/manager)
 "Rn" = (
-/obj/structure/table,
-/turf/open/floor/carpet/red,
-/area/facility_hallway/manager)
+/obj/effect/light_emitter{
+	light_power = 4;
+	light_range = 25;
+	set_cap = 3;
+	set_luminosity = 24
+	},
+/turf/open/floor/plating/asteroid/basalt,
+/area/city/outskirtsfactory)
 "Ro" = (
 /obj/structure/chair/plastic,
 /turf/open/floor/facility/dark,
 /area/facility_hallway/manager)
+"Ru" = (
+/obj/structure/sign/directions/evac{
+	resistance_flags = 64
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
+"Rv" = (
+/obj/effect/turf_decal/siding/thinplating/light{
+	dir = 10
+	},
+/obj/machinery/mech_bay_recharge_port{
+	resistance_flags = 64
+	},
+/turf/open/floor/facility,
+/area/city/outskirtsfactory)
 "Rw" = (
 /obj/structure/chair/stool,
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"Rx" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"RA" = (
+/obj/structure/flora/rock,
+/turf/open/floor/plating/asteroid/basalt,
+/area/city/outskirtsfactory)
+"RD" = (
+/obj/structure/table/wood,
+/turf/open/floor/wood,
+/area/department_main/manager)
+"RI" = (
+/mob/living/simple_animal/hostile/ordeal/green_bot/fast,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "RK" = (
 /obj/structure/table/glass,
 /obj/item/storage/pill_bottle/psicodine,
@@ -2886,6 +5660,18 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/facility_hallway/manager)
+"RP" = (
+/obj/effect/turf_decal/siding/red/corner{
+	dir = 1
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"RV" = (
+/obj/structure/sigsystem/connector{
+	dir = 4
+	},
+/turf/closed/indestructible/rock,
+/area/city/outskirtsfactory)
 "Sd" = (
 /obj/effect/turf_decal/tile{
 	color = "#111111";
@@ -2909,6 +5695,12 @@
 	},
 /turf/open/floor/carpet/green,
 /area/facility_hallway/manager)
+"Sr" = (
+/obj/structure/sigsystem/connector{
+	dir = 8
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "Sx" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 10
@@ -2916,6 +5708,12 @@
 /obj/item/kirbyplants/fullysynthetic,
 /turf/open/floor/carpet/black,
 /area/facility_hallway/manager)
+"Sy" = (
+/obj/effect/turf_decal/siding/blue{
+	dir = 5
+	},
+/turf/open/floor/carpet/cyan,
+/area/department_main/manager)
 "SA" = (
 /obj/machinery/light{
 	dir = 1
@@ -2923,6 +5721,28 @@
 /obj/structure/chair/sofa/corp,
 /turf/open/floor/facility/dark,
 /area/facility_hallway/manager)
+"SD" = (
+/obj/structure/sigsystem/pressure_plate{
+	dir = 1;
+	mobs_only = 1
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirtsfactory)
+"SH" = (
+/obj/machinery/griddle,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/department_main/manager)
+"SI" = (
+/obj/machinery/conveyor/auto{
+	dir = 1;
+	resistance_flags = 64;
+	tamperproof = 1
+	},
+/turf/open/lava,
+/area/city/outskirtsfactory)
 "SJ" = (
 /obj/effect/turf_decal/tile{
 	color = "#111111";
@@ -2952,14 +5772,63 @@
 /obj/machinery/vending/dinnerware,
 /turf/open/floor/plasteel/white,
 /area/facility_hallway/manager)
+"SQ" = (
+/obj/machinery/light/small/red{
+	dir = 8
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
+"SR" = (
+/obj/structure/lootcrate/k_corp,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
+"SU" = (
+/obj/machinery/computer/abnormality_auxiliary{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/department_main/manager)
 "SZ" = (
 /obj/machinery/light/floor,
 /turf/open/floor/carpet/black,
 /area/facility_hallway/manager)
-"Tu" = (
-/obj/machinery/computer/extraction_cargo/chemistry,
-/turf/open/floor/plasteel/white,
-/area/facility_hallway/manager)
+"Tb" = (
+/obj/structure/sigsystem/announcer{
+	message_range = 5;
+	message = "Unauthorized access detected. Engaging temporary lockdown."
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
+"Tf" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"Tk" = (
+/obj/structure/sigsystem/tower{
+	signal_code = 05;
+	dir = 4
+	},
+/obj/structure/sigsystem/tower/button{
+	signal_code = 05
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
+"To" = (
+/obj/structure/lootcrate/tres,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
+"Tp" = (
+/obj/structure/lootcrate/hana,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
+"Tq" = (
+/obj/effect/turf_decal/siding/green/corner{
+	dir = 8
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirtsfactory)
 "Ty" = (
 /obj/effect/turf_decal/siding/white/corner{
 	dir = 8
@@ -2994,12 +5863,34 @@
 "TO" = (
 /turf/open/floor/plasteel/dark,
 /area/facility_hallway/manager)
+"TX" = (
+/obj/structure/fence/end{
+	resistance_flags = 64
+	},
+/turf/open/floor/plating/asteroid/basalt,
+/area/city/outskirtsfactory)
+"TY" = (
+/obj/item/caution{
+	pixel_y = 7;
+	pixel_x = -3
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
 "TZ" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"Ua" = (
+/obj/machinery/light/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes{
+	dir = 1
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "Ui" = (
 /obj/effect/turf_decal/tile{
 	color = "#111111";
@@ -3022,6 +5913,14 @@
 	},
 /turf/open/floor/carpet/black,
 /area/facility_hallway/manager)
+"Uq" = (
+/obj/effect/mob_spawn/human/corpse/charredskeleton,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
+"UA" = (
+/obj/structure/sigsystem/connector,
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
 "UD" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
@@ -3039,14 +5938,59 @@
 /obj/structure/chair/stool,
 /turf/open/floor/carpet/black,
 /area/facility_hallway/manager)
+"UN" = (
+/obj/structure/sigsystem/tower{
+	dir = 1;
+	signal_code = 01
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "UO" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 8
 	},
 /turf/open/floor/wood,
 /area/department_main/manager)
+"UW" = (
+/obj/effect/turf_decal/siding/thinplating/light,
+/turf/open/floor/facility,
+/area/city/outskirtsfactory)
 "Vb" = (
 /turf/open/floor/carpet/black,
+/area/facility_hallway/manager)
+"Vc" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/red/corner{
+	dir = 8
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"Ve" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
+"Vf" = (
+/obj/machinery/door/poddoor/shutters/window{
+	lockpickable = 0;
+	resistance_flags = 64
+	},
+/obj/structure/sigsystem/activator,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
+"Vj" = (
+/obj/machinery/computer/shuttle/mining{
+	name = "elevator console";
+	possible_destinations = "epsilon_command";
+	shuttleId = "epsilon"
+	},
+/obj/machinery/light/cold/no_nightlight{
+	dir = 1;
+	brightness = 16
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
 /area/facility_hallway/manager)
 "Vl" = (
 /obj/structure/chair/comfy/brown{
@@ -3060,19 +6004,99 @@
 	},
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"Vu" = (
+/mob/living/simple_animal/hostile/ordeal/grungeon_shielder,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sigsystem/tower/button{
+	pixel_y = 27;
+	signal_code = 01
+	},
+/obj/effect/turf_decal/siding/red/end{
+	dir = 4
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "Vw" = (
 /turf/open/floor/wood,
 /area/department_main/manager)
+"Vx" = (
+/turf/open/floor/mineral/gold,
+/area/city/outskirtsfactory)
+"VC" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sigsystem/connector{
+	dir = 4;
+	happens_once = 1
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"VD" = (
+/obj/machinery/door/poddoor{
+	id = "sephirah";
+	name = "external blast door"
+	},
+/turf/closed/indestructible/fakeglass,
+/area/department_main/manager)
+"VE" = (
+/obj/machinery/conveyor/auto{
+	dir = 1;
+	resistance_flags = 64;
+	tamperproof = 1
+	},
+/obj/structure/plasticflaps/opaque{
+	resistance_flags = 64
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "VJ" = (
 /obj/item/paper_bin,
 /obj/item/pen/fourcolor,
 /obj/structure/table/glass,
 /turf/open/floor/wood,
 /area/department_main/manager)
+"VK" = (
+/obj/machinery/computer/security/telescreen{
+	network = list("ss13");
+	pixel_x = -24;
+	pixel_y = 45
+	},
+/obj/machinery/computer/security/telescreen{
+	network = list("ss13");
+	pixel_x = -24;
+	pixel_y = 33
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	color = "#3234B9";
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/blue{
+	color = "#3234B9"
+	},
+/obj/machinery/computer/crew,
+/turf/open/floor/plasteel/sepia,
+/area/department_main/manager)
 "VL" = (
 /obj/structure/chair/comfy/beige,
 /turf/open/floor/carpet/green,
 /area/facility_hallway/manager)
+"VM" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sigsystem/connector{
+	happens_once = 1
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"VP" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/sigsystem/connector,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "VZ" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "officer lounge"
@@ -3085,6 +6109,13 @@
 	},
 /turf/open/floor/carpet/green,
 /area/facility_hallway/manager)
+"Wc" = (
+/obj/structure/sigsystem/connector{
+	delay_time = 100;
+	dir = 4
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
 "Wf" = (
 /obj/structure/chair/sofa/corp{
 	dir = 4
@@ -3115,12 +6146,9 @@
 /turf/closed/indestructible/reinforced,
 /area/facility_hallway/manager)
 "WB" = (
-/obj/structure/table/glass,
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/item/storage/box/pillbottles,
-/obj/item/storage/box/pillbottles,
 /turf/open/floor/plasteel/white,
 /area/facility_hallway/manager)
 "WI" = (
@@ -3132,6 +6160,26 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/facility_hallway/manager)
+"WK" = (
+/obj/structure/table/wood,
+/obj/machinery/chem_dispenser/drinks{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/department_main/manager)
+"WM" = (
+/obj/machinery/door/poddoor,
+/obj/machinery/door/poddoor{
+	resistance_flags = 64
+	},
+/obj/structure/sigsystem/connector,
+/obj/structure/sigsystem/activator,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"WN" = (
+/obj/effect/decal/cleanable/blood/gibs/limb,
+/turf/open/floor/plating/asteroid/basalt,
+/area/city/outskirtsfactory)
 "WS" = (
 /obj/effect/turf_decal/siding/blue{
 	dir = 8
@@ -3147,10 +6195,27 @@
 	},
 /turf/open/floor/carpet/cyan,
 /area/department_main/manager)
-"WX" = (
-/obj/structure/closet/secure_closet/discipline,
-/turf/open/floor/carpet/red,
-/area/facility_hallway/manager)
+"WV" = (
+/turf/open/floor/carpet/cyan,
+/area/department_main/manager)
+"Xg" = (
+/obj/machinery/light/small/red{
+	dir = 8
+	},
+/obj/structure/sigsystem/connector{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirtsfactory)
+"Xi" = (
+/obj/effect/turf_decal/siding/blue,
+/obj/machinery/button/door/indestructible{
+	id = "facilitylockdown";
+	name = "Facility Lockdown button";
+	pixel_y = -25
+	},
+/turf/open/floor/carpet/cyan,
+/area/department_main/manager)
 "Xl" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 7
@@ -3187,6 +6252,12 @@
 /obj/effect/turf_decal/siding/blue{
 	dir = 5
 	},
+/obj/machinery/button/door/indestructible{
+	id = "disc_blast";
+	name = "External Elevator Opening";
+	pixel_y = -25;
+	req_access_txt = "20"
+	},
 /turf/open/floor/carpet/cyan,
 /area/department_main/manager)
 "Xs" = (
@@ -3200,6 +6271,23 @@
 /obj/structure/table/glass,
 /turf/open/floor/wood,
 /area/department_main/manager)
+"Xv" = (
+/obj/structure/sigsystem/pressure_plate{
+	dir = 4;
+	mobs_only = 1
+	},
+/obj/structure/sigsystem/connector{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
+"Xw" = (
+/obj/structure/sigsystem/connector,
+/obj/effect/turf_decal/siding/red{
+	dir = 4
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "Xy" = (
 /turf/open/floor/plasteel/white,
 /area/facility_hallway/manager)
@@ -3236,6 +6324,9 @@
 /obj/item/toy/plush/pierre,
 /turf/open/floor/plasteel/white,
 /area/facility_hallway/manager)
+"XO" = (
+/turf/closed/indestructible/rock,
+/area/city/outskirtsfactory)
 "XQ" = (
 /obj/structure/chair/wood{
 	dir = 4
@@ -3265,6 +6356,21 @@
 	},
 /turf/open/floor/facility/dark,
 /area/facility_hallway/manager)
+"XX" = (
+/obj/machinery/conveyor/auto{
+	dir = 4;
+	resistance_flags = 64;
+	tamperproof = 1
+	},
+/obj/structure/railing{
+	resistance_flags = 115;
+	name = "wing-grade railing";
+	desc = "Indestructible railing created in a vain attempt of fool-proofing the wing's workplace.";
+	mouse_opacity = 0;
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
 "XZ" = (
 /obj/effect/turf_decal/siding/blue{
 	color = "#3234B9";
@@ -3288,6 +6394,13 @@
 /obj/effect/turf_decal/siding/wood/corner,
 /turf/open/floor/wood,
 /area/department_main/manager)
+"Ys" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood/gibs/limb,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "Yv" = (
 /obj/structure/table/wood/fancy/royalblack,
 /obj/structure/railing{
@@ -3309,6 +6422,16 @@
 	},
 /turf/open/floor/wood,
 /area/department_main/manager)
+"Yx" = (
+/obj/structure/sigsystem/tower{
+	dir = 1;
+	signal_code = 26
+	},
+/obj/effect/turf_decal/siding/red/corner{
+	dir = 4
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "Yy" = (
 /obj/effect/turf_decal/tile{
 	color = "#111111";
@@ -3321,6 +6444,13 @@
 	},
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"YD" = (
+/obj/machinery/light/red{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/facility/dark,
+/area/city/outskirtsfactory)
 "YE" = (
 /obj/machinery/light{
 	dir = 8
@@ -3329,6 +6459,17 @@
 /obj/structure/railing,
 /turf/open/floor/plasteel/dark,
 /area/facility_hallway/manager)
+"YG" = (
+/obj/structure/sigsystem/tower{
+	dir = 8;
+	signal_code = 39
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"YJ" = (
+/mob/living/simple_animal/hostile/ordeal/green_bot,
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
 "YK" = (
 /obj/structure/chair/sofa/corp/right,
 /turf/open/floor/facility/dark,
@@ -3345,16 +6486,26 @@
 "YQ" = (
 /turf/closed/indestructible/reinforced,
 /area/facility_hallway/manager)
-"YU" = (
-/obj/structure/filingcabinet/chestdrawer,
-/turf/open/floor/carpet/red,
-/area/facility_hallway/manager)
+"YR" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/effect/turf_decal/delivery/red,
+/obj/machinery/light/cold/no_nightlight{
+	brightness = 16
+	},
+/turf/open/floor/facility/white,
+/area/city/outskirtsfactory)
 "YW" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
 /obj/machinery/light/cold/no_nightlight,
 /turf/open/floor/wood,
+/area/department_main/manager)
+"YY" = (
+/obj/machinery/vending/cigarette,
+/turf/open/floor/plasteel,
 /area/department_main/manager)
 "Zc" = (
 /obj/effect/turf_decal/siding/wood{
@@ -3394,15 +6545,49 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/facility_hallway/manager)
+"Zf" = (
+/obj/structure/sigsystem/connector/split,
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
 "Zg" = (
 /obj/effect/turf_decal/siding/yellow{
 	dir = 4
 	},
 /turf/open/floor/carpet/royalblack,
 /area/department_main/manager)
+"Zh" = (
+/obj/machinery/light/red{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
 "Zi" = (
 /turf/open/floor/facility/dark,
 /area/facility_hallway/manager)
+"Zq" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/red{
+	dir = 8
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirtsfactory)
+"Zr" = (
+/obj/structure/sigsystem/tower{
+	dir = 8;
+	signal_code = 15
+	},
+/turf/closed/indestructible/rock,
+/area/city/outskirtsfactory)
+"Zt" = (
+/obj/structure/sigsystem/tower/button{
+	signal_code = 24;
+	signal_range = 3
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirtsfactory)
 "Zu" = (
 /obj/structure/chair/plastic{
 	dir = 4
@@ -3421,6 +6606,12 @@
 	},
 /turf/open/floor/facility/dark,
 /area/department_main/manager)
+"ZD" = (
+/obj/structure/sigsystem/connector{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirtsfactory)
 "ZF" = (
 /obj/structure/toilet{
 	dir = 8
@@ -3430,6 +6621,10 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/facility_hallway/manager)
+"ZH" = (
+/mob/living/simple_animal/hostile/ordeal/green_bot_big,
+/turf/open/floor/plating,
+/area/city/outskirtsfactory)
 "ZI" = (
 /obj/structure/filingcabinet/zayininfo{
 	pixel_x = -10
@@ -3440,6 +6635,13 @@
 	},
 /turf/open/floor/carpet/green,
 /area/facility_hallway/manager)
+"ZT" = (
+/obj/structure/sigsystem/announcer{
+	message_range = 5;
+	message = "Unauthorized access detected. Engaging temporary lockdown."
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
 "ZU" = (
 /obj/machinery/computer/abnormality_archive,
 /obj/effect/turf_decal/siding/green{
@@ -3461,6 +6663,161 @@
 /area/facility_hallway/manager)
 
 (1,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -3663,8 +7020,318 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 "}
 (3,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -3867,8 +7534,318 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 "}
 (5,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -4071,8 +8048,318 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 "}
 (7,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -4275,8 +8562,318 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 "}
 (9,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -4479,8 +9076,318 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 "}
 (11,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+Hg
+Hg
+Hg
+Hg
+Hg
+Hg
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -4683,8 +9590,318 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+Hg
+Ny
+Ny
+Ny
+Ny
+Ny
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 "}
 (13,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+Hg
+Ny
+Ny
+Ny
+Ny
+Ny
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -4798,6 +10015,161 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+Hg
+Ny
+Ny
+Ny
+Ny
+GD
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -4889,6 +10261,161 @@ XL
 XL
 "}
 (15,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+Hg
+Ny
+Ny
+Ny
+Ny
+Ny
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -5002,6 +10529,161 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+Hg
+Ny
+Ny
+Ny
+Ny
+Ny
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -5093,6 +10775,161 @@ XL
 XL
 "}
 (17,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+Hg
+pG
+fv
+Ma
+fv
+YR
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -5206,6 +11043,161 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+Hg
+Hg
+Hg
+tW
+Hg
+Hg
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -5297,6 +11289,161 @@ XL
 XL
 "}
 (19,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+Hg
+vp
+vp
+vp
+vp
+vp
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -5410,6 +11557,161 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+Hg
+vp
+vp
+vp
+vp
+vp
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -5501,6 +11803,161 @@ XL
 XL
 "}
 (21,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+Nc
+Ja
+Ja
+Ja
+Ja
+Ja
+Ja
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+Hg
+vp
+vp
+vp
+vp
+vp
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -5614,6 +12071,161 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+co
+dF
+dF
+dF
+dF
+dF
+tb
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+Hg
+vp
+vp
+vp
+vp
+vp
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -5705,6 +12317,161 @@ XL
 XL
 "}
 (23,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+co
+dF
+XO
+XO
+XO
+dF
+gt
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+Hg
+vp
+vp
+vp
+vp
+vp
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -5818,6 +12585,161 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+da
+dF
+XO
+XO
+XO
+dF
+aP
+sr
+xM
+sr
+sr
+sr
+sr
+sr
+sr
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+Hg
+vp
+vp
+vp
+vp
+vp
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -5909,6 +12831,161 @@ XL
 XL
 "}
 (25,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+dF
+dF
+da
+dF
+dF
+XO
+XO
+dF
+aP
+sr
+sr
+sr
+sr
+sr
+sr
+xM
+sr
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+Hg
+vp
+vp
+vp
+vp
+vp
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -6022,6 +13099,161 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+Uq
+Ve
+co
+Ve
+dF
+XO
+XO
+dF
+aP
+sr
+sr
+sr
+sr
+sr
+sr
+sr
+sr
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+Hg
+vp
+vp
+vp
+vp
+vp
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -6113,6 +13345,161 @@ XL
 XL
 "}
 (27,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+Ve
+rm
+co
+OV
+dF
+dF
+dF
+dF
+aP
+sr
+sr
+sr
+sr
+sr
+sr
+sr
+sr
+dF
+dF
+dF
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+Hg
+vp
+vp
+vp
+vp
+vp
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -6226,6 +13613,161 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+oq
+rB
+oq
+oQ
+gv
+Ve
+ar
+TY
+GY
+pq
+vF
+pq
+vF
+XX
+Bv
+Bv
+Bv
+gQ
+VE
+xE
+dF
+dF
+dF
+dF
+Tk
+dF
+Kk
+dF
+dF
+dF
+aS
+xa
+aS
+aS
+aS
+aS
+TX
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+Hg
+vp
+vp
+vp
+vp
+vp
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -6317,6 +13859,161 @@ XL
 XL
 "}
 (29,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+wQ
+oq
+oq
+Ve
+KD
+oq
+Ve
+Ve
+tb
+oq
+Ve
+pJ
+Ve
+co
+pJ
+Ve
+oq
+dF
+dF
+iU
+dF
+dF
+dF
+Wc
+kX
+js
+de
+sk
+cb
+dF
+Li
+To
+Lp
+lv
+Lp
+Da
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+Hg
+vp
+vp
+Rn
+vp
+vp
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -6430,6 +14127,161 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+kZ
+DR
+Ve
+Ve
+KD
+jI
+Hr
+Ve
+GY
+mT
+yT
+mT
+mT
+co
+mT
+mT
+sq
+dF
+dF
+iU
+dF
+dF
+dF
+JV
+RI
+lB
+zr
+lB
+Fi
+cs
+Lp
+wq
+Lp
+Lp
+wq
+Lp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+Hg
+vp
+vp
+vp
+vp
+vp
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -6532,6 +14384,108 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+ah
+Ve
+oq
+oq
+eN
+dF
+dF
+dF
+aP
+sr
+Nv
+sr
+sr
+bH
+sr
+sr
+sr
+dF
+dF
+iU
+xE
+VE
+VE
+Fe
+EG
+Fi
+cU
+Fi
+lB
+cs
+wq
+ET
+qk
+Oy
+wq
+wq
+zK
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+Hg
+vp
+vp
+vp
+vp
+vp
+Hg
 XL
 XL
 XL
@@ -6556,6 +14510,59 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+YQ
+YQ
+YQ
+YQ
 YQ
 YQ
 YQ
@@ -6634,6 +14641,108 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+dF
+oq
+Ve
+dF
+dF
+XO
+XO
+dF
+aP
+SI
+SI
+SI
+SI
+SI
+sr
+xM
+sr
+dF
+dF
+JQ
+dF
+dF
+dF
+oD
+Ua
+ja
+cU
+Fi
+kb
+dF
+aS
+aS
+aS
+aS
+aS
+aS
+TX
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+Hg
+vp
+vp
+vp
+vp
+vp
+Hg
 XL
 XL
 XL
@@ -6658,6 +14767,59 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+YQ
+YQ
+YQ
+YQ
+YQ
+fd
+hY
+TO
 YQ
 sx
 yg
@@ -6736,6 +14898,108 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+oq
+oq
+dF
+XO
+XO
+XO
+dF
+sr
+sr
+xM
+sr
+sr
+Nv
+sr
+sr
+sr
+dF
+dF
+iU
+xE
+VE
+VE
+vI
+gS
+Fi
+cU
+lB
+dF
+dF
+dF
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+Hg
+vp
+vp
+vp
+vp
+vp
+Hg
 XL
 XL
 XL
@@ -6760,6 +15024,59 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+YQ
+LR
+LR
+ct
+LR
+LR
+OO
+TO
 YQ
 sW
 yp
@@ -6838,6 +15155,108 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+Ve
+oq
+dF
+XO
+XO
+XO
+dF
+dF
+eN
+dF
+dF
+dF
+eN
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+hX
+lB
+js
+js
+Vf
+Dd
+dF
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+Hg
+vp
+vp
+vp
+vp
+vp
+Hg
 XL
 XL
 XL
@@ -6862,6 +15281,59 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+YQ
+LR
+LR
+LR
+LR
+LR
+OO
+TO
 YQ
 YQ
 YQ
@@ -6940,6 +15412,149 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+IN
+IN
+IN
+UA
+eo
+Mn
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+mW
+oA
+dF
+Qn
+jP
+Qn
+dF
+dF
+dF
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+Hg
+vp
+vp
+vp
+vp
+vp
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -6969,11 +15584,23 @@ XL
 XL
 XL
 YQ
+LR
+LR
+LR
+LR
+LR
+eK
+TO
+TO
+TO
+py
+MU
+TO
 YQ
 Kl
 JY
-rO
-yO
+vM
+Ax
 HZ
 GA
 JT
@@ -6984,7 +15611,7 @@ YQ
 jj
 YM
 iO
-iO
+JA
 TA
 gC
 YQ
@@ -7042,6 +15669,149 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+MP
+Hv
+in
+lU
+Jf
+ZT
+vC
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+uZ
+vC
+pA
+Sr
+lB
+dF
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+Hg
+vp
+vp
+vp
+vp
+vp
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -7071,9 +15841,21 @@ XL
 XL
 XL
 YQ
-WX
-iU
-Rn
+LR
+LR
+LR
+LR
+LR
+OO
+TO
+TO
+TO
+py
+TO
+TO
+cE
+rO
+rO
 rO
 rO
 HZ
@@ -7144,6 +15926,149 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+zW
+Zr
+JV
+tD
+oq
+Ly
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+RV
+ry
+Tb
+gG
+lB
+wp
+dF
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+Hg
+vp
+vp
+vp
+vp
+vp
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -7173,12 +16098,24 @@ XL
 XL
 XL
 YQ
-YU
+LR
+LR
+LR
+LR
+LR
+OO
+TO
+TO
+TO
+py
+sg
+TO
+HZ
 rO
 rO
 rO
 rO
-iG
+cE
 Zi
 JT
 Vb
@@ -7246,6 +16183,108 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+dF
+JV
+Zf
+nI
+AE
+Ly
+dF
+dF
+dF
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+IN
+IN
+UA
+Db
+hN
+Je
+dF
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+Hg
+vp
+vp
+vp
+vp
+vp
+Hg
 XL
 XL
 XL
@@ -7269,6 +16308,59 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+YQ
+YQ
+YQ
+YQ
+YQ
+Vj
+lu
 Qf
 Qf
 Qf
@@ -7337,6 +16429,161 @@ XL
 XL
 "}
 (39,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+Fi
+VP
+Cd
+Xw
+Xw
+oh
+Ai
+lB
+Fi
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+mW
+Cc
+lB
+lB
+lB
+dF
+vp
+vp
+vp
+vp
+vp
+vp
+RA
+vp
+Rn
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+Hg
+vp
+vp
+vp
+vp
+vp
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -7450,6 +16697,161 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+lB
+lB
+jx
+dF
+dF
+dF
+vV
+Fi
+lB
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+sl
+ja
+wp
+dF
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+Hg
+vp
+vp
+vp
+vp
+vp
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -7541,6 +16943,161 @@ XL
 XL
 "}
 (41,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+Tf
+Fi
+AC
+dF
+lt
+dF
+xA
+ja
+zB
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+dF
+dF
+dF
+dF
+dF
+lB
+lB
+lB
+dF
+dF
+dF
+dF
+dF
+dF
+vp
+vp
+vp
+vp
+vp
+by
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+Hg
+vp
+vp
+Rn
+vp
+vp
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -7654,6 +17211,161 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+Fi
+lB
+jx
+dF
+CN
+dF
+vV
+lB
+lB
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+qN
+qN
+Eu
+jg
+qN
+qN
+qN
+qN
+qN
+yx
+qN
+qN
+rN
+dF
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+yC
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+Hg
+vp
+vp
+vp
+vp
+vp
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -7745,6 +17457,161 @@ XL
 XL
 "}
 (43,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+lB
+lB
+Vc
+yw
+yS
+Aa
+EV
+Fi
+lB
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+qN
+Cq
+xH
+xH
+vE
+rN
+qN
+qN
+rY
+Pc
+ij
+vE
+rN
+dF
+vp
+vp
+vp
+RA
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+Hg
+vp
+vp
+vp
+vp
+vp
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -7858,6 +17725,161 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+Fi
+Fi
+lB
+Fi
+AB
+lB
+Fi
+Fi
+lB
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+PR
+Nq
+dF
+dF
+IB
+rN
+rN
+qN
+mn
+dF
+dF
+IB
+Gv
+dF
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+Hg
+vp
+vp
+vp
+vp
+vp
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -7949,6 +17971,161 @@ XL
 XL
 "}
 (45,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+lB
+Fi
+lB
+nO
+DL
+DU
+lB
+lB
+lB
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+qN
+Nq
+dF
+dF
+IB
+Gb
+qN
+qN
+kM
+dF
+dF
+IB
+vL
+dF
+dF
+dF
+dF
+dF
+dF
+aS
+aS
+aS
+aS
+aS
+TX
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -8062,6 +18239,161 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+Tf
+ex
+Fi
+lL
+dF
+Nb
+aI
+Fi
+zB
+dF
+dF
+dF
+dF
+jH
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+qN
+Tq
+BE
+NV
+BF
+qN
+qN
+lA
+Tq
+yl
+aF
+Dy
+fZ
+dF
+dF
+pZ
+zg
+PP
+lB
+vp
+qA
+vp
+vp
+vp
+vp
+qA
+vp
+WN
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -8083,7 +18415,7 @@ Qf
 gX
 or
 Vw
-ug
+VD
 fJ
 lE
 rl
@@ -8153,6 +18485,161 @@ XL
 XL
 "}
 (47,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+dF
+dF
+DF
+Xg
+ZD
+ZD
+Xg
+ZD
+vC
+vC
+vC
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+Fi
+Fi
+lB
+vo
+yw
+xQ
+lB
+ja
+VM
+kN
+Fi
+Fi
+lB
+lB
+Fi
+lB
+qN
+qN
+SQ
+qN
+rN
+Ir
+qN
+qN
+qN
+rN
+qN
+rN
+qN
+qN
+Rx
+qN
+qN
+rN
+rN
+Kg
+mY
+Fi
+gA
+fC
+lB
+vp
+vp
+vp
+np
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -8266,6 +18753,161 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+dF
+Nm
+Nm
+Nm
+oq
+oq
+oq
+oq
+Nm
+Nm
+Nm
+Ly
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+lB
+Fi
+iW
+DL
+nl
+nh
+Yx
+Fi
+YG
+kN
+lB
+Fi
+lB
+Fi
+lB
+Fi
+rN
+qN
+rN
+rN
+xs
+xx
+qN
+qN
+rN
+rN
+rN
+qN
+cI
+qN
+qN
+rN
+fZ
+rN
+qN
+QC
+wD
+fC
+fC
+iu
+lB
+vp
+vp
+vp
+vp
+vp
+vp
+cS
+vp
+lC
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+Hg
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -8368,6 +19010,161 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+dF
+qy
+Nm
+oq
+oq
+oq
+dF
+dF
+oq
+oq
+oq
+Nm
+lN
+dF
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+YJ
+Fi
+AC
+dF
+Jr
+dF
+xA
+sk
+lB
+Qn
+lB
+lB
+Fi
+Fi
+uO
+lB
+qN
+qN
+qN
+rN
+CU
+Ir
+qN
+qN
+qN
+qN
+qN
+qN
+vZ
+rN
+fX
+qN
+qN
+qN
+qN
+Qu
+Fi
+gA
+Fi
+lB
+lB
+vp
+vp
+vp
+vp
+vp
+cS
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+Hg
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -8400,8 +19197,8 @@ QL
 Yw
 Qf
 Qf
-Qf
-YQ
+KW
+fx
 ND
 wz
 JT
@@ -8470,6 +19267,161 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+dF
+Nm
+Nm
+oq
+oq
+Nm
+Nm
+dF
+dF
+Nm
+Nm
+oq
+oq
+lN
+Nm
+dF
+UA
+UA
+UA
+UA
+UA
+UA
+UA
+UA
+UA
+UA
+UA
+UA
+JV
+dF
+lB
+lB
+jx
+dF
+Vu
+dF
+xA
+Fi
+lB
+CC
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+Ru
+dF
+Zt
+dF
+Gv
+CL
+xH
+qx
+fj
+qN
+qN
+oK
+rY
+KR
+xH
+vE
+qN
+wl
+EY
+sa
+cp
+Lj
+lB
+WN
+qA
+vp
+vp
+vp
+vp
+qA
+ml
+vp
+vp
+Rn
+lC
+vp
+vp
+vp
+vp
+vp
+vp
+Hg
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -8501,9 +19453,9 @@ Qf
 Qf
 Qf
 Qf
-if
-WB
 rD
+WB
+Xy
 HZ
 jn
 JT
@@ -8572,6 +19524,160 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+Nm
+Nm
+oq
+oq
+Nm
+Nm
+oq
+QW
+oq
+oq
+Nm
+Nm
+oq
+BW
+Nm
+no
+Ly
+LG
+LG
+gP
+LG
+ZH
+LG
+gP
+LG
+ZH
+LG
+LG
+JV
+dF
+Tf
+Fi
+AC
+dF
+dF
+dF
+vV
+lB
+Gt
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+rN
+Nq
+dF
+dF
+ig
+qN
+AQ
+qN
+kM
+dF
+dF
+IB
+rN
+dF
+dF
+dF
+dF
+dF
+dF
+aS
+aS
+aS
+aS
+aS
+TX
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+Hg
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -8602,9 +19708,10 @@ XL
 XL
 XL
 YQ
-Tu
 fx
-Kh
+rA
+Xy
+Xy
 Xy
 HZ
 Zi
@@ -8674,6 +19781,160 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+Nm
+oq
+oq
+Nm
+Nm
+oq
+oq
+Nm
+Nm
+oq
+oq
+Nm
+Nm
+BW
+oq
+pB
+Ly
+LG
+LG
+LG
+LG
+LG
+LG
+LG
+LG
+LG
+LG
+LG
+JV
+dF
+lB
+Fi
+vo
+yw
+Zq
+rG
+RP
+Fi
+Fi
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+Fm
+kM
+dF
+dF
+IB
+rN
+qN
+GZ
+kM
+dF
+dF
+Hb
+vL
+dF
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+yC
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+Hg
+Hg
+Hg
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -8704,9 +19965,10 @@ XL
 XL
 XL
 YQ
-nY
+fx
 Xy
 Xy
+NI
 Xy
 iG
 Zi
@@ -8776,6 +20038,160 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+Et
+oq
+Nm
+Nm
+oq
+oq
+Nm
+Nm
+Nm
+Nm
+dF
+dF
+Nm
+lN
+oq
+lN
+av
+pM
+pM
+pM
+pM
+pM
+pM
+pM
+pM
+pM
+pM
+pM
+JV
+dF
+Fi
+YJ
+Fi
+lB
+ex
+lB
+Fi
+lB
+Fi
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+qN
+di
+aF
+Pz
+BF
+qN
+rN
+AQ
+Tq
+aF
+Pz
+BF
+qN
+dF
+vp
+vp
+vp
+vp
+vp
+vp
+RA
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -8806,8 +20222,9 @@ XL
 XL
 XL
 YQ
-iv
+fx
 Xy
+zT
 fr
 cR
 HZ
@@ -8867,6 +20284,161 @@ XL
 XL
 "}
 (54,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XO
+XO
+XO
+dF
+dF
+dF
+dF
+dF
+dF
+Nm
+oq
+Nm
+oq
+oq
+Nm
+Nm
+oq
+oq
+Nm
+Nm
+dF
+Zh
+lN
+oq
+lN
+vC
+LG
+LG
+LG
+LG
+LG
+LG
+LG
+LG
+LG
+LG
+LG
+JV
+dF
+Fi
+Fi
+lB
+lB
+VC
+UN
+lB
+Fi
+lB
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+rN
+rN
+qN
+MC
+qN
+qN
+AQ
+qN
+rN
+HI
+qN
+qN
+rN
+dF
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -8980,6 +20552,161 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+dF
+uP
+Tp
+Lp
+SR
+dF
+Nm
+oq
+Nm
+oq
+Nm
+Nm
+oq
+oq
+oq
+oq
+Nm
+Nm
+oq
+lN
+Xv
+SD
+Ly
+LG
+LG
+LG
+LG
+ju
+wA
+Kd
+LG
+LG
+LG
+LG
+JV
+dF
+dF
+dF
+NH
+sL
+KA
+sL
+dF
+dF
+dF
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+dF
+dF
+dF
+dF
+dF
+qN
+AQ
+qN
+dF
+dF
+dF
+dF
+dF
+dF
+vp
+vp
+vp
+yC
+vp
+vp
+vp
+by
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -9071,6 +20798,161 @@ XL
 XL
 "}
 (56,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XO
+XO
+XO
+dF
+uP
+Vx
+Vx
+qk
+dF
+Nm
+oq
+Nm
+oq
+Nm
+oq
+oq
+uv
+uv
+oq
+oq
+Nm
+oq
+lN
+Xv
+Nm
+Bq
+LN
+tN
+wW
+HT
+BD
+LW
+QZ
+mk
+AS
+Ys
+qQ
+mq
+wq
+Lp
+Lp
+wq
+Lp
+Lp
+wq
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+Mq
+lB
+lB
+dF
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -9184,6 +21066,161 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+dF
+jl
+Vx
+HC
+cW
+gL
+Nm
+Hl
+Nm
+oq
+Nm
+oq
+uv
+oq
+oq
+uv
+oq
+Nm
+oq
+pR
+Gi
+cQ
+AY
+pw
+uv
+xI
+tj
+HD
+tE
+ri
+uv
+uv
+uv
+uv
+mq
+wq
+Lp
+wq
+Lp
+wq
+Lp
+ue
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+lB
+Mq
+lB
+dF
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+Rn
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -9275,6 +21312,161 @@ XL
 XL
 "}
 (58,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XO
+XO
+XO
+dF
+Gh
+Vx
+Vx
+zA
+mI
+Nm
+oq
+Nm
+oq
+Nm
+oq
+oq
+uv
+uv
+oq
+oq
+Nm
+oq
+dU
+nR
+Nm
+Pu
+qa
+Mx
+EN
+qa
+xY
+hx
+OH
+qa
+qa
+yR
+yR
+mq
+Lp
+wq
+YD
+wq
+Lp
+Lp
+dF
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+at
+lB
+lB
+lB
+at
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -9388,6 +21580,161 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+dF
+Gh
+qk
+zA
+hp
+dF
+Nm
+oq
+Nm
+oq
+Nm
+Nm
+oq
+oq
+oq
+oq
+Nm
+Nm
+oq
+dU
+nR
+SD
+dF
+LG
+LG
+LG
+LG
+uc
+iM
+mo
+LG
+LG
+LG
+LG
+dF
+dF
+AD
+dF
+dF
+dF
+dF
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+lB
+Mq
+lB
+dF
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -9479,6 +21826,161 @@ XL
 XL
 "}
 (60,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XO
+XO
+XO
+dF
+dF
+dF
+dF
+dF
+dF
+Nm
+oq
+Nm
+oq
+oq
+Nm
+Nm
+oq
+oq
+Nm
+Nm
+dF
+Zh
+dU
+oq
+Nm
+dF
+LG
+LG
+LG
+LG
+LG
+LG
+LG
+LG
+LG
+LG
+LG
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+dF
+dF
+lB
+lB
+lB
+dF
+dF
+dF
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -9592,6 +22094,161 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+Et
+oq
+Nm
+Nm
+oq
+oq
+Nm
+Nm
+Nm
+Nm
+dF
+dF
+Nm
+dU
+oq
+Nm
+gi
+pM
+pM
+pM
+pM
+pM
+pM
+pM
+WM
+pM
+pM
+pM
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+MW
+gh
+PA
+pc
+gh
+gh
+Rv
+dF
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -9683,6 +22340,161 @@ XL
 XL
 "}
 (62,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+Nm
+oq
+oq
+Nm
+Nm
+oq
+oq
+Nm
+Nm
+oq
+oq
+Nm
+Nm
+Kx
+oq
+Nm
+dF
+LG
+LG
+LG
+LG
+LG
+LG
+LG
+LG
+LG
+LG
+LG
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+lb
+DV
+DV
+Iv
+DV
+qW
+UW
+dF
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -9796,6 +22608,161 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+Nm
+Nm
+oq
+oq
+Nm
+Nm
+oq
+qU
+oq
+oq
+Nm
+Nm
+oq
+Kx
+Nm
+no
+dF
+LG
+LG
+ZH
+LG
+gP
+LG
+ZH
+LG
+gP
+LG
+LG
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+vD
+sX
+DV
+sX
+Iv
+sX
+lk
+dF
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -9893,6 +22860,161 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+dF
+Nm
+Nm
+oq
+oq
+Nm
+Nm
+dF
+dF
+Nm
+Nm
+oq
+oq
+dU
+Nm
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+bW
+Iv
+DV
+qW
+DV
+DV
+Ot
+dF
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
 XL
 XL
 XL
@@ -10000,6 +23122,161 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+dF
+Ek
+Nm
+oq
+oq
+oq
+dF
+dF
+oq
+oq
+oq
+Nm
+dU
+dF
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+xB
+PU
+PU
+Fx
+PU
+PU
+He
+dF
+vp
+Rn
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+rr
+rr
+rr
+rr
+rr
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -10097,6 +23374,161 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+dF
+Nm
+Nm
+Nm
+oq
+oq
+oq
+oq
+Nm
+Nm
+Nm
+JV
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+vp
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+Qf
+NC
+NC
+NC
+NC
+NC
+Qf
+rr
+rr
+rr
+rr
+rr
 XL
 XL
 XL
@@ -10204,6 +23636,161 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+dF
+dF
+sY
+rL
+ZD
+ZD
+rL
+ZD
+vC
+vC
+vC
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+Qf
+NC
+NC
+NC
+NC
+NC
+Qf
+rr
+rr
+rr
+rr
+rr
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -10301,6 +23888,161 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+dF
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+Qf
+NC
+NC
+NC
+NC
+jy
+Qf
+rr
+rr
+rr
+rr
+rr
 XL
 XL
 XL
@@ -10408,6 +24150,161 @@ XL
 XL
 XL
 XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+Qf
+NC
+NC
+NC
+NC
+NC
+Qf
+rr
+rr
+rr
+rr
+rr
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -10505,6 +24402,161 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XO
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+rr
+rr
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+NC
+NC
+NC
+NC
+NC
+Qf
+rr
+rr
+rr
+rr
+rr
 XL
 XL
 XL
@@ -10645,6 +24697,161 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+rr
+Qf
+Qf
+fy
+ad
+fy
+Qf
+Qf
+FR
+Qf
+Qf
+iD
+Eb
+eG
+Eb
+fn
+Qf
+rr
+rr
+rr
+rr
+rr
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 YQ
 zE
 zb
@@ -10747,6 +24954,161 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+rr
+Qf
+kq
+mB
+Aj
+Cg
+Qf
+Qf
+aE
+Qf
+Qf
+Qf
+Qf
+EB
+Qf
+Qf
+Qf
+rr
+rr
+rr
+rr
+rr
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 YQ
 bB
 hA
@@ -10811,6 +25173,161 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+rr
+Qf
+ae
+nA
+WV
+eL
+Qf
+NY
+NY
+ay
+Qf
+vz
+qb
+qb
+qb
+rd
+Qf
+rr
+rr
+rr
+rr
+rr
 XL
 XL
 XL
@@ -11007,6 +25524,161 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+rr
+Qf
+ne
+Hs
+WV
+eL
+jN
+qb
+il
+qb
+sT
+qb
+qb
+qb
+qb
+YY
+Qf
+rr
+rr
+rr
+rr
+rr
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 "}
 (75,1,1) = {"
 XL
@@ -11015,6 +25687,161 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+rr
+Qf
+VK
+nA
+WV
+Xi
+Qf
+eQ
+Ml
+ac
+Qf
+vz
+qb
+qb
+qb
+LF
+Qf
+rr
+rr
+rr
+rr
+rr
 XL
 XL
 XL
@@ -11211,6 +26038,161 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+rr
+Qf
+eY
+Sy
+bE
+Ao
+Qf
+Qf
+aE
+Qf
+Qf
+Qf
+Qf
+Qf
+IF
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+rr
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 "}
 (77,1,1) = {"
 XL
@@ -11219,6 +26201,161 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+rr
+Qf
+Qf
+cg
+Qf
+Qf
+Qf
+Qf
+QS
+Qf
+rr
+rr
+Qf
+Cr
+Vw
+Qq
+Qf
+Qd
+Vw
+LO
+Qf
+rr
 XL
 XL
 XL
@@ -11415,6 +26552,161 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+rr
+rr
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+rr
+Qf
+Qf
+Qf
+Vw
+Vw
+FZ
+Vw
+Vw
+RD
+Qf
+rr
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 "}
 (79,1,1) = {"
 XL
@@ -11423,6 +26715,161 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+Qf
+Vw
+ub
+Vw
+zv
+Qf
+oM
+Vw
+Lc
+Qf
+rr
 XL
 XL
 XL
@@ -11619,6 +27066,161 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+Qf
+Jj
+ub
+Vw
+Rm
+Qf
+SH
+Vw
+Vw
+Qf
+rr
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 "}
 (81,1,1) = {"
 XL
@@ -11627,6 +27229,161 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+Qf
+Qf
+Qf
+EW
+Qf
+Qf
+Qf
+WK
+Jb
+Qf
+rr
 XL
 XL
 XL
@@ -11823,6 +27580,161 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+Qf
+zD
+or
+Lv
+Qf
+Qf
+Qf
+Qf
+Qf
+rr
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 "}
 (83,1,1) = {"
 XL
@@ -11831,6 +27743,161 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+Qf
+bZ
+jE
+SU
+Qf
+rr
+rr
+rr
+rr
+rr
 XL
 XL
 XL
@@ -12027,6 +28094,161 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+Qf
+KM
+nb
+jq
+Qf
+rr
+rr
+rr
+rr
+rr
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 "}
 (85,1,1) = {"
 XL
@@ -12035,6 +28257,161 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+Qf
+Qf
+Qf
+Qf
+Qf
+rr
+rr
+rr
+rr
+rr
 XL
 XL
 XL
@@ -12231,8 +28608,318 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+rr
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 "}
 (87,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -12435,8 +29122,318 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 "}
 (89,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -12639,8 +29636,318 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 "}
 (91,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -12843,8 +30150,318 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 "}
 (93,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -13047,8 +30664,318 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 "}
 (95,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -13251,8 +31178,318 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 "}
 (97,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL
@@ -13455,6 +31692,161 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 "}
 (99,1,1) = {"
 XL
@@ -13557,8 +31949,318 @@ XL
 XL
 XL
 XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 "}
 (100,1,1) = {"
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
+XL
 XL
 XL
 XL

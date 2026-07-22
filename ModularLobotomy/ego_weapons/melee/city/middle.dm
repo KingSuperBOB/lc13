@@ -5,7 +5,7 @@
 /obj/item/ego_weapon/shield/middle_chain
 	name = "little brother's chain"
 	desc = "A heavy chain used by The Little Brothers of the Middle. Swung with brutal efficiency."
-	special = "Blocking will counter-attack the attacker and inflicts Vengeance Mark to the attacker. This weapon deals more damage depending on how much Vengeance Mark the target has."
+	special = "Blocking will enter a counter-attacking stance, able to counter-attack against melee attackers and inflicting Vengeance Mark on them. This weapon deals more damage depending on how much Vengeance Mark the target has."
 	icon = 'ModularLobotomy/_Lobotomyicons/middle_icons.dmi'
 	lefthand_file = 'ModularLobotomy/_Lobotomyicons/middle_worn_l.dmi'
 	righthand_file = 'ModularLobotomy/_Lobotomyicons/middle_worn_r.dmi'
@@ -14,6 +14,7 @@
 	attack_speed = 1.2
 	damtype = BLACK_DAMAGE
 
+	swingcolor = "#8c559c"
 	attack_verb_continuous = list("whips", "lashes", "strikes", "batters")
 	attack_verb_simple = list("whip", "lash", "strike", "batter")
 	hitsound = 'sound/weapons/fixer/generic/middle_attack.ogg'
@@ -35,13 +36,31 @@
 		JUSTICE_ATTRIBUTE = 60,
 	)
 
-	// Counter-attack system
-	var/mob/living/last_attacker = null
 	// Vengeance Mark system
 	var/vengeance_mark_stacks_per_hit = 4
 	var/vengeance_damage_bonus = 0.03 // 3% per stack for Little Brother
 	var/counter_damage_multiplier = 1.4 // 40% bonus damage on counter-attacks
-	var/countering = FALSE
+	// Counterattack system
+	/// Incoming attacks must match one of these types to be countered.
+	var/attack_types_countered = (ATTACK_TYPE_MELEE)
+	/// Attacks of the correct type will be countered, up to [this var] tiles away. Determines how big a view() proc is.
+	var/counter_range = 12
+	/// Avoids atomizing people who fire a shotgun at you via race condition nonsense (this var must be FALSE to do a counterattack, doing one sets to TRUE)
+	var/already_countered = FALSE
+
+/obj/item/ego_weapon/shield/middle_chain/examine(mob/user)
+	. = ..()
+	if(user.mind)
+		if(user.mind.assigned_role in list("Disciplinary Officer", "Combat Research Agent"))
+			. += span_notice("Due to your abilities, you get a -20 reduction to stat requirements when equipping this weapon.")
+
+/obj/item/ego_weapon/shield/middle_chain/CanUseEgo(mob/living/user)
+	if(user.mind)
+		if(user.mind.assigned_role in list("Disciplinary Officer", "Combat Research Agent"))
+			equip_bonus = 20
+		else
+			equip_bonus = 0
+	. = ..()
 
 /obj/item/ego_weapon/shield/middle_chain/attack_self(mob/user)//FIXME: Find a better way to use this override!
 	if(block == 0) //Extra check because shields returns nothing on 1
@@ -51,66 +70,28 @@
 				var/mob/living/carbon/human/H = user
 				H.add_atom_colour("#8B008B", TEMPORARY_COLOUR_PRIORITY) // Dark purple/magenta color
 				H.Immobilize(block_duration)
-
-			// Register signals to disable blocking when attacked by hand or item
-			RegisterSignal(user, COMSIG_ATOM_ATTACK_HAND, PROC_REF(NoParry), override = TRUE)//creates runtimes without overrides, double check if something's fucked
-			RegisterSignal(user, COMSIG_PARENT_ATTACKBY, PROC_REF(NoParry), override = TRUE)//728 and 729 must be able to unregister the signal of 730
-			// Register signals to capture attacker for counter-attack
-			RegisterSignal(user, COMSIG_ATOM_ATTACK_HAND, PROC_REF(CaptureAttacker), override = TRUE)
-			RegisterSignal(user, COMSIG_PARENT_ATTACKBY, PROC_REF(CaptureAttacker), override = TRUE)
-			RegisterSignal(user, COMSIG_ATOM_ATTACK_ANIMAL, PROC_REF(CaptureAttacker), override = TRUE)
-			countering = TRUE
+			already_countered = FALSE
 			return TRUE
 		else
 			return FALSE
 
-/obj/item/ego_weapon/shield/middle_chain/proc/NoParry(mob/living/carbon/human/user, obj/item/L)//Disables AnnounceBlock when attacked by an item or a human
-	SIGNAL_HANDLER
-	UnregisterSignal(user, COMSIG_MOB_APPLY_DAMGE)//y'all can't behave
+/obj/item/ego_weapon/shield/middle_chain/AnnounceBlock(mob/living/carbon/human/source, damage, damagetype, def_zone, mob/living/source_of_damage, flags, attack_type)
+	// Perform counter-attack if we have a valid attacker - but not ourselves
+	if(istype(source_of_damage) && !QDELETED(source_of_damage) && source_of_damage != source)
 
-//Captures the attacker reference when user is attacked
-/obj/item/ego_weapon/shield/middle_chain/proc/CaptureAttacker(mob/living/carbon/human/user, attacker)
-	SIGNAL_HANDLER
-	if(isliving(attacker))
-		last_attacker = attacker
-	else if(istype(attacker, /obj/item))
-		// When attacked by an item, the user parameter in COMSIG_PARENT_ATTACKBY is actually the attacker
-		if(isliving(user))
-			last_attacker = user
+		if(!(attack_type & attack_types_countered))
+			return
 
-/obj/item/ego_weapon/shield/middle_chain/AnnounceBlock(mob/living/carbon/human/source, damage, damagetype, def_zone)
-	// Perform counter-attack if we have a valid attacker
-	if(last_attacker && !QDELETED(last_attacker))
-		// Calculate combined damage bonus (counter multiplier + vengeance mark bonus)
-		var/original_force = initial(force)
-		var/total_multiplier = counter_damage_multiplier
+		// We need this to avoid countering multiple times per block
+		if(already_countered)
+			return
 
-		// Check for Vengeance Mark and add bonus damage
-		var/datum/status_effect/stacking/vengeance_mark/VM = last_attacker.has_status_effect(STATUS_EFFECT_VENGEANCEMARK)
-		if(VM && VM.stacks > 0)
-			total_multiplier += (VM.stacks * vengeance_damage_bonus)
-			to_chat(source, span_danger("Your counter-attack strikes with vengeful fury! ([VM.stacks] marks)"))
+		if(source.Adjacent(source_of_damage))
+			Counterattack(source, damage, damagetype, source_of_damage, flags, attack_type)
+		else if(CheckToolReach(source, source_of_damage, counter_range))
+			CloseTheGap(source, damage, damagetype, source_of_damage, flags, attack_type)
 
-		force = round(force * total_multiplier)
-
-		// Perform counter-attack
-		source.do_attack_animation(last_attacker)
-		last_attacker.attacked_by(src, source)
-		var/atom/throw_target = get_edge_target_turf(last_attacker, source.dir)
-		last_attacker.throw_at(throw_target, rand(2, 3), 3, source)
-		to_chat(source, span_userdanger("Your chains lash out at [last_attacker]!"))
-		log_combat(source, last_attacker, "counters with", src.name, "(DAMTYPE: [uppertext(damtype)])")
-		playsound(get_turf(last_attacker), hitsound, 50, TRUE)
-
-		// Apply Vengeance Mark stacks after counter-attack
-		if(isliving(last_attacker))
-			last_attacker.apply_vengeance_mark(vengeance_mark_stacks_per_hit)
-
-		// Reset force and clear attacker
-		force = original_force
-		last_attacker = null
-
-	..()
+		. = ..() // Doesn't perform ..() unless a counter is done! This is to avoid confusing people with text saying 'Ricardo counters the attack!' despite nothing happening.
 
 //Override DisableBlock to clean up attacker-tracking signals and remove color
 /obj/item/ego_weapon/shield/middle_chain/DisableBlock(mob/living/carbon/human/user)
@@ -119,14 +100,7 @@
 		var/mob/living/carbon/human/H = user
 		H.remove_atom_colour(TEMPORARY_COLOUR_PRIORITY, "#8B008B")
 
-	// Unregister attacker-tracking signals
-	UnregisterSignal(user, COMSIG_ATOM_ATTACK_HAND)
-	UnregisterSignal(user, COMSIG_PARENT_ATTACKBY)
-	UnregisterSignal(user, COMSIG_ATOM_ATTACK_ANIMAL)
-	// Clear attacker reference
-	last_attacker = null
 	// Call parent DisableBlock
-	countering = FALSE
 	..()
 
 //Override attack to apply Vengeance Mark bonus damage (but not apply stacks - only counter-attacks apply stacks)
@@ -134,13 +108,66 @@
 	if(!CanUseEgo(user))
 		return FALSE
 
-	// Prevent attacking while parrying
-	if(countering)
-		to_chat(user, span_warning("You cannot attack while parrying!"))
-		return FALSE
+	// Check for Vengeance Mark and calculate bonus damage (not against yourself)
+	var/datum/status_effect/stacking/vengeance_mark/VM = target.has_status_effect(STATUS_EFFECT_VENGEANCEMARK)
+	if(VM && VM.stacks > 0 && target != user)
+		var/bonus_multiplier = 1 + (VM.stacks * vengeance_damage_bonus)
+		force = round(initial(force) * bonus_multiplier)
+		to_chat(user, span_danger("Your chains strike with vengeful fury! ([VM.stacks] marks)"))
 
-	// Perform attack (vengeance mark bonus only applies to counter-attacks)
+	// Perform attack
 	. = ..()
+
+	// Safeguard. You were previously able to smuggle 20 vengeance mark's worth of boost into your additional force and end up with biblical damage numbers on a counterattack.
+	force = initial(force)
+
+/obj/item/ego_weapon/shield/middle_chain/proc/Counterattack(mob/living/carbon/human/user, damage, damagetype, mob/living/attacker, flags, attack_type)
+	if(QDELETED(user) || QDELETED(attacker) || !istype(user) || !istype(attacker))
+		return
+
+	already_countered = TRUE
+
+	// Apply counter-attack damage bonus (40% more damage)
+	var/original_force = initial(force)
+	var/total_multiplier = counter_damage_multiplier
+
+	// Check for Vengeance Mark and add bonus damage
+	var/datum/status_effect/stacking/vengeance_mark/VM = attacker.has_status_effect(STATUS_EFFECT_VENGEANCEMARK)
+	if(VM && VM.stacks > 0)
+		total_multiplier += (VM.stacks * vengeance_damage_bonus)
+		to_chat(user, span_danger("Your counter-attack strikes with vengeful fury! ([VM.stacks] marks)"))
+
+	force = round(original_force * total_multiplier)
+
+	// Perform counter-attack
+	user.do_attack_animation(attacker)
+	attacker.attacked_by(src, user)
+	if(!QDELETED(attacker))
+		var/atom/throw_target = get_edge_target_turf(attacker, user.dir)
+		attacker.throw_at(throw_target, rand(2, 3), 3, user)
+	to_chat(user, span_userdanger("Your chains lash out at [attacker]!"))
+	log_combat(user, attacker, "counters with", src.name, "(DAMTYPE: [uppertext(damtype)])")
+	playsound(get_turf(attacker), hitsound, 50, TRUE)
+
+	// Apply Vengeance Mark stacks after counter-attack, if they still live.
+	if(!QDELETED(attacker) && attacker.health > 0)
+		attacker.apply_vengeance_mark(vengeance_mark_stacks_per_hit)
+
+	// Reset force
+	force = original_force
+
+/obj/item/ego_weapon/shield/middle_chain/proc/CloseTheGap(mob/living/carbon/human/user, damage, damagetype, mob/living/attacker, flags, attack_type)
+	var/turf/target_turf = get_step(get_turf(attacker), pick(GLOB.cardinals))
+	if(target_turf)
+		// Teleport to firer
+		user.forceMove(target_turf)
+		user.setDir(get_dir(user, attacker))
+
+		// Visual and audio effects
+		new /obj/effect/temp_visual/dir_setting/bloodsplatter(get_turf(user), user.dir)
+		playsound(get_turf(user), 'sound/weapons/fwoosh.ogg', 50, TRUE)
+		user.visible_message(span_warning("[user]'s chains suddenly lash out, pulling them towards [attacker]!"))
+		Counterattack(user, damage, damagetype, attacker, flags, attack_type)
 
 //Younger Brother Chain
 /obj/item/ego_weapon/shield/middle_chain/younger
@@ -156,12 +183,13 @@
 		TEMPERANCE_ATTRIBUTE = 80,
 		JUSTICE_ATTRIBUTE = 80,
 	)
+	swingcolor = "#654b75"
 
 //Big Brother Chain
 /obj/item/ego_weapon/shield/middle_chain/big
 	name = "big brother's chain"
 	desc = "A masterfully crafted chain used by The Big Brothers of the Middle. Each link is a weapon in itself."
-	special = "This weapon blocks projectiles while attacking. When blocking a projectile, teleports to the shooter and counter-attacks them. Blocking will counter-attack the attacker and inflicts Vengeance Mark to the attacker. This weapon deals more damage depending on how much Vengeance Mark the target has."
+	special = "This weapon can enter a counter-attacking stance by being used in-hand. When hit by a ranged attack, teleports to the assailant and counter-attacks them. Blocking will counter-attack melee or ranged attackers and inflicts Vengeance Mark to them. This weapon deals more damage depending on how much Vengeance Mark the target has."
 	icon_state = "big_chain"
 	force = 63
 	attack_speed = 1.4
@@ -173,54 +201,5 @@
 		TEMPERANCE_ATTRIBUTE = 100,
 		JUSTICE_ATTRIBUTE = 100,
 	)
-
-// Override hit_reaction to teleport to projectile firer
-/obj/item/ego_weapon/shield/middle_chain/big/hit_reaction(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0, attack_type = MELEE_ATTACK)
-	if(attack_type == PROJECTILE_ATTACK && countering)
-		// Get the projectile's firer
-		var/obj/projectile/P = hitby
-		if(istype(P) && P.firer && !QDELETED(P.firer))
-			var/mob/living/firer = P.firer
-			if(isliving(firer))
-				// Get position next to the firer
-				var/turf/target_turf = get_step(get_turf(firer), pick(GLOB.cardinals))
-				if(target_turf)
-					// Teleport to firer
-					owner.forceMove(target_turf)
-					owner.setDir(get_dir(owner, firer))
-
-					// Visual and audio effects
-					new /obj/effect/temp_visual/dir_setting/bloodsplatter(get_turf(owner), owner.dir)
-					playsound(get_turf(owner), 'sound/weapons/fwoosh.ogg', 50, TRUE)
-					owner.visible_message(span_warning("[owner] chains suddenly lash out, pulling them toward [firer]!"))
-
-					// Perform counter-attack on the firer
-					var/original_force = initial(force)
-					var/total_multiplier = counter_damage_multiplier
-
-					// Check for Vengeance Mark and add bonus damage
-					var/datum/status_effect/stacking/vengeance_mark/VM = firer.has_status_effect(STATUS_EFFECT_VENGEANCEMARK)
-					if(VM && VM.stacks > 0)
-						total_multiplier += (VM.stacks * vengeance_damage_bonus)
-						to_chat(owner, span_danger("Your counter-attack strikes with vengeful fury! ([VM.stacks] marks)"))
-
-					force = round(force * total_multiplier)
-					owner.do_attack_animation(firer)
-					firer.attacked_by(src, owner)
-
-					// Apply Vengeance Mark
-					if(isliving(firer))
-						firer.apply_vengeance_mark(vengeance_mark_stacks_per_hit)
-
-					var/atom/throw_target = get_edge_target_turf(firer, owner.dir)
-					firer.throw_at(throw_target, rand(2, 3), 3, owner)
-					to_chat(owner, span_userdanger("Your chains lash out at [firer]!"))
-					log_combat(owner, firer, "teleport-counters with", src.name, "(DAMTYPE: [uppertext(damtype)])")
-					playsound(get_turf(firer), hitsound, 50, TRUE)
-
-					// Reset force
-					force = original_force
-
-		// Call parent to handle the projectile block
-		return ..()
-	return ..()
+	attack_types_countered = (ATTACK_TYPE_MELEE | ATTACK_TYPE_RANGED)
+	swingcolor = "#462e56"

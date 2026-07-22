@@ -27,10 +27,12 @@ SUBSYSTEM_DEF(maptype)
 						FACILITY_TRAIT_CRITICAL_HITS = 10,		//EGO can Critical hit.
 						FACILITY_TRAIT_DEPARTMENTAL_BUFFS = 10,	//Departmental Agent Buffs
 						FACILITY_TRAIT_XP_MOD = 7,				//XP works differently on HP/SP
-						FACILITY_TRAIT_ABNO_BLITZ = 3,			//The game is significantly Faster, starts after noon.
-						FACILITY_TRAIT_DAMAGE_TYPE_SHUFFLE = 2, //Shuffles all lob corp color damage types randomly. Attack and armor damage types shuffled separately.
+						FACILITY_TRAIT_DARK_SOULS = 5,			//You get estus flasks and rolling
+						FACILITY_TRAIT_NO_EGO = 3,				//No EGO, works like our events with double the outputs and refineries
+						FACILITY_TRAIT_PROSTHETICS = 3,			//There's a new prosthetics vendor!
 
 						//Joke stuff is below, should all be low
+						FACILITY_TRAIT_DAMAGE_TYPE_SHUFFLE = 2, //Shuffles all lob corp color damage types randomly. Attack and armor damage types shuffled separately.
 						FACILITY_TRAIT_WORKING_CLERKS = 2,		//For the joke
 						FACILITY_TRAIT_CALLBACK = 2,			//Brings back 2 Classic bugs in Backpack EGO and wounds
 						FACILITY_TRAIT_JOKE_ABNOS = 1,			// Okay it's funny
@@ -72,7 +74,12 @@ SUBSYSTEM_DEF(maptype)
 
 /datum/controller/subsystem/maptype/Initialize()
 	..()
-	if(SSmaptype.maptype in SSmaptype.lc_maps)
+	maptype = GLOB.map_config_global.maptype
+
+	if(maptype in SSmaptype.lc_maps)
+		if(!CONFIG_GET(flag/enabletraits))
+			message_admins("Notice! Station Traits are disabled!")
+			return
 		if(prob(40))	//40% chance to not run a station trait
 			return
 		chosen_trait = pickweight(lc_trait)
@@ -88,7 +95,7 @@ SUBSYSTEM_DEF(maptype)
 					SSlobotomy_corp.enable_possession = TRUE
 
 	//Badda Bing Badda Da. This makes the latejoin menu cleaner
-	switch(SSmaptype.maptype)
+	switch(maptype)
 		if("wonderlabs")
 			departments = list("Command", "Fixers", "Security", "Service")
 		if("city")
@@ -132,3 +139,16 @@ SUBSYSTEM_DEF(maptype)
 					GLOB.rcorp_objective = "payload_rcorp"
 				if(5)
 					GLOB.rcorp_objective = "payload_abno"
+
+/datum/controller/subsystem/maptype/vv_edit_var(var_name, var_value)
+	. = ..()
+	switch(var_name)
+		if(NAMEOF(src, chosen_trait))
+			for(var/mob/living/carbon/human/probably_agent in GLOB.mob_living_list)
+				if(!LAZYLEN(probably_agent.attributes))
+					continue
+				var/datum/attribute/fortitude/fort = probably_agent.attributes[FORTITUDE_ATTRIBUTE]
+				var/datum/attribute/prudence/prud = probably_agent.attributes[PRUDENCE_ATTRIBUTE]
+				fort.on_update(probably_agent)
+				prud.on_update(probably_agent)
+				probably_agent.updatehealth()

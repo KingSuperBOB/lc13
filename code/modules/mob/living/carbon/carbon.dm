@@ -1351,3 +1351,7 @@
 	if (species)
 		return species.attack_type
 	return ..()
+
+/mob/living/carbon/Login()
+	. = ..()
+	update_inv_back() // 'cause maybe someone with different backpack hiding preferences just took over! Woah!

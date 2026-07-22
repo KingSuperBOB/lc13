@@ -31,7 +31,11 @@
 	var/start_qliphoth = 0
 	/// Can it breach? If TRUE - ZeroQliphoth() calls BreachEffect()
 	var/can_breach = FALSE
-	/// List of humans that witnessed the abnormality breaching
+	/// The % chance for it to drop Q on each result.
+	var/good_droprate = 0
+	var/neutral_droprate = 0
+	var/bad_droprate = 0
+	/// List of humans that witnessed the abnormality breaching, uses tags
 	var/list/breach_affected = list()
 	/// Copy-pasted from megafauna.dm: This allows player controlled mobs to use abilities
 	var/chosen_attack = 1
@@ -137,7 +141,7 @@
 
 	/// Bubbles and their speech
 	// Generic bubbles by agent level.
-	var/list/generic_bubbles = list(
+	var/alist/generic_bubbles = alist(
 		1 = list("%PERSON looks nervously at %ABNO...", "%PERSON tries to stay focused."),
 		2 = list("%PERSON focuses on the task at hand.", "%PERSON follows the directions as trained."),
 		3 = list("%PERSON keeps an eye on %ABNO.", "%PERSON considers what they'll eat next."),
@@ -152,7 +156,7 @@
 		ABNORMALITY_WORK_REPRESSION = list("%PERSON holds what %ABNO desires, just out of reach..."),
 	)
 
-	// If TRUE, this Abnormality's odds of spawning go up dramatically. Enable for Abnormalities that are being reworked and need testing.
+	/// If TRUE, this Abnormality's odds of spawning go up dramatically. Enable for Abnormalities which are in need of testing, or have E.G.O. which is in need of testing.
 	var/being_tested = FALSE
 
 /mob/living/simple_animal/hostile/abnormality/Login()
@@ -198,9 +202,9 @@
 	if(secret_chance && (prob(1) || SSmaptype.chosen_trait == FACILITY_TRAIT_JOKE_ABNOS))
 		InitializeSecretIcon()
 
-	//Abnormalities have no name here. And we don't want nonsentient ones to breach
+	//regular abnormalities shouldn't spawn on the limbus map, but we'll give them a very different name from limbus abnos to avoid confusion.
 	if(SSmaptype.maptype == "limbus_labs")
-		name = "Limbus Company Specimen"
+		name = "Anomaly"
 		faction = list("neutral")
 
 /mob/living/simple_animal/hostile/abnormality/proc/InitializeSecretIcon()
@@ -227,6 +231,8 @@
 
 /mob/living/simple_animal/hostile/abnormality/Destroy()
 	SHOULD_CALL_PARENT(TRUE)
+	breach_affected = null
+	attack_action_types = null
 	if(istype(datum_reference)) // Respawn the mob on death
 		datum_reference.current = null
 		addtimer(CALLBACK (datum_reference, TYPE_PROC_REF(/datum/abnormality, RespawnAbno)), 30 SECONDS)
@@ -312,11 +318,11 @@
 	if(fear_level <= 0)
 		return
 	for(var/mob/living/carbon/human/H in ohearers(7, src))
-		if(H in breach_affected)
+		if(H.tag in breach_affected)
 			continue
 		if(H.stat == DEAD)
 			continue
-		breach_affected += H
+		breach_affected += H.tag
 		if(HAS_TRAIT(H, TRAIT_COMBATFEAR_IMMUNE))
 			to_chat(H, span_notice("This again...?"))
 			H.apply_status_effect(/datum/status_effect/panicked_lvl_0)
@@ -432,16 +438,22 @@ The variable's key needs to be non-numerical.*/
 // Additional effects on good work result, if any
 /mob/living/simple_animal/hostile/abnormality/proc/SuccessEffect(mob/living/carbon/human/user, work_type, pe, work_time, canceled)
 	WorkCompleteEffect("good")
+	if(prob(good_droprate))
+		datum_reference.qliphoth_change(-1)
 	return
 
 // Additional effects on neutral work result, if any
 /mob/living/simple_animal/hostile/abnormality/proc/NeutralEffect(mob/living/carbon/human/user, work_type, pe, work_time, canceled)
 	WorkCompleteEffect("normal")
+	if(prob(neutral_droprate))
+		datum_reference.qliphoth_change(-1)
 	return
 
 // Additional effects on work failure
 /mob/living/simple_animal/hostile/abnormality/proc/FailureEffect(mob/living/carbon/human/user, work_type, pe, work_time, canceled)
 	WorkCompleteEffect("bad")
+	if(prob(bad_droprate))
+		datum_reference.qliphoth_change(-1)
 	return
 
 // Visual effect for work completion
@@ -478,7 +490,7 @@ The variable's key needs to be non-numerical.*/
 	if(!datum_reference.console)
 		stack_trace("[src] tried to work without a console? user = [user]")
 		return
-	if(ABNO_BALLOON_OFF & bubble_type)
+	if(bubble_type & ABNO_BALLOON_OFF)
 		return
 	if(prob(20-(3*(threat_level-1))))
 		var/list/output_string_list = GetBubbleText(get_user_level(user), bubble_type, work_type)
@@ -500,9 +512,9 @@ The variable's key needs to be non-numerical.*/
  */
 /mob/living/simple_animal/hostile/abnormality/proc/GetBubbleText(user_level, bubble_type, work_type)
 	var/list/potential_output = list()
-	if(ABNO_BALLOON_WORK & bubble_type && !isnull(work_type))
+	if(bubble_type & ABNO_BALLOON_WORK && !isnull(work_type))
 		potential_output += work_bubbles[work_type]
-	if(ABNO_BALLOON_GENERIC & bubble_type)
+	if(bubble_type & ABNO_BALLOON_GENERIC)
 		potential_output += generic_bubbles[user_level]
 	. = potential_output
 

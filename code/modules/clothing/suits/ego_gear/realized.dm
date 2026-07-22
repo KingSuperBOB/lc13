@@ -448,6 +448,12 @@ This empowered state makes them arc lightning to all nearby foes when taking dam
 	sleep(0.2 SECONDS)
 	ArcLightningScan(target_turf, chains + 1)
 
+/obj/item/clothing/suit/armor/ego_gear/realization/rhythm
+	name = "rhythm"
+	desc = "To satisfy people, a product of despair and suffering of someone else is needed."
+	icon_state = "rhythm"
+	armor = list(RED_DAMAGE = 70, WHITE_DAMAGE = 70, BLACK_DAMAGE = 40, PALE_DAMAGE = 40)          //Empowers EGO Weapon Rhythm
+
 /* WAW Realizations */
 
 /obj/item/clothing/suit/armor/ego_gear/realization/goldexperience
@@ -605,6 +611,18 @@ This empowered state makes them arc lightning to all nearby foes when taking dam
 	playsound(get_turf(user), 'sound/misc/moist_impact.ogg', 30, 1)
 	var/mob/living/simple_animal/hostile/naked_nest_serpent_friend/W = new(get_turf(user))
 	W.origin_nest = user
+
+/obj/item/clothing/suit/armor/ego_gear/realization/awe
+	name = "awe"
+	desc = "Scatter. Every gaze shall be drawn to this squalidity."
+	icon_state = "contempt" // Sprite by insiteparaful
+	armor = list(RED_DAMAGE = 70, WHITE_DAMAGE = 40, BLACK_DAMAGE = 80, PALE_DAMAGE = 60) // No Ability (For now. Until then it just gets a suspiciously alright statline (I didn't dare add a red 8/black 8 armour))
+
+/obj/item/clothing/suit/armor/ego_gear/realization/sole_focus
+	name = "sole focus"
+	desc = "She's always watching. Do not forget who it was that sprung the project to the skies."
+	icon_state = "sole_focus"
+	armor = list(RED_DAMAGE = 50, WHITE_DAMAGE = 80, BLACK_DAMAGE = 80, PALE_DAMAGE = 40) //Two slashes allows for free ranting in the files, so... first, sprites made by Monoman335, basically it's heaven's stats boosted, the 50 is for Red resist and 40 for pale because the weapon does Red and I think it fits. Also no ability. Yet.
 
 /* ALEPH Realizations */
 
