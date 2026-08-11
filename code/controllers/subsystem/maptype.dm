@@ -105,7 +105,7 @@ SUBSYSTEM_DEF(maptype)
 		if("office")
 			departments = list("Command", "Fixers")
 		if("limbus_labs")
-			departments = list("Command", "Security", "Medical", "Science", "Engineering", "Service" )
+			departments = list("Command", "Security", "Medical", "Science")
 		if("rcorp")
 			departments = list("Command", "R Corp", "Medical")
 		if("wcorp")
@@ -125,8 +125,8 @@ SUBSYSTEM_DEF(maptype)
 	//All the maptype specific stuff
 	switch(maptype)
 		if("rcorp")	//For the gamemode stuff
-			if(prob(30))
-				jobtype = "rcorp_fifth"
+			//if(prob(30))
+			//	jobtype = "rcorp_fifth"
 
 			switch(rand(1,5))
 				if(1)	 //Find this var in the objectives folder
@@ -139,6 +139,24 @@ SUBSYSTEM_DEF(maptype)
 					GLOB.rcorp_objective = "payload_rcorp"
 				if(5)
 					GLOB.rcorp_objective = "payload_abno"
+
+/// TRUE iff `chosen_trait` matches `trait` AND `A`'s turf is on a ZTRAIT_STATION z.
+/// Use this in place of `SSmaptype.chosen_trait == X` at any per-mob trait
+/// hook so Refraction Railway sub-Z's don't pick up station-trait effects.
+/datum/controller/subsystem/maptype/proc/trait_active_for(atom/A, trait)
+	if(chosen_trait != trait)
+		return FALSE
+	var/turf/T = get_turf(A)
+	return T && is_station_level(T.z)
+
+/// TRUE iff the damage-type shuffler is enabled AND `A`'s turf is on a
+/// ZTRAIT_STATION z. Companion to trait_active_for for the shuffler's
+/// global-flag dispatch.
+/datum/controller/subsystem/maptype/proc/shuffler_active_for(atom/A)
+	if(!GLOB.damage_type_shuffler?.is_enabled)
+		return FALSE
+	var/turf/T = get_turf(A)
+	return T && is_station_level(T.z)
 
 /datum/controller/subsystem/maptype/vv_edit_var(var_name, var_value)
 	. = ..()

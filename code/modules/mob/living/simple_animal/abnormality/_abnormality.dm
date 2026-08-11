@@ -1,6 +1,7 @@
 /mob/living/simple_animal/hostile/abnormality
 	name = "Abnormality"
 	desc = "An abnormality..? You should report this to the Head!"
+	gender = NEUTER
 	robust_searching = TRUE
 	ranged_ignores_vision = TRUE
 	stat_attack = HARD_CRIT
@@ -538,7 +539,7 @@ The variable's key needs to be non-numerical.*/
 		var/list/damage_types = work_damage_type
 		damage.icon_state = pick(damage_types)
 	var/damage_type = damage.icon_state
-	if(GLOB.damage_type_shuffler?.is_enabled && IsColorDamageType(damage_type))
+	if(SSmaptype.shuffler_active_for(src) && IsColorDamageType(damage_type))
 		damage.icon_state = GLOB.damage_type_shuffler.mapping_offense[damage_type]
 
 // Dictates whereas this type of work can be performed at the moment or not
@@ -673,6 +674,7 @@ The variable's key needs to be non-numerical.*/
 /mob/living/simple_animal/hostile/abnormality/spawn_gibs()
 	if(blood_volume <= 0)
 		return
+	//Abnormalities dont explode on mass most of the time so they can keep gibs.
 	return new /obj/effect/gibspawner/generic(drop_location(), src, get_static_viruses())
 
 // Actions

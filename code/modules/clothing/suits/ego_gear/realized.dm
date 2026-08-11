@@ -730,3 +730,10 @@ This empowered state makes them arc lightning to all nearby foes when taking dam
 	icon_state = "gasharpoon"
 	armor = list(RED_DAMAGE = 60, WHITE_DAMAGE = 70, BLACK_DAMAGE = 20, PALE_DAMAGE = 80)//230, required for the corresponding weapon abilities
 	assimilation_ability = /obj/effect/proc_holder/ability/ego_assimilation/gasharpoon
+
+/obj/item/clothing/suit/armor/ego_gear/realization/dreaming
+	name = "dreaming"
+	desc = "A dream to be free."
+	icon_state = "dreaming"
+	armor = list(RED_DAMAGE = 40, WHITE_DAMAGE = 80, BLACK_DAMAGE = 60, PALE_DAMAGE = 70)
+	assimilation_ability = /obj/effect/proc_holder/ability/ego_assimilation/dreaming

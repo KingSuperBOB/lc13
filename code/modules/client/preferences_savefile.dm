@@ -5,7 +5,7 @@
 //	You do not need to raise this if you are adding new values that have sane defaults.
 //	Only raise this value when changing the meaning/format/name/layout of an existing value
 //	where you would want the updater procs below to run
-#define SAVEFILE_VERSION_MAX	38
+#define SAVEFILE_VERSION_MAX	39
 
 /*
 SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Carn
@@ -86,6 +86,18 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 		if (!found_block_movement)
 			LAZYADD(key_bindings["Ctrl"], "block_movement")
+
+	if(current_version < 39)
+		//lcl_abno_pref changed from typepath -> bool to typepath -> priority level.
+		//Old TRUE (willing) becomes MEDIUM; old FALSE becomes NEVER, written as an
+		//EXPLICIT 0 rather than by omitting the key. An absent entry means "never seen
+		//this abno" and reconcile_lcl_prefs() fills those in as MEDIUM, so dropping the
+		//old FALSE entries would have silently re-enabled every abno the player had
+		//turned off.
+		var/list/converted = list()
+		for(var/key in lcl_abno_pref)
+			converted[key] = lcl_abno_pref[key] ? JP_MEDIUM : 0
+		lcl_abno_pref = converted
 
 /datum/preferences/proc/update_character(current_version, savefile/S)
 	return
@@ -409,6 +421,8 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	READ_FILE(S["uplink_loc"], uplink_spawn_loc)
 	READ_FILE(S["playtime_reward_cloak"], playtime_reward_cloak)
 	READ_FILE(S["phobia"], phobia)
+	READ_FILE(S["pet_rat_color"], pet_rat_color)
+	READ_FILE(S["equipped_id_skin"], equipped_id_skin)
 	READ_FILE(S["district_origin"], district_origin)
 	READ_FILE(S["zone_origin"], zone_origin)
 	READ_FILE(S["randomise"],  randomise)
@@ -596,6 +610,8 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["randomise"]		, randomise)
 	WRITE_FILE(S["species"]			, pref_species.id)
 	WRITE_FILE(S["phobia"], phobia)
+	WRITE_FILE(S["pet_rat_color"], pet_rat_color)
+	WRITE_FILE(S["equipped_id_skin"], equipped_id_skin)
 	WRITE_FILE(S["district_origin"], district_origin)
 	WRITE_FILE(S["zone_origin"], zone_origin)
 	WRITE_FILE(S["feature_mcolor"]					, features["mcolor"])

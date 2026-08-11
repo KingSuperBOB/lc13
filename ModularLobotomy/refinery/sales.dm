@@ -225,3 +225,22 @@
 	power_timer = 180 	//Takes a bit
 	crate_timer = 180	//And it's super cheap
 	our_corporation = "J corp"
+
+/obj/structure/pe_sales/thumb
+	name = "The Thumb Power Input"
+	desc = "A machine used to send PE to the Thumb"
+	// Placeholder sprite.
+	icon_state = "machinethumb"
+	crate = /obj/structure/lootcrate/thumb
+	// Four minutes to get a crate. They have decent gear, BUT it's RED damage and they have ammo boxes showing up 20% of the time.
+	power_timer = 120
+	crate_timer = 240
+
+/obj/structure/pe_sales/h_corp
+	name = "H-Corp Power Input"
+	desc = "A machine used to send PE to K-Corp."
+	icon_state = "machineh"
+	crate = /obj/structure/lootcrate/h_corp
+	crate_timer = 60	//2 Crates per
+	our_corporation = "H corp"
+
