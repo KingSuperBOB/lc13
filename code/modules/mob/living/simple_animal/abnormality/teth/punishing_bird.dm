@@ -69,6 +69,7 @@
 
 	var/list/enemies = list()
 	var/list/pecking_targets = list()
+	//uses tags
 	var/list/already_punished = list()
 	var/bird_angry = FALSE
 	/// Melee damage done to simple mobs when enraged
@@ -77,6 +78,7 @@
 	var/angry_damage_human = 500
 
 	var/death_timer
+	var/omw_to_apoc = FALSE
 
 /mob/living/simple_animal/hostile/abnormality/punishing_bird/Initialize()
 	. = ..()
@@ -86,6 +88,9 @@
 /mob/living/simple_animal/hostile/abnormality/punishing_bird/Destroy()
 	UnregisterSignal(SSdcs, COMSIG_GLOB_WORK_STARTED)
 	UnregisterSignal(SSdcs, COMSIG_GLOB_HUMAN_INSANE)
+	enemies = null
+	pecking_targets = null
+	already_punished = null
 	return ..()
 
 /mob/living/simple_animal/hostile/abnormality/punishing_bird/proc/TransformRed()
@@ -157,15 +162,15 @@
 			if(H.mind && !faction_check_mob(H))
 				if(H.sanity_lost)
 					priority_mobs += H
-				else if(!(H in already_punished) && prob(10))
+				else if(!(H.tag in already_punished) && prob(10))
 					potential_mobs += H
 
 		if(LAZYLEN(priority_mobs))
 			var/mob/living/carbon/le_target = pick(priority_mobs)
-			pecking_targets |= le_target
+			LAZYOR(pecking_targets,le_target.tag)
 		else if(LAZYLEN(potential_mobs))
 			var/mob/living/carbon/le_target = pick(potential_mobs)
-			pecking_targets |= le_target
+			LAZYOR(pecking_targets, le_target.tag)
 
 /mob/living/simple_animal/hostile/abnormality/punishing_bird/AttackingTarget(atom/attacked_target)
 	if(ishuman(attacked_target) && bird_angry)
@@ -200,12 +205,12 @@
 					H.adjustSanityLoss(-10) // Heal sanity
 					return
 			if(prob(5) || L.health < L.maxHealth*0.5)
-				if(L in enemies)
+				if(L.tag in enemies)
 					enemies -= L
-				if(L in pecking_targets)
-					pecking_targets -= L
-					already_punished |= L
-				target = null
+				if(L.tag in pecking_targets)
+					pecking_targets -= L.tag
+					already_punished |= L.tag
+				LoseTarget(FALSE)
 		else if(L.health <= 0)
 			visible_message(span_danger("\The [src] devours [L]!"))
 			L.gib()
@@ -232,15 +237,24 @@
 			return A
 
 /mob/living/simple_animal/hostile/abnormality/punishing_bird/ListTargets()
-	if(!enemies.len && !pecking_targets.len)
+	if(omw_to_apoc || (!enemies.len && !pecking_targets.len))
 		return list()
 	var/list/see = ..()
 	var/list/targeting = list()
-	targeting += enemies
-	if(obj_damage <= 0)
-		targeting |= pecking_targets
-	see &= targeting // Remove all entries that aren't in enemies
-	return see
+	for(var/mob/living/L in see)
+		if((L.tag in enemies) || (L.tag in pecking_targets))
+			targeting += L
+	return targeting
+
+/mob/living/simple_animal/hostile/abnormality/punishing_bird/RegisterAttackAggro(damage_amount, damage_type, source)
+	if(omw_to_apoc) // Ts ain't nothin to me man
+		return
+	. = ..()
+
+/mob/living/simple_animal/hostile/abnormality/punishing_bird/FindTarget(list/possible_targets, HasTargetsList)
+	if(omw_to_apoc) // Nah I'd Walk
+		return
+	. = ..()
 
 /mob/living/simple_animal/hostile/abnormality/punishing_bird/HandleStructures()
 	. = ..()
@@ -308,6 +322,8 @@
 
 /mob/living/simple_animal/hostile/abnormality/punishing_bird/BreachEffect(mob/living/carbon/human/user, breach_type)
 	. = ..()
+	omw_to_apoc = FALSE
+	docile_confinement = FALSE
 	icon_state = initial(icon_state)
 	icon_living = initial(icon_living)
 	pixel_x = initial(pixel_x)
