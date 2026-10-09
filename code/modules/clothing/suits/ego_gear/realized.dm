@@ -285,6 +285,14 @@ or until the damage cap on the debuff is hit. While Fairy Lure is active on your
 	armor = list(RED_DAMAGE = 70, WHITE_DAMAGE = 50, BLACK_DAMAGE = 60, PALE_DAMAGE = 50)		//Melee
 	realized_ability = /obj/effect/proc_holder/ability/rip_space
 
+/obj/item/clothing/suit/armor/ego_gear/realization/dimension_ripper/examine(mob/user)
+	. = ..()
+	if(user == loc)
+		. += span_notice("The Realization of Dimension Shredder has given you the ability to Rip Space!")
+		. += span_notice("Rip Space allows you to hit up to 10 targets within range.")
+		. += span_notice("In addition, while you're using Rip Space, you're invulnerable.")
+		. += span_notice("Rip Space also takes into consideration your currently held weapon.")
+
 /obj/item/clothing/suit/armor/ego_gear/realization/gift
 	name = "gift"
 	desc = "Play with me! Join my friends and laugh with us."
@@ -479,7 +487,7 @@ This empowered state makes them arc lightning to all nearby foes when taking dam
 	name = "rhythm"
 	desc = "To satisfy people, a product of despair and suffering of someone else is needed."
 	icon_state = "rhythm"
-	armor = list(RED_DAMAGE = 70, WHITE_DAMAGE = 70, BLACK_DAMAGE = 40, PALE_DAMAGE = 40)          //Empowers EGO Weapon Rhythm
+	armor = list(RED_DAMAGE = 70, WHITE_DAMAGE = 70, BLACK_DAMAGE = 40, PALE_DAMAGE = 50)          //Empowers EGO Weapon Rhythm
 
 /* WAW Realizations */
 
@@ -969,7 +977,7 @@ If you land the killing blow on that enemy, you get a buff and a heal.
 	name = "for whom the bell tolls"
 	desc = "I suppose if a man has something once, always something of it remains."
 	icon_state = "thirteen"
-	armor = list(RED_DAMAGE = 50, WHITE_DAMAGE = 50, BLACK_DAMAGE = 80, PALE_DAMAGE = 70)		//No Ability
+	armor = list(RED_DAMAGE = 50, WHITE_DAMAGE = 50, BLACK_DAMAGE = 70, PALE_DAMAGE = 80)		//No Ability
 
 /obj/item/clothing/suit/armor/ego_gear/realization/capitalism
 	name = "capitalism"
@@ -1041,6 +1049,14 @@ If you land the killing blow on that enemy, you get a buff and a heal.
 	desc = "She's always watching. Do not forget who it was that sprung the project to the skies."
 	icon_state = "sole_focus"
 	armor = list(RED_DAMAGE = 50, WHITE_DAMAGE = 80, BLACK_DAMAGE = 80, PALE_DAMAGE = 40) //Two slashes allows for free ranting in the files, so... first, sprites made by Monoman335, basically it's heaven's stats boosted, the 50 is for Red resist and 40 for pale because the weapon does Red and I think it fits. Also no ability. Yet.
+
+/obj/item/clothing/suit/armor/ego_gear/realization/dreaming
+	name = "dreaming"
+	desc = "A dream to be free."
+	icon_state = "dreaming"
+	armor = list(RED_DAMAGE = 70, WHITE_DAMAGE = 80, BLACK_DAMAGE = 30, PALE_DAMAGE = 50)
+	assimilation_ability = /obj/effect/proc_holder/ability/ego_assimilation/dreaming
+
 
 /* ALEPH Realizations */
 
@@ -1118,7 +1134,7 @@ If you land the killing blow on that enemy, you get a buff and a heal.
 	name = "farmwatch"
 	desc = "Haha. You're right, the calf doesn't recognize me."
 	icon_state = "farmwatch"
-	armor = list(RED_DAMAGE = 70, WHITE_DAMAGE = 70, BLACK_DAMAGE = 40, PALE_DAMAGE = 60)
+	armor = list(RED_DAMAGE = 70, WHITE_DAMAGE = 80, BLACK_DAMAGE = 40, PALE_DAMAGE = 60)
 	hat = /obj/item/clothing/head/ego_hat/farmwatch_hat
 	assimilation_ability = /obj/effect/proc_holder/ability/ego_assimilation/farmwatch
 
@@ -1131,7 +1147,7 @@ If you land the killing blow on that enemy, you get a buff and a heal.
 	name = "spicebush"
 	desc = "I've always wished to be a bud. Soon to bloom, bearing a scent within."
 	icon_state = "spicebush"
-	armor = list(RED_DAMAGE = 40, WHITE_DAMAGE = 70, BLACK_DAMAGE = 70, PALE_DAMAGE = 60)
+	armor = list(RED_DAMAGE = 50, WHITE_DAMAGE = 70, BLACK_DAMAGE = 70, PALE_DAMAGE = 60)
 	assimilation_ability = /obj/effect/proc_holder/ability/ego_assimilation/spicebush
 
 /obj/item/clothing/suit/armor/ego_gear/realization/desperation
@@ -1148,10 +1164,3 @@ If you land the killing blow on that enemy, you get a buff and a heal.
 	icon_state = "gasharpoon"
 	armor = list(RED_DAMAGE = 60, WHITE_DAMAGE = 70, BLACK_DAMAGE = 20, PALE_DAMAGE = 80)//230, required for the corresponding weapon abilities
 	assimilation_ability = /obj/effect/proc_holder/ability/ego_assimilation/gasharpoon
-
-/obj/item/clothing/suit/armor/ego_gear/realization/dreaming
-	name = "dreaming"
-	desc = "A dream to be free."
-	icon_state = "dreaming"
-	armor = list(RED_DAMAGE = 40, WHITE_DAMAGE = 80, BLACK_DAMAGE = 60, PALE_DAMAGE = 70)
-	assimilation_ability = /obj/effect/proc_holder/ability/ego_assimilation/dreaming

@@ -16,9 +16,9 @@ import { Window } from '../layouts';
 
 const isValidHex = color => /^#([0-9A-F]{3}){1,2}$/i.test(color);
 
-export const AugmentFabricator = (props, context) => {
-  const { data = {} } = useBackend(context);
-  const [page, setPage] = useSharedState(context, 'page', 'template');
+export const AugmentFabricator = props => {
+  const { data = {} } = useBackend();
+  const [page, setPage] = useSharedState('page', 'template');
   const hasLoaded = data && data.forms && Array.isArray(data.forms);
 
   return (
@@ -30,9 +30,8 @@ export const AugmentFabricator = (props, context) => {
         {!hasLoaded ? (<NoticeBox>Loading configuration...</NoticeBox>) : (
           <>
             {page === 'template' && <TemplatePage setPage={setPage} /> }
-            {/* Pass context to EffectsPage */}
             {page === 'effects' && (
-              <EffectsPage setPage={setPage} context={context} />
+              <EffectsPage setPage={setPage} />
             )}
           </>
         )}
@@ -42,27 +41,21 @@ export const AugmentFabricator = (props, context) => {
 };
 
 // Page 1: Template & Flavor (RESTORED)
-const TemplatePage = (props, context) => {
+const TemplatePage = props => {
   const { setPage } = props;
-  const { act, data } = useBackend(context);
+  const { act, data } = useBackend();
 
   // State Hooks
-  const [selectedFormId, setSelectedFormId] = useSharedState(
-    context,
-    'formId',
+  const [selectedFormId, setSelectedFormId] = useSharedState('formId',
     null
   );
-  const [selectedRank, setSelectedRank] = useSharedState(context, 'rank', 1);
-  const [augName, setAugName] = useSharedState(context, 'augName', '');
-  const [augDesc, setAugDesc] = useSharedState(context, 'augDesc', '');
-  const [primaryColor, setPrimaryColor] = useSharedState(
-    context,
-    'primaryColor',
+  const [selectedRank, setSelectedRank] = useSharedState('rank', 1);
+  const [augName, setAugName] = useSharedState('augName', '');
+  const [augDesc, setAugDesc] = useSharedState('augDesc', '');
+  const [primaryColor, setPrimaryColor] = useSharedState('primaryColor',
     '#FFFFFF'
   );
-  const [secondaryColor, setSecondaryColor] = useSharedState(
-    context,
-    'secondaryColor',
+  const [secondaryColor, setSecondaryColor] = useSharedState('secondaryColor',
     '#CCCCCC'
   );
 
@@ -354,23 +347,24 @@ const TemplatePage = (props, context) => {
 };
 
 // --- EffectsPage component (UPDATED to use formId) ---
-const EffectsPage = (props, context) => {
+const EffectsPage = props => {
   const { setPage } = props;
-  const { act, data } = useBackend(context);
+  const { act, data } = useBackend();
 
   // --- UPDATED: Read form ID ---
-  const [selectedFormId] = useSharedState(context, 'formId');
+  const [selectedFormId] = useSharedState('formId');
   // Keep other shared state hooks
-  const [selectedRank] = useSharedState(context, 'rank', 1);
-  const [augName] = useSharedState(context, 'augName', '');
-  const [augDesc] = useSharedState(context, 'augDesc', '');
-  const [primaryColor] = useSharedState(context, 'primaryColor', '#FFFFFF');
-  const [secondaryColor] = useSharedState(
-    context, 'secondaryColor', '#CCCCCC'
+  const [selectedRank] = useSharedState('rank', 1);
+  const [augName] = useSharedState('augName', '');
+  const [augDesc] = useSharedState('augDesc', '');
+  const [primaryColor] = useSharedState('primaryColor', '#FFFFFF');
+  const [secondaryColor] = useSharedState('secondaryColor', '#CCCCCC'
   );
-  const [selectedEffects, setSelectedEffects] = useSharedState(
-    context, 'selectedEffects', []
+  const [selectedEffects, setSelectedEffects] = useSharedState('selectedEffects', []
   ); // Array of effect IDs
+
+  // Search state for filtering effects
+  const [searchQuery, setSearchQuery] = useSharedState('searchQuery', '');
 
   const {
     forms = [],
@@ -417,6 +411,15 @@ const EffectsPage = (props, context) => {
     );
     setSelectedEffects(newEffects);
   };
+
+  // Filter effects based on search query
+  const filteredEffects = effects.filter(effect => {
+    if (!searchQuery) return true;
+    const query = searchQuery.toLowerCase();
+    const name = (effect?.name || '').toLowerCase();
+    const desc = (effect?.desc || '').toLowerCase();
+    return name.includes(query) || desc.includes(query);
+  });
 
   const handleFabricate = () => {
     // --- UPDATED: Check form ID ---
@@ -495,6 +498,20 @@ const EffectsPage = (props, context) => {
         <Box flexBasis="50%" pr={1} overflowY="auto" mr={1}>
           {/* Added margin right */}
           <Section title="Available Effects">
+            {/* Search Bar */}
+            <Box mb={1}>
+              <Input
+                fluid
+                placeholder="Search effects by name or description..."
+                value={searchQuery}
+                onInput={(e, value) => setSearchQuery(value)}
+              />
+              {searchQuery && (
+                <Box mt={0.5} color="label" fontSize="small">
+                  Showing {filteredEffects.length} of {effects.length} effects
+                </Box>
+              )}
+            </Box>
             <Table>
               {/* Header Row */}
               <Table.Row header>
@@ -509,8 +526,14 @@ const EffectsPage = (props, context) => {
                 <Table.Row>
                   <Table.Cell colSpan={5}>No effects available.</Table.Cell>
                 </Table.Row>
+              ) : filteredEffects.length === 0 ? (
+                <Table.Row>
+                  <Table.Cell colSpan={5}>
+                    No effects match your search query.
+                  </Table.Cell>
+                </Table.Row>
               ) : (
-                effects.map(effect => {
+                filteredEffects.map(effect => {
                   // Safety check for effect data
                   if (!effect || !effect.id || !effect.name) {
                     console.error(
@@ -556,9 +579,9 @@ const EffectsPage = (props, context) => {
                   }
 
                   // --- Market Display Logic ---
-                  const baseCost = effect.ahn_cost ?? 0;
+                  const baseCost = effect.ahn_cost || 0;
                   const currentCost
-                    = effect.current_ahn_cost ?? baseCost; // Fallback to base
+                    = effect.current_ahn_cost || baseCost; // Fallback to base
                   const isOnSale = effect.sale_percent > 0;
                   const isMarkedUp = effect.markup_percent > 0;
                   // --- End Market Display Logic ---

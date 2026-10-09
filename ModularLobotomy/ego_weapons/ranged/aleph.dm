@@ -54,7 +54,7 @@
 	It’s the byproduct of some horrid experiment in a certain laboratory that eventually failed."
 	icon_state = "adoration"
 	inhand_icon_state = "adoration"
-	special = "Use in hand to swap between AOE, DOT and shotgun modes."
+	special = "Alt click to swap between AOE, DOT and shotgun modes."
 
 	force = 56
 	damtype = BLACK_DAMAGE
@@ -76,7 +76,7 @@
 							)
 	var/mode = 0
 
-/obj/item/ego_weapon/ranged/adoration/attack_self(mob/user)
+/obj/item/ego_weapon/ranged/adoration/AltClick(mob/user)
 	. = ..()
 	switch(mode)
 		if(SHOT_MODE)
@@ -260,10 +260,11 @@
 	desc = "With the waxing of the sun, humanity wanes."
 	icon_state = "arcadia"
 	inhand_icon_state = "arcadia"
-	special = "Use in hand to load bullets."
+	special = "Firing this weapon when below half health will increase damage by 50%."
 	force = 56
 	projectile_path = /obj/projectile/ego_bullet/arcadia
 	weapon_weight = WEAPON_HEAVY
+	knockback = KNOCKBACK_LIGHT
 	spread = 5
 	recoil = 1.5
 	fire_sound = 'sound/weapons/gun/rifle/shot_atelier.ogg'
@@ -292,6 +293,15 @@
 		shotsleft +=1
 	is_reloading = FALSE
 
+/obj/item/ego_weapon/ranged/arcadia/fire_projectile(atom/target, mob/living/user, params, distro, quiet, zone_override, spread, atom/fired_from, temporary_damage_multiplier)
+	if(!ishuman(user))
+		return ..()
+
+	var/mob/living/carbon/human/H = user
+	if(H.health < H.maxHealth * 0.5)
+		temporary_damage_multiplier = 1.5 // HP below half will increase damage by 1.5x
+	return ..()
+
 /obj/item/ego_weapon/ranged/arcadia/judge
 	name = "Judge"
 	desc = "You will be judged; as I have."
@@ -300,6 +310,7 @@
 	force = 56
 	damtype = WHITE_DAMAGE
 	weapon_weight = WEAPON_MEDIUM	//Cannot be dual wielded
+	knockback = FALSE	//Only the big gun has knockback
 	recoil = 2
 	fire_sound_volume = 30
 	fire_delay = 3	//FAN THE HAMMER
@@ -900,6 +911,8 @@
 	animate(src.get_filter("motionblur"), y = 0, time = travel_time, flags = ANIMATION_PARALLEL)
 	animate(src, pixel_z = -1 * abs(sin(rotation))*4, pixel_x = (sin(rotation) * 20), time = travel_time, easing = LINEAR_EASING, flags = ANIMATION_PARALLEL)
 
+
+
 /obj/item/ego_weapon/ranged/pistol/tarnished
 	name = "Tears of the Tarnished Blood"
 	desc = "With contemplation, I shall darken the clear skies above; with my sacrifice, I shall exsanguinate my carnal blood upon this earth."
@@ -907,7 +920,7 @@
 	inhand_icon_state = "tarnished"
 	special = ""
 
-	force = 50
+	force = 40
 	damtype = PALE_DAMAGE
 	attack_speed = 1.0
 	swingstyle = WEAPONSWING_LARGESWEEP
@@ -928,8 +941,8 @@
 
 	alternate_fire_name = "Flower Burying Pin"
 	alternate_pellets = 1
-	alternate_shotsleft = 3
-	alternate_info = "This weapon fires a levinfall pin."
+	alternate_shotsleft = 5
+	alternate_info = "This weapon fires a levinfall pin. Hitting a target will cause Red damage to the firer."
 	alternate_reload_type = RANGEDEGO_ALTERNATEFIRE_RELOADTYPE_SHARED_RELOAD
 	alternate_projectile_path = /obj/projectile/ego_bullet/tarnished_pin
 	alternate_fire_sound = 'sound/weapons/bowfire.ogg'

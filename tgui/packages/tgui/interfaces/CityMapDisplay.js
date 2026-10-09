@@ -52,11 +52,8 @@ const holoTint = function (hex) {
   );
 };
 
-export const CityMapDisplay = (
-  props,
-  context,
-) => {
-  const { data } = useBackend(context);
+export const CityMapDisplay = props => {
+  const { data } = useBackend();
   const {
     mapGrid,
     gridWidth = 0,
@@ -64,21 +61,13 @@ export const CityMapDisplay = (
     map_legend = [],
   } = data;
   const [selColor, setSelColor]
-    = useSharedState(
-      context, 'selColor', '',
-    );
+    = useSharedState('selColor', '');
   const [zoom, setZoom]
-    = useSharedState(
-      context, 'zoom', 1,
-    );
+    = useSharedState('zoom', 1);
   const [focusX, setFocusX]
-    = useSharedState(
-      context, 'focusX', -1,
-    );
+    = useSharedState('focusX', -1);
   const [focusY, setFocusY]
-    = useSharedState(
-      context, 'focusY', -1,
-    );
+    = useSharedState('focusY', -1);
   const toggleColor = color => {
     setSelColor(
       selColor === color ? '' : color,

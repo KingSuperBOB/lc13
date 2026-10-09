@@ -455,7 +455,7 @@
 			heard_us_speak[H.ckey] = world.time
 
 /mob/living/simple_animal/hostile/limbus_abno/Hear(message, atom/movable/speaker, datum/language/message_language, raw_message, radio_freq, list/spans, list/message_mods)
-	..()
+	. = ..()
 	if(desire_on_talk != 0 && speaker != src)
 		AdjustDesire(desire_on_talk)
 	//...and if one of them then answers us, that is a conversation, and it is worth something.
@@ -526,13 +526,13 @@
 	return desire_amount
 
 /mob/living/simple_animal/hostile/limbus_abno/proc/AdjustCounter(counter_amount)
-	if(counter_amount == 0)
-		if(can_breach)
-			Breach()
-		return FALSE
 	var/original_counter = counter
 	var/pos_counter = 0 < counter_amount ? TRUE : FALSE
 	counter = clamp(counter + counter_amount, 0, max_counter)
+	if(counter == 0)
+		if(can_breach)
+			Breach()
+		return FALSE
 	UpdateBars()
 	update_action_buttons()
 
@@ -633,7 +633,7 @@
 	if(special_desc == "" || isnull(special_desc))
 		return ..()
 
-	. = list(special_desc)
+	return list(special_desc)
 
 ///A precise, numeric rundown of the abno's needs, shown only to the player controlling it.
 /mob/living/simple_animal/hostile/limbus_abno/proc/SelfStatusReadout()

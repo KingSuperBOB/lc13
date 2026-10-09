@@ -15,7 +15,9 @@ import { Box, Flex, Tabs, TextArea } from '../components';
 import { Window } from '../layouts';
 import { clamp } from 'common/math';
 import { sanitizeText } from '../sanitize';
-const MAX_PAPER_LENGTH = 5000; // Question, should we send this with ui_data?
+// With chunking support, we can now use the full paper length from DM
+// The chunking system will automatically split large data
+const MAX_PAPER_LENGTH = 5000;
 
 // Hacky, yes, works?...yes
 const textWidth = (text, font, fontsize) => {
@@ -183,7 +185,7 @@ const pauseEvent = e => {
   return false;
 };
 
-const Stamp = (props, context) => {
+const Stamp = props => {
   const {
     image,
     opacity,
@@ -214,7 +216,7 @@ const setInputReadonly = (text, readonly) => {
 
 // got to make this a full component if we
 // want to control updates
-const PaperSheetView = (props, context) => {
+const PaperSheetView = props => {
   const {
     value = "",
     stamps = [],
@@ -251,8 +253,8 @@ const PaperSheetView = (props, context) => {
 
 // again, need the states for dragging and such
 class PaperSheetStamper extends Component {
-  constructor(props, context) {
-    super(props, context);
+  constructor(props) {
+    super(props);
     this.state = {
       x: 0,
       y: 0,
@@ -268,7 +270,7 @@ class PaperSheetStamper extends Component {
     };
     this.handleMouseClick = e => {
       if (e.pageY <= 30) { return; }
-      const { act, data } = useBackend(this.context);
+      const { act, data } = useBackend();
       const stamp_obj = {
         x: this.state.x, y: this.state.y, r: this.state.rotate,
         stamp_class: this.props.stamp_class,
@@ -361,11 +363,10 @@ class PaperSheetStamper extends Component {
 // component too if I want to keep updates
 // low and keep the weird flashing down
 class PaperSheetEdit extends Component {
-  constructor(props, context) {
-    super(props, context);
+  constructor(props) {
+    super(props);
     this.state = {
       previewSelected: "Preview",
-      old_text: props.value || "",
       textarea_text: "",
       combined_text: props.value || "",
     };
@@ -374,7 +375,7 @@ class PaperSheetEdit extends Component {
   // This is the main rendering part, this creates the html from marked text
   // as well as the form fields
   createPreview(value, do_fields = false) {
-    const { data } = useBackend(this.context);
+    const { data } = useBackend();
     const {
       text,
       pen_color,
@@ -420,16 +421,10 @@ class PaperSheetEdit extends Component {
 
   onInputHandler(e, value) {
     if (value !== this.state.textarea_text) {
-      const combined_length = this.state.old_text.length
-        + this.state.textarea_text.length;
-      if (combined_length > MAX_PAPER_LENGTH) {
-        if ((combined_length - MAX_PAPER_LENGTH) >= value.length) {
-          // Basically we cannot add any more text to the paper
-          value = '';
-        } else {
-          value = value.substr(0, value.length
-            - (combined_length - MAX_PAPER_LENGTH));
-        }
+      // Check only the new text length, not the HTML formatted old text
+      if (value.length > MAX_PAPER_LENGTH) {
+        // Truncate to MAX_PAPER_LENGTH
+        value = value.substr(0, MAX_PAPER_LENGTH);
         // we check again to save an update
         if (value === this.state.textarea_text) {
           // Do nothing
@@ -444,9 +439,16 @@ class PaperSheetEdit extends Component {
   }
   // the final update send to byond, final upkeep
   finalUpdate(new_text) {
-    const { act } = useBackend(this.context);
+    // Ensure text doesn't exceed MAX_PAPER_LENGTH
+    if (new_text.length > MAX_PAPER_LENGTH) {
+      new_text = new_text.substr(0, MAX_PAPER_LENGTH);
+    }
+
+    const { act } = useBackend();
     const final_processing = this.createPreview(new_text, true);
+
     act('save', final_processing);
+
     this.setState(() => { return {
       textarea_text: "",
       previewSelected: "save",
@@ -553,8 +555,8 @@ class PaperSheetEdit extends Component {
   }
 }
 
-export const PaperSheet = (props, context) => {
-  const { data } = useBackend(context);
+export const PaperSheet = props => {
+  const { data } = useBackend();
   const {
     edit_mode,
     text,
