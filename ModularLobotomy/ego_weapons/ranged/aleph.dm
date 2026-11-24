@@ -56,16 +56,17 @@
 	It’s the byproduct of some horrid experiment in a certain laboratory that eventually failed."
 	icon_state = "adoration"
 	inhand_icon_state = "adoration"
-	special = "Alt click to swap between AOE, DOT and shotgun modes."
+	special = "Alt Click to swap between AOE, Rend Black and Slow modes."
 
 	force = 56
 	damtype = BLACK_DAMAGE
 
 	projectile_path = /obj/projectile/ego_bullet/adoration
 	weapon_weight = WEAPON_HEAVY
-	fire_delay = 10
-	pellets = 3
-	variance = 20
+	fire_delay = 14
+	shotsleft = 5
+	reloadtime = 1.2 SECONDS
+
 
 	reload_start_sound = null
 	reload_success_sound = 'sound/effects/footstep/slime1.ogg'
@@ -84,22 +85,18 @@
 	. = ..()
 	switch(mode)
 		if(SHOT_MODE)
-			to_chat(user,"<span class='warning'>You focus, changing for a DOT blast</span>")
-			projectile_path = /obj/projectile/ego_bullet/adoration/dot
-			pellets = 1
-			variance = 0
+			to_chat(user, span_warning("You focus, changing to a rending bullet."))
+			projectile_path = /obj/projectile/ego_bullet/adoration/rend
 			mode = DOT_MODE
 			return
 		if(DOT_MODE)
-			to_chat(user,"<span class='warning'>You focus, changing for an AOE blast</span>")
+			to_chat(user, span_warning("You focus, changing to an AOE blast."))
 			projectile_path = /obj/projectile/ego_bullet/adoration/aoe
 			mode = AOE_MODE
 			return
 		if(AOE_MODE)
-			to_chat(user,"<span class='warning'>You focus, changing for a shotgun blast</span>")
-			projectile_path = /obj/projectile/ego_bullet/adoration
-			pellets = initial(pellets)
-			variance = initial(variance)
+			to_chat(user, span_warning("You focus, changing to a slow bullet."))
+			projectile_path = /obj/projectile/ego_bullet/adoration/slow
 			mode = SHOT_MODE
 			return
 
@@ -288,16 +285,7 @@
 
 	shotsleft = 16	//Based off a henry .44
 	reloadtime = 0.5 SECONDS
-
-/obj/item/ego_weapon/ranged/arcadia/reload_ego(mob/user)
-	if(shotsleft == initial(shotsleft))
-		return
-	is_reloading = TRUE
-	to_chat(user,"<span class='notice'>You start loading a bullet.</span>")
-	if(do_after(user, reloadtime, src)) //gotta reload
-		playsound(src, 'sound/weapons/gun/general/slide_lock_1.ogg', 50, TRUE)
-		shotsleft +=1
-	is_reloading = FALSE
+	roundsreload = TRUE
 
 /obj/item/ego_weapon/ranged/arcadia/fire_projectile(atom/target, mob/living/user, params, distro, quiet, zone_override, spread, atom/fired_from, temporary_damage_multiplier)
 	if(!ishuman(user))
@@ -345,6 +333,7 @@
 							JUSTICE_ATTRIBUTE = 100
 	)
 	shotsleft = 200
+	reloadtime = 4 SECONDS
 
 #define STATUS_EFFECT_ENTRENCHED_INITIAL /datum/status_effect/willing_weapon_entrenched
 #define STATUS_EFFECT_ENTRENCHED_FINAL /datum/status_effect/willing_weapon_entrenched/final_stage
